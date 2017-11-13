@@ -13,7 +13,7 @@
           </a>
           <span xid="span1" __cid="cYVb2Qv" class="cYVb2Qv"/>
           <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm pull-right cYVb2Qv" xid="sourceBtn" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cYVb2Qv"> 
-            <i xid="i3" __cid="cYVb2Qv" class="cYVb2Qv"/>  
+            <i xid="i31" __cid="cYVb2Qv" class="cYVb2Qv"/>  
             <span xid="span2" __cid="cYVb2Qv" class="cYVb2Qv">源码</span>
           </a>
           <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm pull-right cYVb2Qv" xid="jsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:jsClick" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cYVb2Qv"> 

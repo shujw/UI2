@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window takeout cfaINby" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfaINby" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/bootstrap/panel/panel,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.takeout.cfaINby .x-col.cfaINby{padding: 0px} .takeout.cfaINby .takeout-list-row.cfaINby{border-bottom: 1px solid rgb(229, 229, 229)} .takeout.cfaINby .x-titlebar.cfaINby{background-color: rgb(53, 179, 228)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfaINby" class="cfaINby"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mapDialog" style="left:63px;top:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;routable&quot;:true,&quot;src&quot;:&quot;$model/UI2/takeout/mapActivity.w&quot;}" __cid="cfaINby" class="cfaINby"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cfaINby" __cid="cfaINby"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cfaINby" style="display:none;" __cid="cfaINby">  
+      <div class="x-dialog-title cfaINby" __cid="cfaINby"> 
+        <button class="close cfaINby" __cid="cfaINby"> 
+          <span __cid="cfaINby" class="cfaINby">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cfaINby" __cid="cfaINby"/> 
+      </div>  
+      <div class="x-dialog-body cfaINby" __cid="cfaINby"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceMFZba-iosstatusbar cfaINby" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfaINby"> 
+    <div class="x-panel-top cfaINby" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaINby"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfaINby" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;WeX5 外卖&quot;}" __cid="cfaINby"> 
+        <div class="x-titlebar-left cfaINby" xid="div1" __cid="cfaINby"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfaINby" style="display:none" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:justep.Portal.getPortal()" data-events="onClick:{&quot;operation&quot;:&quot;window.close&quot;}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cfaINby"> 
+            <i xid="i11" class="icon-chevron-left cfaINby" __cid="cfaINby"/>  
+            <span xid="span18" __cid="cfaINby" class="cfaINby"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cfaINby" xid="div2" __cid="cfaINby">WeX5 外卖</div>  
+        <div class="x-titlebar-right  cfaINby" xid="div3" __cid="cfaINby"> 
+          <div class="empty cfaINby" __cid="cfaINby"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cfaINby" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaINby"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cfaINby" xid="contents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:contentsActiveChange" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true}" __cid="cfaINby"> 
+        <div class="x-contents-content active x-scroll-view active cfaINby" xid="foodContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfaINby"> 
+          <div class="x-scroll cfaINby" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfaINby"> 
+            <div class="x-content-center x-pull-down container cfaINby" xid="div4" __cid="cfaINby"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cfaINby" xid="i1" __cid="cfaINby"/>  
+              <span class="x-pull-down-label cfaINby" xid="span2" __cid="cfaINby">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cfaINby" xid="div5" __cid="cfaINby"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards cfaINby" xid="foodList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;foodData&quot;,&quot;limit&quot;:8}" __cid="cfaINby"> 
+                <ul class="x-list-template list-group hide cfaINby" xid="listTemplateUl1" __cid="cfaINby" data-bind="foreach:{data:$model.foreach_foodList($element),afterRender:$model.foreach_afterRender_foodList.bind($model,$element)}"> 
+                  <li xid="li1" class="list-group-item cfaINby" __cid="cfaINby"> 
+                    <div class="media cfaINby" __cid="cfaINby"> 
+                      <div class="media-left cfaINby" __cid="cfaINby"> 
+                        <img alt="" xid="image1" style="width:120px;height:89px;width:38vw;height: 25.333333333333vw;max-width:120px;max-height:89px;" class="img-rounded media-object cfaINby" __cid="cfaINby" data-bind="attr:{src:$model.transUrl($object)}"/> 
+                      </div>  
+                      <div class="media-body cfaINby" __cid="cfaINby"> 
+                        <a component="$model/UI2/system/components/justep/button/button" style="padding: 0;margin: 10px 10px 0 0;" class="btn x-card btn-link pull-right cfaINby" xid="addCartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addCartBtnClick" data-config="{&quot;label&quot;:&quot;来一份&quot;}" __cid="cfaINby"> 
+                          <i xid="i14" __cid="cfaINby" class="cfaINby"/>  
+                          <span xid="span10" __cid="cfaINby" class="cfaINby">来一份</span> 
+                        </a>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-heading cfaINby" xid="output1" style="font-size:14px;font-weight:bold" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cfaINby" xid="output2" data-bind="component:{ref:ref('fDescription'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cfaINby" xid="output3" style="font-weight: bold;" data-bind="component:{ref:ref('calcPriceText'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cfaINby" xid="div6" __cid="cfaINby"> 
+              <span class="x-pull-up-label cfaINby" xid="span5" __cid="cfaINby">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content x-cards cfaINby" xid="cartContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfaINby"> 
+          <div class="panel panel-default panel-default x-card cfaINby" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cfaINby"> 
+            <div class="panel-heading cfaINby" xid="heading2" __cid="cfaINby"> 
+              <h4 class="panel-title cfaINby" xid="h42" __cid="cfaINby">清单</h4> 
+            </div>  
+            <div class="panel-body cfaINby" xid="body2" __cid="cfaINby"> 
+              <span style="color:#ddd" __cid="cfaINby" class="cfaINby" data-bind="visible:$model.cartData.getCount() == 0">空</span>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cfaINby" xid="carList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;cartData&quot;}" __cid="cfaINby"> 
+                <ul class="x-list-template hide cfaINby" xid="listTemplateUl2" __cid="cfaINby" data-bind="foreach:{data:$model.foreach_carList($element),afterRender:$model.foreach_afterRender_carList.bind($model,$element)}"> 
+                  <li xid="li2" __cid="cfaINby" class="cfaINby"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cfaINby" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cfaINby"> 
+                      <div class="col col-xs-5 cfaINby" xid="col7" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output4" style="font-weight:bold;" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                      </div>  
+                      <div class="col col-xs-2 cfaINby" xid="col8" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output11" data-bind="component:{ref:ref('fPrice'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                      </div>  
+                      <div class="col col-xs-5 cfaINby" xid="col9" __cid="cfaINby"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-xs btn-only-icon cfaINby" xid="reduceCountBtn" style="color:white;background-color:#35b3e4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reduceCountBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfaINby"> 
+                          <i xid="i3" class="icon-android-remove cfaINby" __cid="cfaINby"/>  
+                          <span xid="span3" __cid="cfaINby" class="cfaINby"/> 
+                        </a>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" data-bind="component:{ref:ref('fCount'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-xs btn-only-icon cfaINby" xid="addCountBtn" style="color:white;background-color:#35b3e4;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addCountBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfaINby"> 
+                          <i xid="i4" class="icon-android-add cfaINby" __cid="cfaINby"/>  
+                          <span xid="span4" __cid="cfaINby" class="cfaINby"/> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="panel-footer cfaINby" xid="footer2" __cid="cfaINby"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                <div class="x-col cfaINby" xid="col14" __cid="cfaINby"/>  
+                <div xid="col15" __cid="cfaINby" class="cfaINby"> 
+                  <span xid="span11" style="font-weight:bold;" __cid="cfaINby" class="cfaINby">合计：</span> 
+                </div>  
+                <div xid="col16" __cid="cfaINby" class="cfaINby"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output6" style="padding-top: 0;margin-right:10px;margin-left:10px;font-weight:bold;" data-bind="component:{ref:statusData.ref('calcCartSumMoneyText'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="panel panel-default x-card cfaINby" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel13" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cfaINby"> 
+            <div class="panel-heading cfaINby" xid="heading1" __cid="cfaINby"> 
+              <h4 class="panel-title cfaINby" xid="h41" __cid="cfaINby">联系方式</h4> 
+            </div>  
+            <div class="panel-body cfaINby" xid="body1" __cid="cfaINby"> 
+              <form class="form-horizontal cfaINby" __cid="cfaINby"> 
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:10px;padding-top: 12px;" __cid="cfaINby">姓名</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaINby" xid="input1" data-bind="component:{ref:userData.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/> 
+                  </div> 
+                </div>  
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:10px;padding-top: 12px;" __cid="cfaINby">电话</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaINby" xid="input2" data-bind="component:{ref:userData.ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/> 
+                  </div> 
+                </div>  
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:10px;padding-top: 12px;" __cid="cfaINby">地址</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaINby" xid="input3" data-bind="component:{ref:userData.ref('fAddress'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/> 
+                  </div> 
+                </div> 
+              </form>  
+              <div xid="paySection" style="height:40px; padding-top: 5px;" __cid="cfaINby" class="cfaINby"> 
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cfaINby" xid="payTypeSelect" style="float:right;margin-right:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:payData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cfaINby"> 
+                  <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cfaINby" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('fPayTypeLabel'),value:ref('fPayType')}" __cid="cfaINby">  
+                    <input type="radio" __cid="cfaINby" class="cfaINby"/>  
+                    <label __cid="cfaINby" class="cfaINby"/> 
+                  </span> 
+                </span> 
+              </div> 
+            </div>  
+            <div class="panel-footer clearfix cfaINby" xid="footer1" __cid="cfaINby"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning btn-sm cfaINby" xid="saveOrderBtn" style="float: right; margin-right:10px;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:statusData.ref('calcCanSaveOrder')" data-events="onClick:saveOrderBtnClick" data-config="{&quot;label&quot;:&quot;下单&quot;}" __cid="cfaINby"> 
+                <i xid="i9" __cid="cfaINby" class="cfaINby"/>  
+                <span xid="span12" __cid="cfaINby" class="cfaINby">下单</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn card btn-link btn-sm cfaINby" xid="cleanCartBtn" style="float: right; margin-right:10px;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:statusData.ref('calcCanClearCart')" data-events="onClick:cleanCartBtnClick" data-config="{&quot;label&quot;:&quot;清空购物车&quot;}" __cid="cfaINby"> 
+                <i xid="i10" __cid="cfaINby" class="cfaINby"/>  
+                <span xid="span13" __cid="cfaINby" class="cfaINby">清空购物车</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content x-scroll-view cfaINby" xid="orderContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfaINby"> 
+          <div class="x-scroll cfaINby" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfaINby"> 
+            <div class="x-content-center x-pull-down container cfaINby" xid="div8" __cid="cfaINby"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cfaINby" xid="i12" __cid="cfaINby"/>  
+              <span class="x-pull-down-label cfaINby" xid="span14" __cid="cfaINby">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cfaINby" xid="div9" __cid="cfaINby"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cfaINby" xid="orderList" style="margin: 5px;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;orderData&quot;,&quot;limit&quot;:10}" __cid="cfaINby"> 
+                <ul class="x-list-template hide cfaINby" xid="listTemplateUl3" __cid="cfaINby" data-bind="foreach:{data:$model.foreach_orderList($element),afterRender:$model.foreach_afterRender_orderList.bind($model,$element)}"> 
+                  <li xid="li3" class="takeout-list-row cfaINby" __cid="cfaINby"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div xid="col13" __cid="cfaINby" class="cfaINby"> 
+                        <span xid="span17" style="font-weight:bold;" class="x-output cfaINby" __cid="cfaINby">订餐时间：</span> 
+                      </div>  
+                      <div class="x-col cfaINby" xid="col18" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output7" data-bind="component:{ref:ref('fCreateTime'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div xid="col20" __cid="cfaINby" class="cfaINby"> 
+                        <span xid="span16" style="margin-left:5px;color:#FF8040;" class="x-output cfaINby" __cid="cfaINby">订餐内容：</span> 
+                      </div>  
+                      <div class="x-col cfaINby" xid="col21" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output8" data-bind="component:{ref:ref('fContent'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfaINby"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div xid="col23" __cid="cfaINby" class="cfaINby"> 
+                        <span xid="span116" style="margin-left:5px;color:#FF8040;" class="x-output cfaINby" __cid="cfaINby">配送信息：</span> 
+                      </div>  
+                      <div class="x-col cfaINby" xid="col24" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output9" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:val('fUserName') + '，' + val('fPhoneNumber') + '，' + val('fAddress')" __cid="cfaINby"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div xid="col26" style="margin-left:5px;color:#FF8040;" __cid="cfaINby" class="cfaINby"> 
+                        <span xid="span117" class="x-output cfaINby" __cid="cfaINby">合计金额：</span> 
+                      </div>  
+                      <div class="x-col cfaINby" xid="col27" __cid="cfaINby"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfaINby" xid="output10" style="color:#FF0000;font-weight:bold;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:'¥ ' + val('fSum') + '元'" __cid="cfaINby"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div xid="col28" style="margin-left:5px;color:#FF8040;" __cid="cfaINby" class="cfaINby"> 
+                        <span xid="span119" class="x-output cfaINby" __cid="cfaINby">支付状态：</span> 
+                      </div>  
+                      <div class="x-col cfaINby" xid="col29" __cid="cfaINby"> 
+                        <span xid="span120" class="x-output cfaINby" __cid="cfaINby" data-bind="text:(val('fPayState') &gt; 0 &amp;&amp; val('fPayState') &lt; 100) ? '已支付' : '货到付款'"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cfaINby" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfaINby"> 
+                      <div class="x-col cfaINby" xid="col31" __cid="cfaINby"/>  
+                      <div class="x-col cfaINby" xid="col32" __cid="cfaINby"/>  
+                      <div class="x-col cfaINby" xid="col33" __cid="cfaINby"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cfaINby" xid="div10" __cid="cfaINby"> 
+              <span class="x-pull-up-label cfaINby" xid="span15" __cid="cfaINby">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content x-cards cfaINby" xid="ownContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfaINby"> 
+          <div xid="photoDiv" style="height:128px;width:128px;margin:5px auto;" __cid="cfaINby" class="cfaINby"> 
+            <img alt="" xid="photoImage" height="100%" style="width:100%;" __cid="cfaINby" class="cfaINby"/> 
+          </div>  
+          <div class="panel panel-default x-card cfaINby" __cid="cfaINby"> 
+            <div class="panel-heading clearfix cfaINby" __cid="cfaINby"> 
+              <h3 class="panel-title pull-left cfaINby" __cid="cfaINby">默认联系方式</h3> 
+            </div>  
+            <div class="modal-body cfaINby" __cid="cfaINby"> 
+              <form class="form-horizontal cfaINby" __cid="cfaINby"> 
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:20px;padding-top: 12px;" __cid="cfaINby">姓名</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaINby" xid="input9" data-bind="component:{ref:userData.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/> 
+                  </div> 
+                </div>  
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:20px;padding-top: 12px;" __cid="cfaINby">电话</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cfaINby" xid="input8" data-bind="component:{ref:userData.ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/> 
+                  </div> 
+                </div>  
+                <div class="form-group cfaINby" __cid="cfaINby"> 
+                  <label class="col-xs-3 control-label cfaINby" style="word-spacing:20px;padding-top: 12px;" __cid="cfaINby">地址</label>  
+                  <div class="col-xs-9 cfaINby" __cid="cfaINby"> 
+                    <div class="input-group cfaINby" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cfaINby"> 
+                      <input type="text" class="form-control cfaINby" component="$model/UI2/system/components/justep/input/input" xid="input5" data-bind="component:{ref:userData.ref('fAddress'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cfaINby"/>  
+                      <div class="input-group-btn cfaINby" xid="div14" __cid="cfaINby"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfaINby" xid="location" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:locationClick" data-config="{&quot;icon&quot;:&quot;icon-android-location&quot;,&quot;label&quot;:&quot; 定位&quot;}" __cid="cfaINby"> 
+                          <i xid="i13" class="icon-android-location cfaINby" __cid="cfaINby"/>  
+                          <span xid="span19" __cid="cfaINby" class="cfaINby">定位</span> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </form> 
+            </div>  
+            <div class="panel-footer clearfix cfaINby" __cid="cfaINby"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-sm cfaINby" xid="saveUserBtn" style="float: right;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:saveUserBtnClick" data-config="{&quot;label&quot;:&quot;保存用户信息&quot;}" __cid="cfaINby"> 
+                <i xid="i2" __cid="cfaINby" class="cfaINby"/>  
+                <span xid="span1" __cid="cfaINby" class="cfaINby">保存用户信息</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cfaINby" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfaINby"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cfaINby" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;foodBtn&quot;,&quot;tabbed&quot;:true}" __cid="cfaINby"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cfaINby" xid="foodBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-beer&quot;,&quot;label&quot;:&quot;菜单&quot;,&quot;target&quot;:&quot;foodContent&quot;}" __cid="cfaINby"> 
+          <i xid="i5" class="icon-beer cfaINby" __cid="cfaINby"/>  
+          <span xid="span6" __cid="cfaINby" class="cfaINby">菜单</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cfaINby" xid="cartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-cart&quot;,&quot;label&quot;:&quot;购物车&quot;,&quot;target&quot;:&quot;cartContent&quot;}" __cid="cfaINby"> 
+          <i xid="i6" class="icon-ios7-cart cfaINby" __cid="cfaINby"/>  
+          <span xid="span7" __cid="cfaINby" class="cfaINby" data-bind="text:statusData.ref('calcCartCountText')">购物车</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cfaINby" xid="orderBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-copy&quot;,&quot;label&quot;:&quot;订单&quot;,&quot;target&quot;:&quot;orderContent&quot;}" __cid="cfaINby"> 
+          <i xid="i7" class="icon-ios7-copy cfaINby" __cid="cfaINby"/>  
+          <span xid="span8" __cid="cfaINby" class="cfaINby">订单</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top cfaINby" xid="ownBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;ownContent&quot;}" __cid="cfaINby"> 
+          <i xid="i8" class="icon-person cfaINby" __cid="cfaINby"/>  
+          <span xid="span9" __cid="cfaINby" class="cfaINby">我的</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cfaINby" class="cfaINby">.x-panel.pceMFZba-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceMFZba-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceMFZba-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceMFZba-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceMFZba-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceMFZba-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceMFZba-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceMFZba-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceMFZba-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

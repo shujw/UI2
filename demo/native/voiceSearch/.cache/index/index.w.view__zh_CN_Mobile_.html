@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cfIRZFr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfIRZFr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>ul.cfIRZFr{margin-bottom: 0} .list-group-item.cfIRZFr{border-left: 0; border-right: 0; border-radius: 0} .list-group-item.cfIRZFr .form-control.cfIRZFr{border: 0; box-shadow: none} .x-panel-bottom.cfIRZFr{border-top: thin solid rgb(227, 227, 227)} .voicePicture.cfIRZFr{margin-top: 20px} .form-control-feedback.cfIRZFr{top: 12px; left: 0} .has-feedback.cfIRZFr .form-control.cfIRZFr{padding-left: 47.5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfIRZFr" class="cfIRZFr"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cfIRZFr" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;dismissible&#34;:false,&#34;opacity&#34;:0.5}" __cid="cfIRZFr"> 
+    <div class="x-popOver-overlay cfIRZFr" xid="div8" __cid="cfIRZFr"></div>  
+    <div class="x-popOver-content cfIRZFr" xid="div9" __cid="cfIRZFr">
+      <div xid="div4" align="center" class="voicePicture cfIRZFr" __cid="cfIRZFr">
+        <img src="" alt="" xid="image1" class="img-responsive cfIRZFr" height="150px" style="width:150px;" __cid="cfIRZFr" data-bind="attr:{src:$model.getImageUrl('./img/1.gif')}">
+      </div>
+    </div>
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciiAR73-iosstatusbar cfIRZFr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfIRZFr"> 
+    <div class="x-panel-top cfIRZFr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfIRZFr">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfIRZFr" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cfIRZFr"> 
+        <div class="x-titlebar-left cfIRZFr" xid="left1" __cid="cfIRZFr">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfIRZFr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-volumehigh&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+            <i xid="i4" class="linear linear-volumehigh cfIRZFr" __cid="cfIRZFr"></i>  
+            <span xid="span5" __cid="cfIRZFr" class="cfIRZFr"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cfIRZFr" xid="title1" __cid="cfIRZFr">
+          <span xid="span1" __cid="cfIRZFr" class="cfIRZFr">我的书库</span>
+        </div>  
+        <div class="x-titlebar-right  cfIRZFr" xid="right1" __cid="cfIRZFr">
+          <div class="empty cfIRZFr" __cid="cfIRZFr"></div>
+          <i xid="i2" __cid="cfIRZFr" class="cfIRZFr"></i>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfIRZFr" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-compose&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+            <i xid="i1" class="icon-compose cfIRZFr" __cid="cfIRZFr"></i>  
+            <span xid="span2" __cid="cfIRZFr" class="cfIRZFr"></span>
+          </a>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cfIRZFr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfIRZFr">
+      <div xid="div7" class="list-group-item cfIRZFr" style="background-color:#E3E3E3;" __cid="cfIRZFr">
+        <div xid="div1" class="has-feedback cfIRZFr" __cid="cfIRZFr">
+          <div xid="div6" __cid="cfIRZFr" class="cfIRZFr">
+            <span xid="span11" class="form-control-feedback icon-android-search cfIRZFr" __cid="cfIRZFr"></span>
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cfIRZFr" xid="search" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cfIRZFr">
+          </div>
+        </div>
+      </div>
+      <div xid="div2" __cid="cfIRZFr" class="cfIRZFr">
+        <ul xid="ul1" __cid="cfIRZFr" class="cfIRZFr"> 
+          <li class="list-group-item cfIRZFr" xid="li101" __cid="cfIRZFr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cfIRZFr" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+              <i xid="i18" class="icon-ios7-arrow-right text-muted cfIRZFr" __cid="cfIRZFr"></i>  
+              <span xid="span17" __cid="cfIRZFr" class="cfIRZFr"></span>
+            </a>  
+            <span xid="span16" __cid="cfIRZFr" class="cfIRZFr">热门搜索</span>
+          </li>  
+          <li class="list-group-item cfIRZFr" xid="li201" __cid="cfIRZFr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cfIRZFr" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+              <i xid="i27" class="icon-ios7-arrow-right text-muted cfIRZFr" __cid="cfIRZFr"></i>  
+              <span xid="span20" __cid="cfIRZFr" class="cfIRZFr"></span>
+            </a>  
+            <span xid="span19" __cid="cfIRZFr" class="cfIRZFr">最近搜索</span>
+          </li>  
+          <li class="list-group-item cfIRZFr" xid="li301" __cid="cfIRZFr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cfIRZFr" xid="button160" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+              <i xid="i290" class="icon-ios7-arrow-right text-muted cfIRZFr" __cid="cfIRZFr"></i>  
+              <span xid="span230" __cid="cfIRZFr" class="cfIRZFr"></span>
+            </a>  
+            <span xid="span220" __cid="cfIRZFr" class="cfIRZFr">最近浏览</span>
+          </li>  
+          <li class="list-group-item cfIRZFr" xid="li1" __cid="cfIRZFr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cfIRZFr" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cfIRZFr"> 
+              <i xid="i29" class="icon-ios7-arrow-right text-muted cfIRZFr" __cid="cfIRZFr"></i>  
+              <span xid="span23" __cid="cfIRZFr" class="cfIRZFr"></span>
+            </a>  
+            <span xid="span22" __cid="cfIRZFr" class="cfIRZFr">最近流行</span>
+          </li>  
+          <li class="list-group-item cfIRZFr" xid="li4" __cid="cfIRZFr"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cfIRZFr" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;}" __cid="cfIRZFr"> 
+              <i xid="i3" class="icon-ios7-arrow-right text-muted cfIRZFr" __cid="cfIRZFr"></i>  
+              <span xid="span4" __cid="cfIRZFr" class="cfIRZFr"></span>
+            </a>  
+            <span xid="span3" __cid="cfIRZFr" class="cfIRZFr">摇一摇</span>
+          </li> 
+        </ul>
+      </div>  
+      <div xid="div3" style="background-color:#E3E3E3;height:40px;display:none;" __cid="cfIRZFr" class="cfIRZFr"></div>  
+      <div xid="div5" align="center" class="panel-body cfIRZFr" __cid="cfIRZFr"></div>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn x-orange btn-block cfIRZFr" xid="saying" style="margin-top:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{touchstart:$model._callModelFn.bind($model, 'sayingTouchstart'),touchend:$model._callModelFn.bind($model, 'sayingTouchend')}" data-config="{&#34;label&#34;:&#34;按住说话&#34;}" __cid="cfIRZFr"> 
+        <i xid="i8" __cid="cfIRZFr" class="cfIRZFr"></i>  
+        <span xid="span10" __cid="cfIRZFr" class="cfIRZFr">按住说话</span>
+      </a>
+    </div>  
+    <div class="x-panel-bottom cfIRZFr" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&#34;height&#34;:54}" __cid="cfIRZFr">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row text-center cfIRZFr" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfIRZFr"> 
+        <div class="x-col text-muted cfIRZFr" xid="col1" __cid="cfIRZFr">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top cfIRZFr" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-android-book&#34;,&#34;label&#34;:&#34;书架&#34;}" __cid="cfIRZFr"> 
+            <i xid="i5" class="icon-android-book cfIRZFr" __cid="cfIRZFr"></i>  
+            <span xid="span7" __cid="cfIRZFr" class="cfIRZFr">书架</span>
+          </a>
+        </div>  
+        <div class="x-col cfIRZFr" xid="col2" __cid="cfIRZFr">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top cfIRZFr" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-stats-bars&#34;,&#34;label&#34;:&#34;书城&#34;}" __cid="cfIRZFr"> 
+            <i xid="i6" class="icon-stats-bars cfIRZFr" __cid="cfIRZFr"></i>  
+            <span xid="span8" __cid="cfIRZFr" class="cfIRZFr">书城</span>
+          </a>
+        </div>  
+        <div class="x-col cfIRZFr" xid="col3" __cid="cfIRZFr">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top cfIRZFr" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-android-contact&#34;,&#34;label&#34;:&#34;个人中心&#34;}" __cid="cfIRZFr"> 
+            <i xid="i7" class="icon-android-contact cfIRZFr" __cid="cfIRZFr"></i>  
+            <span xid="span9" __cid="cfIRZFr" class="cfIRZFr">个人中心</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style __cid="cfIRZFr" class="cfIRZFr">.x-panel.pciiAR73-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pciiAR73-iosstatusbar >.x-panel-content { top: 48px;bottom: 54px;}.x-panel.pciiAR73-iosstatusbar >.x-panel-bottom {height: 54px;}.iosstatusbar .x-panel.pciiAR73-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciiAR73-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciiAR73-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciiAR73-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciiAR73-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciiAR73-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

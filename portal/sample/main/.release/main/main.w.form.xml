@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window portal-main cqqQ7zq" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqqQ7zq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid9.cqqQ7zq{padding: 0; border: 0; margin-top: 15px} .grid9.cqqQ7zq .row.cqqQ7zq{margin-left: 0; margin-right: 0} .grid9.cqqQ7zq .cell.cqqQ7zq{padding: 0; overflow: hidden; text-align: center; padding: 10px} .grid9.cqqQ7zq &gt; .cell.cqqQ7zq &gt; .card.cqqQ7zq &gt; .btn.cqqQ7zq &gt; i.linear.cqqQ7zq{font-size: 26px; width: 50px; height: 50px; padding: 10px; border-radius: 50%; color: rgb(255, 255, 255)} .grid9.cqqQ7zq &gt; .cell.cqqQ7zq &gt; .card.cqqQ7zq &gt; .btn.cqqQ7zq &gt; i.cqqQ7zq{font-size: 26px; width: 46px; height: 43px; padding: 10px; border-radius: 50%; color: rgb(255, 255, 255); margin-top: -5px} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(1) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(242, 183, 65)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(2) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(1, 186, 242)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(3) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(92, 210, 195)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(4) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(74, 176, 49)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(5) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(175, 139, 185)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(6) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(70, 163, 194)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(7) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(73, 145, 227)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(8) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(86, 95, 164)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(9) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(41, 151, 102)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(10) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(207, 175, 134)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(11) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(242, 126, 65)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(12) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(56, 121, 203)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(13) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(242, 176, 48)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(14) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(0, 177, 239)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(15) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(0, 239, 202)} .grid9.cqqQ7zq .cell.cqqQ7zq:nth-child(16) .card.cqqQ7zq .btn.cqqQ7zq i.cqqQ7zq{background-color: rgb(172, 195, 61)} .grid9.cqqQ7zq &gt; .cell.cqqQ7zq &gt; .card.cqqQ7zq &gt; .btn.cqqQ7zq &gt; span.cqqQ7zq{color: rgb(136, 136, 136); font-size: 12px; padding-top: 10px} .grid9.cqqQ7zq .cell.cqqQ7zq .card.cqqQ7zq .title.cqqQ7zq{display: block; text-align: center; word-wrap: break-word} .grid9.cqqQ7zq .cell.cqqQ7zq .card.cqqQ7zq .btn.cqqQ7zq{padding: 0} .portal-main.cqqQ7zq .x-contents.cqqQ7zq &gt; .x-contents-content.cqqQ7zq{overflow: hidden} .x-panel.cqqQ7zq .x-contents.cqqQ7zq .x-contents-content.cqqQ7zq img.cqqQ7zq{width: 100%} .iosstatusbar.cqqQ7zq .x-panel.cqqQ7zq &gt; .x-contents.cqqQ7zq{background-color: rgb(40, 40, 40); padding-top: 20px} .x-panel.cqqQ7zq &gt; .x-panel-top.cqqQ7zq{position: fixed; top: 0px; right: 0px; z-index: 100} .x-panel.cqqQ7zq &gt; .x-panel-top.cqqQ7zq &gt; .x-titlebar.cqqQ7zq{background-color: rgb(31, 34, 41); color: white} .x-panel.cqqQ7zq &gt; .x-content.cqqQ7zq{margin-top: 48px}</xhtml:style>  
+  <link type="text/css" rel="stylesheet" href="$model/UI2/portal/sample/main/main.ext.css" __cid="cqqQ7zq" class="cqqQ7zq"/>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqqQ7zq" class="cqqQ7zq"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" xid="panel1" class="x-panel pcjEB3yq-iosstatusbar cqqQ7zq" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqqQ7zq"> 
+    <div class="x-panel-top cqqQ7zq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqqQ7zq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqqQ7zq" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;综合案例&quot;}" __cid="cqqQ7zq"> 
+        <div class="x-titlebar-left cqqQ7zq" xid="div1" __cid="cqqQ7zq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  cqqQ7zq" xid="menuBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:menuBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-sad&quot;}" __cid="cqqQ7zq"> 
+            <i xid="i1" class="linear linear-sad cqqQ7zq" __cid="cqqQ7zq"/>  
+            <span xid="span1" __cid="cqqQ7zq" class="cqqQ7zq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cqqQ7zq" xid="div2" __cid="cqqQ7zq">综合案例</div>  
+        <div class="x-titlebar-right  cqqQ7zq" xid="div3" __cid="cqqQ7zq">
+          <div class="empty cqqQ7zq" __cid="cqqQ7zq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content1" class="x-content cqqQ7zq" __cid="cqqQ7zq"> 
+      <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cqqQ7zq" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:true,&quot;interval&quot;:4}" __cid="cqqQ7zq"> 
+        <ol class="carousel-indicators cqqQ7zq" xid="ol1" __cid="cqqQ7zq"/>  
+        <div role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents1" class="x-contents carousel-inner cqqQ7zq" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cqqQ7zq"> 
+          <div class="x-contents-content active cqqQ7zq" xid="page1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqqQ7zq"> 
+            <img src="$model/UI2/portal/sample/main/images/1.png" alt="" xid="image1" __cid="cqqQ7zq" class="cqqQ7zq"/>
+          </div>  
+          <div class="x-contents-content cqqQ7zq" xid="page2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqqQ7zq"> 
+            <img src="$model/UI2/portal/sample/main/images/2.png" alt="" xid="image2" __cid="cqqQ7zq" class="cqqQ7zq"/>
+          </div>  
+          <div class="x-contents-content cqqQ7zq" xid="page3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqqQ7zq"> 
+            <img src="$model/UI2/portal/sample/main/images/3.png" alt="" xid="image3" __cid="cqqQ7zq" class="cqqQ7zq"/>
+          </div> 
+        </div> 
+      </div>  
+      <div class="container cqqQ7zq" xid="div12" __cid="cqqQ7zq"> 
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid9 cqqQ7zq" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqqQ7zq"> 
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col1" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div13" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button5" url="/demo/native/accelerometer/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-flag&quot;,&quot;label&quot;:&quot;加速传感&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i16" class="linear linear-flag cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span16" __cid="cqqQ7zq" class="cqqQ7zq">加速传感</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col2" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div14" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button2" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-bicycle&quot;,&quot;label&quot;:&quot;地图定位&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i3" class="linear linear-bicycle cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span53" __cid="cqqQ7zq" class="cqqQ7zq"/> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col3" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div15" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button7" url="/demo/plugin/screenOrientation/demo.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-smartphone&quot;,&quot;label&quot;:&quot;屏幕旋转&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i8" class="linear linear-smartphone cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span8" __cid="cqqQ7zq" class="cqqQ7zq">屏幕旋转</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col4" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div16" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button3" url="/demo/native/barcode/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-chevronupcircle&quot;,&quot;label&quot;:&quot;扫一扫&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i14" class="linear linear-chevronupcircle cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span14" __cid="cqqQ7zq" class="cqqQ7zq"/> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col5" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div17" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button6" url="/demo/native/camera/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-filmplay&quot;,&quot;label&quot;:&quot;摄像头&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i7" class="linear linear-filmplay cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span7" __cid="cqqQ7zq" class="cqqQ7zq"/> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col6" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div18" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button1" url="/demo/native/voiceSearch/index.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-mic&quot;,&quot;label&quot;:&quot;语音搜索&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i2" class="linear linear-mic cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span2" __cid="cqqQ7zq" class="cqqQ7zq">语音搜索</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col15" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div19" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button4" url="/demo/native/audio/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-tag&quot;,&quot;label&quot;:&quot;音频录播&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i15" class="linear linear-tag cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span15" __cid="cqqQ7zq" class="cqqQ7zq"/> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col16" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div20" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button11" url="$UI/system/components/justep/messageDialog/demo/demo.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-dice&quot;,&quot;label&quot;:&quot;消息框&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i5" class="linear linear-dice cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span5" __cid="cqqQ7zq" class="cqqQ7zq">消息框</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col10" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div4" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button10" url="/demo/native/share/index.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-briefcase&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i84" class="linear linear-briefcase cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span4" __cid="cqqQ7zq" class="cqqQ7zq">分享</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col11" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div5" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button9" url="/demo/native/keyboard/index.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-map&quot;,&quot;label&quot;:&quot;键盘&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i64" class="linear linear-map cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span73" __cid="cqqQ7zq" class="cqqQ7zq">键盘</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col12" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div6" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top  cqqQ7zq" xid="button8" url="/demo/plugin/calendar/demo.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-sun&quot;,&quot;label&quot;:&quot;日历&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i9" class="linear linear-sun cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span9" __cid="cqqQ7zq" class="cqqQ7zq">日历</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col13" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div7" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button12" url="/demo/picCut/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-construction&quot;,&quot;label&quot;:&quot;图片剪裁&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i6" class="linear linear-construction cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span6" __cid="cqqQ7zq" class="cqqQ7zq">图片剪裁</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col9" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div10" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button15" url="/system/components/bootstrap/row/demo/grid.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;icon-grid&quot;,&quot;label&quot;:&quot;九宫格&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i11" class="icon-grid cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span11" __cid="cqqQ7zq" class="cqqQ7zq">九宫格</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col14" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div11" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button16" url="/demo/plugin/BLECentral/demo.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;icon-bluetooth&quot;,&quot;label&quot;:&quot;蓝牙&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i12" class="icon-bluetooth cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span12" __cid="cqqQ7zq" class="cqqQ7zq">蓝牙</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col7" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div8" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button13" url="/demo/pai/main.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-crosscircle&quot;,&quot;label&quot;:&quot;随手拍&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i4" class="linear linear-crosscircle cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span3" __cid="cqqQ7zq" class="cqqQ7zq">随手拍</span> 
+              </a> 
+            </div> 
+          </div>  
+          <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 cqqQ7zq" xid="col8" __cid="cqqQ7zq"> 
+            <div class="card borderDiv cqqQ7zq" xid="div9" __cid="cqqQ7zq"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqqQ7zq" xid="button14" url="/takeout/index.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openPage" data-config="{&quot;icon&quot;:&quot;linear linear-clock&quot;,&quot;label&quot;:&quot;外卖&quot;}" __cid="cqqQ7zq"> 
+                <i xid="i10" class="linear linear-clock cqqQ7zq" __cid="cqqQ7zq"/>  
+                <span xid="span10" __cid="cqqQ7zq" class="cqqQ7zq">外卖</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div21" class="panel-body cqqQ7zq" __cid="cqqQ7zq"/>
+    </div>  
+    <style __cid="cqqQ7zq" class="cqqQ7zq">.x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjEB3yq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

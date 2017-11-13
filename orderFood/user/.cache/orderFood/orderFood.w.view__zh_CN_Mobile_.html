@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<div class="main13 cQjeqAn" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQjeqAn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <style>.text-black.cQjeqAn{color: rgb(51, 51, 51)} .tb-nopadding.cQjeqAn{padding-left: 0; padding-right: 0} .x-panel-top.cQjeqAn .x-titlebar.cQjeqAn{background-color: rgb(178, 133, 58)} .x-titlebar.cQjeqAn .x-titlebar-title.cQjeqAn{font-weight: normal} .x-cards.cQjeqAn{padding: 0} .tb-box.cQjeqAn, .tb-box.cQjeqAn > .col.cQjeqAn{height: 100%; margin: 0; padding: 0} s.cQjeqAn .tb-box.cQjeqAn > .col.cQjeqAn:first-child{padding-right: 10px} .list-group.cQjeqAn{box-shadow: none} .list-group-item.cQjeqAn{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cQjeqAn{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cQjeqAn h5.cQjeqAn{color: rgb(207, 2, 2)} .tb-listBox.cQjeqAn{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cQjeqAn div.cQjeqAn{background-color: rgb(255, 255, 255)} .tb-listBox.cQjeqAn p.cQjeqAn{font-size: 13px; margin-top: 5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQjeqAn" class="cQjeqAn"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pc2qMfu2-iosstatusbar cQjeqAn" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQjeqAn"> 
+    <div class="x-panel-top cQjeqAn" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQjeqAn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQjeqAn" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;桌号：9&#34;}" __cid="cQjeqAn"> 
+        <div class="x-titlebar-left cQjeqAn" __cid="cQjeqAn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQjeqAn" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;分类&#34;}" __cid="cQjeqAn"> 
+            <i xid="i6" class="icon-chevron-left cQjeqAn" __cid="cQjeqAn"></i>  
+            <span xid="span6" __cid="cQjeqAn" class="cQjeqAn">分类</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQjeqAn" __cid="cQjeqAn">桌号：9</div>  
+        <div class="x-titlebar-right  cQjeqAn" __cid="cQjeqAn">
+          <div class="empty cQjeqAn" __cid="cQjeqAn"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-cards cQjeqAn" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQjeqAn"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-box cQjeqAn" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQjeqAn"> 
+        <div class="col col-xs-3 cQjeqAn" xid="col10" __cid="cQjeqAn"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-root cQjeqAn" xid="rootClassList" dataItemAlias="rootClassRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;rootClassData&#34;}" __cid="cQjeqAn"> 
+            <ul class="x-list-template list-group hide cQjeqAn" xid="listTemplateUl1" __cid="cQjeqAn" data-bind="foreach:{data:$model.foreach_rootClassList($element),afterRender:$model.foreach_afterRender_rootClassList.bind($model,$element),as:'rootClassRow'}"> 
+              <li xid="li1" class="list-group-item text-center tb-nopadding cQjeqAn" __cid="cQjeqAn" data-bind="css:{'current':rootClassRow.val('fID')==$model.rootClassData.val('fID')}"> 
+                <h5 xid="h52" class="text-black cQjeqAn" __cid="cQjeqAn" data-bind="text:ref('fClassName')"></h5> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="col col-xs-9 cQjeqAn" xid="col11" __cid="cQjeqAn"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards cQjeqAn" xid="foodList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;foodData&#34;,&#34;limit&#34;:8}" __cid="cQjeqAn"> 
+            <ul class="x-list-template list-group hide cQjeqAn" xid="listTemplateUl1" __cid="cQjeqAn" data-bind="foreach:{data:$model.foreach_foodList($element),afterRender:$model.foreach_afterRender_foodList.bind($model,$element)}"> 
+              <li xid="li1" class="list-group-item cQjeqAn" __cid="cQjeqAn"> 
+                <div class="media cQjeqAn" __cid="cQjeqAn"> 
+                  <div class="media-left cQjeqAn" __cid="cQjeqAn"> 
+                    <img alt="" xid="image1" style="width:120px;height:89px;width:38vw;height: 25.333333333333vw;max-width:120px;max-height:89px;" class="img-rounded media-object cQjeqAn" __cid="cQjeqAn" data-bind="attr:{src:val('calcImageURL')}"> 
+                  </div>  
+                  <div class="media-body cQjeqAn" __cid="cQjeqAn"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-heading cQjeqAn" xid="output1" style="font-size:14px;font-weight:bold" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"></div>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cQjeqAn" xid="output2" style="font-size:x-small;" data-bind="component:{ref:ref('fDescription'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"></div>  
+                    <a component="$model/UI2/system/components/justep/button/button" xid="addCartBtn" class="btn btn-icon-top pull-right x-card cQjeqAn" style="padding:0;color:#EC8557;font-weight:bold;font-size:large;font-variant:normal;text-decoration:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addCartBtnClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-plus-outline&#34;}" __cid="cQjeqAn"> 
+                      <i xid="i14" class="icon-ios7-plus-outline cQjeqAn" __cid="cQjeqAn"></i>  
+                      <span xid="span10" __cid="cQjeqAn" class="cQjeqAn"></span> 
+                    </a>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cQjeqAn" xid="output3" style="font-weight:normal;color:#F98C5C;" data-bind="component:{ref:ref('calcPriceText'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"></div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQjeqAn" class="cQjeqAn">.x-panel.pc2qMfu2-iosstatusbar >.x-panel-top {height: 49px;}.x-panel.pc2qMfu2-iosstatusbar >.x-panel-content { top: 49px;bottom: nullpx;}.x-panel.pc2qMfu2-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2qMfu2-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2qMfu2-iosstatusbar >.x-panel-top {height: 69px;}.iosstatusbar .x-panel.pc2qMfu2-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2qMfu2-iosstatusbar >.x-panel-content { top: 69px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2qMfu2-iosstatusbar >.x-panel-top {height: 49px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2qMfu2-iosstatusbar >.x-panel-content {top: 49px;}</style>
+  </div> 
+</div>

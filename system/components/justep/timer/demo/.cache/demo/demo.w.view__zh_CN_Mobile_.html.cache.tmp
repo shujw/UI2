@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cU7Fvyq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cU7Fvyq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/timer/timer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/timer/timer" style="left:65px;top:12px;" xid="timer" data-bind="component:{name:'$model/UI2/system/components/justep/timer/timer'}" data-events="onTimer:timerTimer" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVN7n6r-iosstatusbar cU7Fvyq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cU7Fvyq"> 
+    <div class="x-panel-top cU7Fvyq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cU7Fvyq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cU7Fvyq" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;Timer&quot;}" __cid="cU7Fvyq"> 
+        <div class="x-titlebar-left cU7Fvyq" __cid="cU7Fvyq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cU7Fvyq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cU7Fvyq"> 
+            <i class="icon-chevron-left cU7Fvyq" __cid="cU7Fvyq"/>  
+            <span __cid="cU7Fvyq" class="cU7Fvyq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cU7Fvyq" __cid="cU7Fvyq">Timer</div>  
+        <div class="x-titlebar-right  cU7Fvyq" __cid="cU7Fvyq"> 
+          <div class="empty cU7Fvyq" __cid="cU7Fvyq"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cU7Fvyq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cU7Fvyq"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cU7Fvyq" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;自动执行&quot;}" __cid="cU7Fvyq"> 
+        <div class="x-control-group-title cU7Fvyq" xid="controlGroupTitle1" __cid="cU7Fvyq"> 
+          <span xid="span1" __cid="cU7Fvyq" class="cU7Fvyq">title</span> 
+        </div>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;开始&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i1" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span3" __cid="cU7Fvyq" class="cU7Fvyq">开始</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;暂停&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i2" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span4" __cid="cU7Fvyq" class="cU7Fvyq">暂停</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;停止&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i3" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span5" __cid="cU7Fvyq" class="cU7Fvyq">停止</span> 
+        </a>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cU7Fvyq" xid="output" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cU7Fvyq"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cU7Fvyq" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;动态创建&quot;}" __cid="cU7Fvyq"> 
+        <div class="x-control-group-title cU7Fvyq" xid="controlGroupTitle2" __cid="cU7Fvyq"> 
+          <span xid="span2" __cid="cU7Fvyq" class="cU7Fvyq">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cU7Fvyq" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cU7Fvyq"> 
+          <label class="x-label cU7Fvyq" xid="label1" __cid="cU7Fvyq">触发次数</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cU7Fvyq" xid="inputTimes" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;0为无限次&quot;}" __cid="cU7Fvyq"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cU7Fvyq" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cU7Fvyq"> 
+          <label class="x-label cU7Fvyq" xid="label2" __cid="cU7Fvyq">间隔时间</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cU7Fvyq" xid="inputInterval" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;单位毫秒，默认1000&quot;}" __cid="cU7Fvyq"/> 
+        </div>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button4Click" data-config="{&quot;label&quot;:&quot;创建&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i4" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span6" __cid="cU7Fvyq" class="cU7Fvyq">创建</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;开始&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i5" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span7" __cid="cU7Fvyq" class="cU7Fvyq">开始</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;label&quot;:&quot;暂停&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i6" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span8" __cid="cU7Fvyq" class="cU7Fvyq">暂停</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;label&quot;:&quot;停止&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i7" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span9" __cid="cU7Fvyq" class="cU7Fvyq">停止</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cU7Fvyq" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;label&quot;:&quot;释放&quot;}" __cid="cU7Fvyq"> 
+          <i xid="i8" __cid="cU7Fvyq" class="cU7Fvyq"/>  
+          <span xid="span10" __cid="cU7Fvyq" class="cU7Fvyq">释放</span> 
+        </a>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cU7Fvyq" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cU7Fvyq"/> 
+      </div> 
+    </div>  
+    <style __cid="cU7Fvyq" class="cU7Fvyq">.x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVN7n6r-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window demo-simpleData cYFFvY3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYFFvY3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cYFFvY3" class="cYFFvY3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRr6Bzi-iosstatusbar cYFFvY3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYFFvY3"> 
+    <div class="x-panel-top cYFFvY3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYFFvY3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cYFFvY3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;Sqlite数据存取&quot;}" __cid="cYFFvY3"> 
+        <div class="x-titlebar-left cYFFvY3" xid="div1" __cid="cYFFvY3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYFFvY3" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cYFFvY3"> 
+            <i xid="i9" __cid="cYFFvY3" class="cYFFvY3"/>  
+            <span xid="span9" __cid="cYFFvY3" class="cYFFvY3"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYFFvY3" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'testData.save'}" __cid="cYFFvY3"> 
+            <i xid="i4" __cid="cYFFvY3" class="cYFFvY3"/>  
+            <span xid="span4" __cid="cYFFvY3" class="cYFFvY3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cYFFvY3" xid="div2" __cid="cYFFvY3">Sqlite数据存取</div>  
+        <div class="x-titlebar-right  cYFFvY3" xid="div3" __cid="cYFFvY3">
+          <div class="empty cYFFvY3" __cid="cYFFvY3"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYFFvY3" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'testData.new'}" data-config="{&quot;target&quot;:&quot;detailContent&quot;}" __cid="cYFFvY3"> 
+            <i xid="i1" __cid="cYFFvY3" class="cYFFvY3"/>  
+            <span xid="span1" __cid="cYFFvY3" class="cYFFvY3"/> 
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cYFFvY3" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'testData.delete'}" __cid="cYFFvY3"> 
+            <i xid="i2" __cid="cYFFvY3" class="cYFFvY3"/>  
+            <span xid="span2" __cid="cYFFvY3" class="cYFFvY3"/> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cYFFvY3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYFFvY3"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pciqqMFz-iosstatusbar cYFFvY3" xid="panel2" style="height:100%;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYFFvY3"> 
+        <div class="x-panel-content cYFFvY3" xid="content2" style="top: 48px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYFFvY3"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cYFFvY3" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cYFFvY3"> 
+            <div class="x-contents-content active xui-hignlight-selected x-scroll-view active cYFFvY3" xid="listContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cYFFvY3"> 
+              <div class="x-scroll cYFFvY3" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cYFFvY3"> 
+                <div class="x-content-center x-pull-down container cYFFvY3" xid="div5" __cid="cYFFvY3"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cYFFvY3" xid="i3" __cid="cYFFvY3"/>  
+                  <span class="x-pull-down-label cYFFvY3" xid="span3" __cid="cYFFvY3">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cYFFvY3" xid="div6" __cid="cYFFvY3"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cYFFvY3" xid="testList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;testData&quot;,&quot;limit&quot;:5}" __cid="cYFFvY3"> 
+                    <ul class="x-list-template hide cYFFvY3" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_testList($element),afterRender:$model.foreach_afterRender_testList.bind($model,$element)}" __cid="cYFFvY3"> 
+                      <li xid="li1" bind-css="{'bg-info' : $object == $model.testData.getCurrentRow()}" style="padding: 5px;" __cid="cYFFvY3" class="cYFFvY3"> 
+                        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                          <label class="x-label cYFFvY3" xid="label1" style="width:120px;" __cid="cYFFvY3">主键（字符型）</label>  
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cYFFvY3" xid="output1" data-bind="component:{ref:ref('fString'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cYFFvY3"/> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cYFFvY3" xid="div7" __cid="cYFFvY3"> 
+                  <span class="x-pull-up-label cYFFvY3" xid="span5" __cid="cYFFvY3">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cYFFvY3" xid="detailContent" style="padding: 10px;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cYFFvY3"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label2" style="width:100px;" __cid="cYFFvY3">字符型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input1" data-bind="component:{ref:testData.ref('fString'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label5" style="width:100px;" __cid="cYFFvY3">整型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input4" data-bind="component:{ref:testData.ref('fInteger'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label6" style="width:100px;" __cid="cYFFvY3">长整型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input5" data-bind="component:{ref:testData.ref('fLong'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label7" style="width:100px;" __cid="cYFFvY3">浮点型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input6" data-bind="component:{ref:testData.ref('fFloat'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label8" style="width:100px;" __cid="cYFFvY3">双精度</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input7" data-bind="component:{ref:testData.ref('fDouble'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label9" style="width:100px;" __cid="cYFFvY3">DECIMAL</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input8" data-bind="component:{ref:testData.ref('fDecimal'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelToggle1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label10" style="width:100px;" __cid="cYFFvY3">布尔型</label>  
+                <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle x-edit cYFFvY3" xid="toggle1" checkedValue="1" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;OFF&quot;,&quot;on&quot;:&quot;ON&quot;}}" data-bind="component:{ref:testData.ref('fBoolean'),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cYFFvY3">
+                  <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cYFFvY3" class="cYFFvY3"/>
+                  <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="ON" data-off="OFF" __cid="cYFFvY3" class="cYFFvY3">
+                    <xhtml:span __cid="cYFFvY3" class="cYFFvY3"/>
+                  </xhtml:label>
+                </span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label11" style="width:100px;" __cid="cYFFvY3">日期型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input9" data-bind="component:{ref:testData.ref('fDate'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label12" style="width:100px;" __cid="cYFFvY3">时间型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input10" data-bind="component:{ref:testData.ref('fTime'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cYFFvY3" xid="labelInput11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cYFFvY3"> 
+                <label class="x-label cYFFvY3" xid="label13" style="width:100px;" __cid="cYFFvY3">日期时间型</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cYFFvY3" xid="input11" data-bind="component:{ref:testData.ref('fDateTime'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cYFFvY3"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cYFFvY3" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYFFvY3"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cYFFvY3" xid="buttonGroup1" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;btnList&quot;,&quot;tabbed&quot;:true}" __cid="cYFFvY3"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cYFFvY3" xid="btnList" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;列表&quot;,&quot;target&quot;:&quot;listContent&quot;}" __cid="cYFFvY3"> 
+              <i xid="i5" __cid="cYFFvY3" class="cYFFvY3"/>  
+              <span xid="span6" __cid="cYFFvY3" class="cYFFvY3">列表</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cYFFvY3" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;详细&quot;,&quot;target&quot;:&quot;detailContent&quot;}" __cid="cYFFvY3"> 
+              <i xid="i7" __cid="cYFFvY3" class="cYFFvY3"/>  
+              <span xid="span7" __cid="cYFFvY3" class="cYFFvY3">详细</span> 
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cYFFvY3" class="cYFFvY3">.x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciqqMFz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cYFFvY3" class="cYFFvY3">.x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRr6Bzi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

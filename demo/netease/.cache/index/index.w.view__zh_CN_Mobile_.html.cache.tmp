@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQrAfie" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQrAfie" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/buttonGroup,,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQrAfie" class="cQrAfie"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQrAfie" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false}" __cid="cQrAfie"> 
+    <div class="x-contents-content active cQrAfie" xid="main" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQrAfie"> 
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cQrAfie" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/netease/index_main.w&quot;}" __cid="cQrAfie"> 
+        <div class="main13 ciUZ7fy" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciUZ7fy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/buttonGroup,"> 
+          <style xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.ciUZ7fy, .h5.ciUZ7fy{color: rgb(0, 0, 0); font-size: 16px} .text-danger.ciUZ7fy{color: rgb(234, 65, 60)} .text-black.ciUZ7fy{color: rgb(0, 0, 0)} .x-panel-top.ciUZ7fy .x-titlebar.ciUZ7fy{background-color: rgb(234, 65, 60)} .x-bar.ciUZ7fy{background-color: rgb(225, 225, 225); border: none} .x-titlebar.ciUZ7fy .x-titlebar-right.ciUZ7fy .btn.ciUZ7fy{padding-left: 30px} .img3.ciUZ7fy{height: 60px} .img_cloud.ciUZ7fy{height: 30px} .btn.ciUZ7fy i.ciUZ7fy{font-size: 20px} .x-nav.x-row.ciUZ7fy, .x-nav.ciUZ7fy .x-col.ciUZ7fy{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.ciUZ7fy .x-col.ciUZ7fy:nth-child(1){height: 41px; overflow: hidden} .x-nav.ciUZ7fy .x-col.ciUZ7fy:nth-child(2){width: 50px} .x-nav.ciUZ7fy .x-col.ciUZ7fy .x-navbox.ciUZ7fy{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.ciUZ7fy .x-col.ciUZ7fy .x-navbox.ciUZ7fy .x-list.ciUZ7fy{width: auto !important; white-space: nowrap; text-overflow: ellipsis} .x-nav.ciUZ7fy .btn.ciUZ7fy{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.ciUZ7fy .btn.current.ciUZ7fy{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.ciUZ7fy .navMoreBtn.ciUZ7fy{background-color: rgb(225, 225, 225)} .x-popOver-overlay.ciUZ7fy{background-color: rgb(0, 0, 0)} .x-popOver-content.ciUZ7fy{border-radius: 0} .x-wangyiOver.ciUZ7fy h5.ciUZ7fy{padding-left: 15px} .x-wangyiOver.ciUZ7fy .x-titlebar.ciUZ7fy{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.ciUZ7fy .x-navGroup.ciUZ7fy{padding-bottom: 0} .x-wangyiOver.ciUZ7fy .x-navGroup.ciUZ7fy .col-xs-3.ciUZ7fy{padding-left: 3px; padding-right: 3px} .x-wangyiOver.ciUZ7fy .x-navGroup.ciUZ7fy .col-xs-3.ciUZ7fy .btn.ciUZ7fy{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.ciUZ7fy .x-navGroup.ciUZ7fy .col-xs-3.ciUZ7fy .btn.active.ciUZ7fy{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)} .x-wangyi.btn-group.ciUZ7fy{background-color: rgb(255, 255, 255)} .x-wangyi.btn-group.ciUZ7fy .btn.ciUZ7fy{border-top: 0} .x-wangyi.btn-group.ciUZ7fy .btn.ciUZ7fy span.ciUZ7fy{font-size: 12px; font-weight: normal} .x-card.btn-group.ciUZ7fy .btn.active.ciUZ7fy{color: rgb(234, 65, 60); padding: 0; border-top: 0} .o-nomargin.ciUZ7fy{margin-left: 0; margin-right: 0} .o-nopadding.ciUZ7fy{padding-left: 0; padding-right: 0}</style>  
+          <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ciUZ7fy" class="ciUZ7fy"></div>  
+          <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver x-wangyiOver ciUZ7fy" xid="popOver" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;navMenuTop&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5}" __cid="ciUZ7fy">  
+            <div class="x-popOver-overlay ciUZ7fy" xid="div2" __cid="ciUZ7fy"/>  
+            <div xid="div4" class="x-full x-popOver-content panel ciUZ7fy" __cid="ciUZ7fy"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciUZ7fy" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-up&quot;}" __cid="ciUZ7fy"> 
+                <i xid="i9" class="text-muted icon-ios7-arrow-up ciUZ7fy" __cid="ciUZ7fy"/> 
+              </a>  
+              <h5 class="text-muted ciUZ7fy" __cid="ciUZ7fy">切换栏目</h5>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list o-nomargin x-navGroup panel-body ciUZ7fy" xid="list1" dataItemAlias="navRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'navLiClick')}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="ciUZ7fy"> 
+                <ul class="x-list-template hide ciUZ7fy" xid="listTemplateUl1" __cid="ciUZ7fy" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'navRow'}"> 
+                  <li xid="li1" class="col col-xs-3 ciUZ7fy" __cid="ciUZ7fy"> 
+                    <div class="btn btn-link ciUZ7fy" __cid="ciUZ7fy" data-bind="css:{'active':navRow.val('fID')==$model.navData.val('fID')}"> 
+                      <span xid="span1" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:ref('fName')"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>  
+              <div xid="div9" class="panel-heading ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'点击添加更多栏目'"/>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin x-navGroup panel-body bg-muted ciUZ7fy" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="ciUZ7fy"> 
+                <div class="col col-xs-3 ciUZ7fy" xid="col9" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;NBA&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i25" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span31" __cid="ciUZ7fy" class="ciUZ7fy">NBA</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col801" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button102" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;社会&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i261" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span291" __cid="ciUZ7fy" class="ciUZ7fy">社会</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col11" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;哒哒&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i27" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span28" __cid="ciUZ7fy" class="ciUZ7fy">哒哒</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col10" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;影视&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i24" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span30" __cid="ciUZ7fy" class="ciUZ7fy">影视</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col80" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button103" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;彩票&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i266" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span290" __cid="ciUZ7fy" class="ciUZ7fy">彩票</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col85" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding ciUZ7fy" xid="button104" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;中国足球&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i262" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span292" __cid="ciUZ7fy" class="ciUZ7fy">中国足球</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8_1" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button10_1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;CBA&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_1" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_10" __cid="ciUZ7fy" class="ciUZ7fy">CBA</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8_2" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button10_2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;跑步&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_5" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_1" __cid="ciUZ7fy" class="ciUZ7fy">跑步</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button10_3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;手机&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_6" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_2" __cid="ciUZ7fy" class="ciUZ7fy">手机</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8_9" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label ciUZ7fy" xid="button10_4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;数码&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_7" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_3" __cid="ciUZ7fy" class="ciUZ7fy">数码</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8_8" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding ciUZ7fy" xid="button10_5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;移动互联&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_8" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_4" __cid="ciUZ7fy" class="ciUZ7fy">移动互联</span> 
+                  </a> 
+                </div>  
+                <div class="col col-xs-3 ciUZ7fy" xid="col8_7" __cid="ciUZ7fy"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding ciUZ7fy" xid="button10_6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;云课堂&quot;,&quot;target&quot;:&quot;&quot;}" __cid="ciUZ7fy"> 
+                    <i xid="i26_9" __cid="ciUZ7fy" class="ciUZ7fy"/>  
+                    <span xid="span29_5" __cid="ciUZ7fy" class="ciUZ7fy">云课堂</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver ciUZ7fy" xid="popOverMore" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;titleBar&quot;,&quot;position&quot;:&quot;center&quot;}" __cid="ciUZ7fy">  
+            <div class="x-popOver-overlay ciUZ7fy" xid="div13" __cid="ciUZ7fy"/>  
+            <div class="x-full x-popOver-content panel ciUZ7fy" xid="div14" __cid="ciUZ7fy"> 
+              <div xid="div15" class="panel-body ciUZ7fy" __cid="ciUZ7fy"> 
+                <div xid="div19" class="col-xs-6 pull-left media ciUZ7fy" __cid="ciUZ7fy"> 
+                  <h1 xid="h11" class="media-left text-danger ciUZ7fy" __cid="ciUZ7fy">21</h1>  
+                  <div xid="div27" class="media-body ciUZ7fy" __cid="ciUZ7fy"> 
+                    <span xid="span14" class="text-danger ciUZ7fy" __cid="ciUZ7fy">℃</span>  
+                    <p xid="p1" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:'10/22℃'"/> 
+                  </div> 
+                </div>  
+                <div xid="div26" class="col-xs-6 pull-left text-right ciUZ7fy" __cid="ciUZ7fy"> 
+                  <img src="" alt="" xid="image15" class="img_cloud ciUZ7fy" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/cloud.png')}"/>  
+                  <div xid="div28" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:'多云 微风'"/>  
+                  <div xid="div29" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:'昆明'"/> 
+                </div>  
+                <div xid="div30" class="col-xs-12 pull-left ciUZ7fy" __cid="ciUZ7fy"> 
+                  <span xid="span21" __cid="ciUZ7fy" class="ciUZ7fy">2015/10/14 星期五</span>  
+                  <p xid="p2" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:'PM2.5 24 优'"/> 
+                </div> 
+              </div>  
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-center panel-body o-nomargin o-nopadding ciUZ7fy" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="ciUZ7fy"> 
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col12_1" __cid="ciUZ7fy"> 
+                  <img src="" alt="" class="img3 ciUZ7fy" xid="image5_1" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more1.png')}"/>  
+                  <div xid="div250" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'搜索'"/> 
+                </div>  
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col14" __cid="ciUZ7fy"> 
+                  <img src="" alt="" class="img3 ciUZ7fy" xid="image12" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more2.png')}"/>  
+                  <div xid="div24" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'上头条'"/> 
+                </div>  
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col13" __cid="ciUZ7fy"> 
+                  <img src="" alt="" xid="image5_2" class="img3 ciUZ7fy" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more3.png')}"/>  
+                  <div xid="div23" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'离线'"/> 
+                </div>  
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col12_2" __cid="ciUZ7fy"> 
+                  <img src="" alt="" class="img3 ciUZ7fy" xid="image5_9" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more4.png')}"/>  
+                  <div xid="div251" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'夜间'"/> 
+                </div>  
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col12_3" __cid="ciUZ7fy"> 
+                  <img src="" alt="" class="img3 ciUZ7fy" xid="image5_3" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more5.png')}"/>  
+                  <div xid="div252" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'扫一扫'"/> 
+                </div>  
+                <div class="col col-xs-4 o-nopadding ciUZ7fy" xid="col12_4" __cid="ciUZ7fy"> 
+                  <img src="" alt="" class="img3 ciUZ7fy" xid="image5_4" __cid="ciUZ7fy" data-bind="attr:{src:$model.getImageUrl('./img/more6.png')}"/>  
+                  <div xid="div25" class="text-muted h6 ciUZ7fy" __cid="ciUZ7fy" data-bind="text:'邀请好友'"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card top-trans pcBzeI7b-iosstatusbar ciUZ7fy" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciUZ7fy">  
+            <div class="x-panel-content x-cards ciUZ7fy" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+              <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ciUZ7fy" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:contents1ActiveChange" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="ciUZ7fy"> 
+                <div class="x-contents-content active ciUZ7fy" xid="newsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:newsContentActive" __cid="ciUZ7fy"> 
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar pcu6BBna-iosstatusbar ciUZ7fy" xid="panel7" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciUZ7fy"> 
+                    <div class="x-panel-top ciUZ7fy" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+                      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciUZ7fy" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciUZ7fy"> 
+                        <div class="x-titlebar-left ciUZ7fy" xid="div1" __cid="ciUZ7fy"> 
+                          <img src="@justepContextPath@/v_f229ab61a345452ba73ccebd9750fb6el_zh_CNs_d_m/demo/netease/img/navbar_logo.png" alt="" xid="image3" height="26px" __cid="ciUZ7fy" class="ciUZ7fy"/> 
+                        </div>  
+                        <div class="x-titlebar-title ciUZ7fy" __cid="ciUZ7fy"/>  
+                        <div class="x-titlebar-right  ciUZ7fy" xid="div3" __cid="ciUZ7fy"> 
+                          <div class="empty ciUZ7fy" __cid="ciUZ7fy"/>  
+                          <img src="@justepContextPath@/v_db795abf20f14ed4ae9b634a5ef0741dl_zh_CNs_d_m/demo/netease/img/icon24.png" alt="" xid="importantBtn" height="26px" __cid="ciUZ7fy" class="ciUZ7fy" data-bind="event:{click:$model._callModelFn.bind($model, 'importantBtnClick')}"/>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciUZ7fy" xid="moreBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOverMore.show'}" data-config="{&quot;icon&quot;:&quot;icon-android-more&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciUZ7fy"> 
+                            <i xid="i2" class="icon-android-more ciUZ7fy" __cid="ciUZ7fy"/>  
+                            <span xid="span3" __cid="ciUZ7fy" class="ciUZ7fy"/> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-panel-content ciUZ7fy" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+                      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuIbUNf-iosstatusbar ciUZ7fy" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciUZ7fy"> 
+                        <div class="x-panel-top ciUZ7fy" xid="navMenuTop" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row x-nav ciUZ7fy" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ciUZ7fy"> 
+                            <div class="x-col ciUZ7fy" xid="col15" __cid="ciUZ7fy"> 
+                              <div class="x-navbox ciUZ7fy" __cid="ciUZ7fy"> 
+                                <div component="$model/UI2/system/components/justep/list/list" class="x-list ciUZ7fy" xid="navList" dataItemAlias="navRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'navLiClick')}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="ciUZ7fy"> 
+                                  <ul class="x-list-template hide ciUZ7fy" xid="listTemplateUl2" __cid="ciUZ7fy" data-bind="foreach:{data:$model.foreach_navList($element),afterRender:$model.foreach_afterRender_navList.bind($model,$element),as:'navRow'}"> 
+                                    <li xid="li2" class="btn btn-link ciUZ7fy" __cid="ciUZ7fy" data-bind="css:{'current':navRow.val('fID')==$model.navData.val('fID')}"> 
+                                      <span __cid="ciUZ7fy" class="ciUZ7fy" data-bind="text:ref('fName')"/> 
+                                    </li> 
+                                  </ul> 
+                                </div> 
+                              </div> 
+                            </div>  
+                            <div class="x-col x-col-fixed ciUZ7fy" xid="col16" __cid="ciUZ7fy"> 
+                              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right center-block navMoreBtn ciUZ7fy" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.show'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciUZ7fy"> 
+                                <i xid="i15" class="text-muted icon-ios7-arrow-down ciUZ7fy" __cid="ciUZ7fy"/>  
+                                <span xid="span7" __cid="ciUZ7fy" class="ciUZ7fy"/> 
+                              </a> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-panel-content ciUZ7fy" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciUZ7fy" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/demo/netease/index_main1.w&quot;}" __cid="ciUZ7fy"> 
+                            <div xid="window" class="window c3i2im2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3i2im2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,"> 
+                              <style xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.c3i2im2, .h5.c3i2im2{color: rgb(0, 0, 0); font-size: 16px} .img1.c3i2im2{height: 200px} .img_new.c3i2im2{width: 100px; height: 70px} .img_small.c3i2im2{height: 15px} .o-nomargintop.c3i2im2{margin-top: 0} .x-seach.c3i2im2{background-color: rgb(246, 246, 246); display: none} .x-seach.c3i2im2 span.c3i2im2{margin: 10px 10px 0 0} .x-banner.c3i2im2{overflow-x: hidden} .x-banner.c3i2im2 .carousel-indicators.c3i2im2{bottom: 20px; margin-left: 10%} .x-banner.c3i2im2 .carousel-indicators.c3i2im2 .active.c3i2im2{width: 8px; height: 8px} .x-banner.c3i2im2 .carousel-indicators.c3i2im2 li.c3i2im2{width: 6px; height: 6px} .x-banner.c3i2im2 .x-contents.c3i2im2 .x-contents-content.c3i2im2 .x-title.c3i2im2{background-color: rgb(255, 255, 255); padding: 5px} .x-wangyi.panel.c3i2im2{margin-bottom: 10px} .x-wangyi.panel.c3i2im2 &gt; .panel-heading.c3i2im2 .panel-title.c3i2im2{color: rgb(51, 51, 51)} .x-wangyi.c3i2im2 .list-group-item.c3i2im2{border-radius: 0} .x-wangyi.c3i2im2 .list-group-item.c3i2im2:last-child{border-bottom: 0} .o-nomargin.c3i2im2{margin-left: 0; margin-right: 0} .o-nopadding.c3i2im2{padding-left: 0; padding-right: 0}</style>  
+                              <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3i2im2" class="c3i2im2"/>  
+                              <div class="list-group-item x-seach c3i2im2" xid="div16" __cid="c3i2im2"> 
+                                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-inputText c3i2im2" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="c3i2im2"/>  
+                                <span class="glyphicon glyphicon-search form-control-feedback c3i2im2" aria-hidden="true" xid="span34" __cid="c3i2im2"/> 
+                              </div>  
+                              <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel x-banner c3i2im2" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="c3i2im2"> 
+                                <ol class="carousel-indicators c3i2im2" xid="ol1" __cid="c3i2im2"/>  
+                                <div class="x-contents carousel-inner c3i2im2" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="c3i2im2"> 
+                                  <div class="x-contents-content active c3i2im2" xid="banner1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c3i2im2"> 
+                                    <img alt="" xid="image1" id="image1" class="image-wall img1 c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/1.jpg')}"/>  
+                                    <div class="x-title c3i2im2" xid="div17" __cid="c3i2im2"> 
+                                      <img alt="" class="img_small c3i2im2" xid="image400" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/icon1.png')}"/>  
+                                      <span xid="span35" __cid="c3i2im2" class="c3i2im2">一周图片：马来西亚青年躺河里纳凉</span> 
+                                    </div> 
+                                  </div>  
+                                  <div class="x-contents-content c3i2im2" xid="banner2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c3i2im2"> 
+                                    <img alt="" xid="image2" id="image2" class="image-wall img1 c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/2.jpg')}"/>  
+                                    <div class="x-title c3i2im2" xid="div10" __cid="c3i2im2"> 
+                                      <img alt="" class="img_small c3i2im2" xid="image8" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/icon5.png')}"/>  
+                                      <span xid="span22" __cid="c3i2im2" class="c3i2im2">福特旗舰座驾金牛座开启预售</span> 
+                                    </div> 
+                                  </div>  
+                                  <div class="x-contents-content c3i2im2" xid="banner3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c3i2im2"> 
+                                    <img alt="" xid="image13" id="image13" class="image-wall img1 c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/3.jpg')}"/>  
+                                    <div class="x-title c3i2im2" xid="div11" __cid="c3i2im2"> 
+                                      <img alt="" class="img_small c3i2im2" xid="image9" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/icon1.png')}"/>  
+                                      <span xid="span23" __cid="c3i2im2" class="c3i2im2">俯瞰上海迪士尼在建大城堡露真容</span> 
+                                    </div> 
+                                  </div>  
+                                  <div class="x-contents-content c3i2im2" xid="banner4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c3i2im2"> 
+                                    <img alt="" xid="image14" id="image14" class="image-wall img1 c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/4.jpg')}"/>  
+                                    <div class="x-title c3i2im2" xid="div12" __cid="c3i2im2"> 
+                                      <img alt="" class="img_small c3i2im2" xid="image10" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/icon1.png')}"/>  
+                                      <span xid="span24" __cid="c3i2im2" class="c3i2im2">全新迈锐宝驾问世竞猜赢好礼</span> 
+                                    </div> 
+                                  </div> 
+                                </div> 
+                              </div>  
+                              <div class="panel panel-default x-card x-wangyi c3i2im2" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="c3i2im2"> 
+                                <div component="$model/UI2/system/components/justep/list/list" class="x-list c3i2im2" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="c3i2im2"> 
+                                  <ul class="x-list-template hide c3i2im2" xid="listTemplateUl10" __cid="c3i2im2" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
+                                    <li xid="li10" class="list-group-item x-flex c3i2im2" __cid="c3i2im2"> 
+                                      <div xid="div80" class="media-left c3i2im2" __cid="c3i2im2"> 
+                                        <a xid="a10" __cid="c3i2im2" class="c3i2im2"> 
+                                          <img alt="" xid="image401" class="img-responsive img_new c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                                        </a> 
+                                      </div>  
+                                      <div class="x-flex1 c3i2im2" xid="col260" __cid="c3i2im2"> 
+                                        <h5 class="o-nomargintop c3i2im2" xid="h51" __cid="c3i2im2" data-bind="text:ref('fTitle')"/>  
+                                        <span style="text-align: justify;" class="text-muted c3i2im2" xid="span36" __cid="c3i2im2" data-bind="text:ref('fOmit')"/>  
+                                        <span class="pull-right c3i2im2" xid="span37" __cid="c3i2im2" data-bind="text:ref('fPostNumber')"/> 
+                                      </div> 
+                                    </li> 
+                                  </ul> 
+                                </div>  
+                                <div xid="div18" __cid="c3i2im2" class="c3i2im2"> 
+                                  <h5 class="panel-heading c3i2im2" xid="h52" __cid="c3i2im2">广州女子为追回爱犬贼轧双腿 
+                                    <span xid="span12" class="pull-right text-muted c3i2im2" __cid="c3i2im2">16071跟帖</span> 
+                                  </h5>  
+                                  <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin panel c3i2im2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c3i2im2"> 
+                                    <div class="col col-xs-4 c3i2im2" xid="col1" __cid="c3i2im2"> 
+                                      <img src="" alt="" xid="image6" class="img-responsive c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/a3.jpg')}"/> 
+                                    </div>  
+                                    <div class="col col-xs-4 c3i2im2" xid="col2" __cid="c3i2im2"> 
+                                      <img src="" alt="" xid="image7" class="img-responsive c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/a4.jpg')}"/> 
+                                    </div>  
+                                    <div class="col col-xs-4 c3i2im2" xid="col3" __cid="c3i2im2"> 
+                                      <img src="" alt="" xid="image11" class="img-responsive c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl('./img/a5.jpg')}"/> 
+                                    </div> 
+                                  </div> 
+                                </div>  
+                                <div component="$model/UI2/system/components/justep/list/list" class="x-list c3i2im2" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="c3i2im2"> 
+                                  <ul class="x-list-template hide c3i2im2" xid="listTemplateUl1" __cid="c3i2im2" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
+                                    <li xid="li1" class="list-group-item x-flex c3i2im2" __cid="c3i2im2"> 
+                                      <div xid="div8" class="media-left c3i2im2" __cid="c3i2im2"> 
+                                        <a xid="a1" __cid="c3i2im2" class="c3i2im2"> 
+                                          <img alt="" xid="image4" class="img-responsive img_new c3i2im2" __cid="c3i2im2" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                                        </a> 
+                                      </div>  
+                                      <div class="x-flex1 c3i2im2" xid="col26" __cid="c3i2im2"> 
+                                        <h5 class="o-nomargintop c3i2im2" xid="h53" __cid="c3i2im2" data-bind="text:ref('fTitle')"/>  
+                                        <span style="text-align: justify;" class="text-muted c3i2im2" xid="span38" __cid="c3i2im2" data-bind="text:ref('fOmit')"/>  
+                                        <span class="pull-right c3i2im2" xid="span39" __cid="c3i2im2" data-bind="text:ref('fPostNumber')"/> 
+                                      </div> 
+                                    </li> 
+                                  </ul> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <style __cid="ciUZ7fy" class="ciUZ7fy">.x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuIbUNf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+                      </div> 
+                    </div>  
+                    <style __cid="ciUZ7fy" class="ciUZ7fy">.x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcu6BBna-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+                  </div> 
+                </div>  
+                <div class="x-contents-content ciUZ7fy" xid="readContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciUZ7fy"> 
+                  <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciUZ7fy" xid="mainContainer2" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/demo/netease/index-read.w&quot;}" __cid="ciUZ7fy"/> 
+                </div>  
+                <div class="x-contents-content ciUZ7fy" xid="audioContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciUZ7fy"> 
+                  <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciUZ7fy" xid="mainContainer3" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/demo/netease/index-audio.w&quot;}" __cid="ciUZ7fy"/> 
+                </div>  
+                <div class="x-contents-content ciUZ7fy" xid="foundContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciUZ7fy"> 
+                  <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciUZ7fy" xid="mainContainer4" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/demo/netease/index-found.w&quot;}" __cid="ciUZ7fy"/> 
+                </div>  
+                <div class="x-contents-content ciUZ7fy" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciUZ7fy"> 
+                  <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciUZ7fy" xid="mainContainer5" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/demo/netease/index-user.w&quot;}" __cid="ciUZ7fy"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom ciUZ7fy" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciUZ7fy"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card x-wangyi ciUZ7fy" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="ciUZ7fy"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active ciUZ7fy" xid="newsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;新闻&quot;,&quot;target&quot;:&quot;newsContent&quot;}" __cid="ciUZ7fy"> 
+                  <i xid="i4" class="icon icon-android-note ciUZ7fy" __cid="ciUZ7fy"/>  
+                  <span xid="span6" __cid="ciUZ7fy" class="ciUZ7fy">新闻</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciUZ7fy" xid="readBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-bookmarks-outline&quot;,&quot;label&quot;:&quot;阅读&quot;,&quot;target&quot;:&quot;readContent&quot;}" __cid="ciUZ7fy"> 
+                  <i xid="i3" class="icon icon-ios7-bookmarks-outline ciUZ7fy" __cid="ciUZ7fy"/>  
+                  <span xid="span5" __cid="ciUZ7fy" class="ciUZ7fy">阅读</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciUZ7fy" xid="audioBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-b&quot;,&quot;label&quot;:&quot;视听&quot;,&quot;target&quot;:&quot;audioContent&quot;}" __cid="ciUZ7fy"> 
+                  <i xid="i5" class="icon icon-arrow-right-b ciUZ7fy" __cid="ciUZ7fy"/>  
+                  <span xid="span4" __cid="ciUZ7fy" class="ciUZ7fy">视听</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciUZ7fy" xid="foundBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-locate&quot;,&quot;label&quot;:&quot;发现&quot;,&quot;target&quot;:&quot;foundContent&quot;}" __cid="ciUZ7fy"> 
+                  <i xid="i300" class="icon icon-android-locate ciUZ7fy" __cid="ciUZ7fy"/>  
+                  <span xid="span400" __cid="ciUZ7fy" class="ciUZ7fy">发现</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciUZ7fy" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-contact-outline&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;userContent&quot;}" __cid="ciUZ7fy"> 
+                  <i xid="i6" class="icon icon-ios7-contact-outline ciUZ7fy" __cid="ciUZ7fy"/>  
+                  <span xid="span71" __cid="ciUZ7fy" class="ciUZ7fy">我的</span> 
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="ciUZ7fy" class="ciUZ7fy">.x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBzeI7b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

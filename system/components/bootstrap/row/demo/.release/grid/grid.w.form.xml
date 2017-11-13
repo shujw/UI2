@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window grid91 czY36fu" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czY36fu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid91.czY36fu .grid.czY36fu{margin: 0; padding: 0; border: 0} .grid91.czY36fu .cell.czY36fu{padding: 0} .grid91.czY36fu .cell.czY36fu .card.czY36fu{width: 60px; margin: 10px auto; text-align: center; border: 0px solid rgb(136, 136, 136); border-radius: 6px; padding: 5px; box-sizing: content-box} .grid91.czY36fu .cell.czY36fu .card.czY36fu i.czY36fu{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .grid91.czY36fu .cell.czY36fu .card.czY36fu .title.czY36fu{display: block; text-align: center; word-wrap: break-word}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czY36fu" class="czY36fu"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciyUZVf-iosstatusbar czY36fu" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czY36fu"> 
+    <div class="x-panel-top czY36fu" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czY36fu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czY36fu" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;九宫格布局&quot;}" __cid="czY36fu"> 
+        <div class="x-titlebar-left czY36fu" xid="div1" __cid="czY36fu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czY36fu" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="czY36fu"> 
+            <i xid="i1" class="icon-chevron-left czY36fu" __cid="czY36fu"/>  
+            <span xid="span1" __cid="czY36fu" class="czY36fu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czY36fu" xid="div2" __cid="czY36fu">九宫格布局</div>  
+        <div class="x-titlebar-right  czY36fu" xid="div3" __cid="czY36fu">
+          <div class="empty czY36fu" __cid="czY36fu"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czY36fu" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czY36fu"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid czY36fu" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="czY36fu"> 
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col1" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-download czY36fu" style="color: rgb(153, 196, 18);" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">下载</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col2" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-alarm czY36fu" style="color:#FF8080;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">时钟</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col3" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-battery czY36fu" style="color:#FF8000;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">电池电量</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col4" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-call czY36fu" style="color: rgb(153, 196, 18);" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">电话</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col5" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-camera czY36fu" style="color:#C0C0C0;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">相机</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" xid="col6" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-lightbulb czY36fu" style="color:#FF8040;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">手电筒</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-locate czY36fu" style="color:#0080FF;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">指南针</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-location czY36fu" style="color:#FF8080;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">地图</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-mail czY36fu" style="color:#FF8000;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">电子邮件</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-microphone czY36fu" style="color: rgb(153, 196, 18);" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">录音机</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-playstore czY36fu" style="color:#0080FF;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">视频</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-search czY36fu" style="color:#000000;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">放大镜</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-share czY36fu" style="color:#0080FF;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">分享</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-trash czY36fu" style="color: rgb(153, 196, 18);" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">回收站</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-android-wifi czY36fu" style="color:#FF80C0;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">WLAN</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-heart czY36fu" style="color:#FF8080;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">收藏</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-clipboard czY36fu" style="color:#FF8000;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">便签</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-cloud czY36fu" style="color:#8BBBCD;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">云</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-ios7-musical-notes czY36fu" style="color:#8000FF;" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">音乐</span> 
+          </div> 
+        </div>  
+        <div class="col cell col-xs-3 col-sm-2 col-md-2 col-lg-1 czY36fu" __cid="czY36fu"> 
+          <div class="card czY36fu" __cid="czY36fu"> 
+            <i class="icon-film-marker czY36fu" style="color: rgb(153, 196, 18);" __cid="czY36fu"/>  
+            <span class="title czY36fu" __cid="czY36fu">摄像机</span> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="czY36fu" class="czY36fu">.x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciyUZVf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

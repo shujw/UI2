@@ -4,8 +4,8 @@
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c7BVNnq" class="c7BVNnq"></div>  
   <div xid="div2" style="margin-left:20px;margin-top:20px;" __cid="c7BVNnq" class="c7BVNnq"> 
     <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7BVNnq" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="c7BVNnq"> 
-      <i xid="i5" __cid="c7BVNnq" class="c7BVNnq"/>  
-      <span xid="span7" __cid="c7BVNnq" class="c7BVNnq">js</span> 
+      <i xid="i51" __cid="c7BVNnq" class="c7BVNnq"/>  
+      <span xid="span71" __cid="c7BVNnq" class="c7BVNnq">js</span> 
     </a>  
     <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7BVNnq" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="c7BVNnq"> 
       <i xid="i5" __cid="c7BVNnq" class="c7BVNnq"/>  

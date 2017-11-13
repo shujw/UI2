@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window portal-main c7Bfiui" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Bfiui" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid9.c7Bfiui .row.c7Bfiui{margin-left: 0; margin-right: 0} .grid9.c7Bfiui .cell.c7Bfiui{padding: 0; overflow: hidden} .grid9.c7Bfiui .cell.c7Bfiui .card.c7Bfiui i.c7Bfiui{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .portal-main.c7Bfiui .x-contents.c7Bfiui &gt; .x-contents-content.c7Bfiui{overflow: hidden} .grid9.c7Bfiui .btn.c7Bfiui{width: 100%} .x-portal.c7Bfiui .x-contents[xid="carousel"].c7Bfiui{height: 288px} .iosstatusbar.c7Bfiui .x-portal.c7Bfiui .x-contents[xid="carousel"].c7Bfiui{height: 308px} .x-portal.c7Bfiui &gt; .x-panel-top.c7Bfiui{z-index: 100} .x-portal.c7Bfiui &gt; .x-panel-top.c7Bfiui &gt; .x-titlebar.c7Bfiui{background-color: transparent; color: white}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c7Bfiui" class="c7Bfiui"/>  
+  <link type="text/css" rel="stylesheet" href="$model/UI2/demo/page/main.ext.css" __cid="c7Bfiui" class="c7Bfiui"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-portal pcem6vei-iosstatusbar c7Bfiui" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Bfiui"> 
+    <div class="x-panel-top c7Bfiui" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Bfiui"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7Bfiui" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;WeX5基础原理&quot;}" __cid="c7Bfiui"> 
+        <div class="x-titlebar-left c7Bfiui" xid="div1" __cid="c7Bfiui"/>  
+        <div class="x-titlebar-title c7Bfiui" xid="div2" __cid="c7Bfiui">WeX5基础原理</div>  
+        <div class="x-titlebar-right  c7Bfiui" xid="div3" __cid="c7Bfiui">
+          <div class="empty c7Bfiui" __cid="c7Bfiui"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content xui-hignlight-selected x-scroll-view c7Bfiui" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Bfiui"> 
+      <div class="x-scroll c7Bfiui" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;autoPullUp&quot;:false,&quot;bounce&quot;:false}" __cid="c7Bfiui"> 
+        <div class="x-scroll-content c7Bfiui" xid="div9" __cid="c7Bfiui"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents c7Bfiui" xid="carousel" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:carouselActiveChange" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true}" __cid="c7Bfiui"> 
+            <div class="x-contents-content active c7Bfiui" xid="page1" style="height:100%;background-color:#009fde;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bfiui"> 
+              <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image: url($model/UI2/demo/page/images/1.png);" __cid="c7Bfiui" class="c7Bfiui"/> 
+            </div>  
+            <div class="x-contents-content c7Bfiui" xid="page2" style="height:100%;background-color:#0e1fcc;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bfiui"> 
+              <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image: url($model/UI2/demo/page/images/2.png);" __cid="c7Bfiui" class="c7Bfiui"/> 
+            </div>  
+            <div class="x-contents-content c7Bfiui" xid="page3" style="height:100%;background-color:#006700;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bfiui"> 
+              <div style="height:100%;background-repeat:no-repeat;background-position:center;background-image: url($model/UI2/demo/page/images/3.png);" __cid="c7Bfiui" class="c7Bfiui"/> 
+            </div>  
+            <ol class="carousel-indicators c7Bfiui" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Bfiui"> 
+              <li index="0" class="active c7Bfiui" __cid="c7Bfiui"/>  
+              <li index="1" class=" c7Bfiui" __cid="c7Bfiui"/>  
+              <li index="2" class=" c7Bfiui" __cid="c7Bfiui"/> 
+            </ol> 
+          </div>  
+          <div class="container c7Bfiui" __cid="c7Bfiui"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid9 c7Bfiui" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c7Bfiui"> 
+              <div class="col cell col-xs-6 col-sm-4 col-md-4 col-lg-3 c7Bfiui" xid="col3" __cid="c7Bfiui"> 
+                <div class="card c7Bfiui" __cid="c7Bfiui"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Bfiui" xid="button5" url="./core/xid/xid.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:open" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-th-list&quot;,&quot;label&quot;:&quot;xid技术&quot;}" __cid="c7Bfiui"> 
+                    <i xid="i16" class="glyphicon glyphicon-th-list c7Bfiui" style="color: rgb(252, 100, 0);" __cid="c7Bfiui"/>  
+                    <span xid="span16" __cid="c7Bfiui" class="c7Bfiui">xid技术</span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col cell col-xs-6 col-sm-4 col-md-4 col-lg-3 c7Bfiui" xid="col31" __cid="c7Bfiui"> 
+                <div class="card c7Bfiui" __cid="c7Bfiui"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Bfiui" xid="button51" url="./core/cssPart/cssPart.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:open" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-th-list&quot;,&quot;label&quot;:&quot;css局部化&quot;}" __cid="c7Bfiui"> 
+                    <i xid="i161" class="glyphicon glyphicon-th-list c7Bfiui" style="color: rgb(252, 100, 0);" __cid="c7Bfiui"/>  
+                    <span xid="span161" __cid="c7Bfiui" class="c7Bfiui">css局部化</span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col cell col-xs-6 col-sm-4 col-md-4 col-lg-3 c7Bfiui" xid="col32" __cid="c7Bfiui"> 
+                <div class="card c7Bfiui" __cid="c7Bfiui"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Bfiui" xid="button52" url="./core/jsModule/jsModule.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:open" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-th-list&quot;,&quot;label&quot;:&quot;js模块化&quot;}" __cid="c7Bfiui"> 
+                    <i xid="i162" class="glyphicon glyphicon-th-list c7Bfiui" style="color: rgb(252, 100, 0);" __cid="c7Bfiui"/>  
+                    <span xid="span162" __cid="c7Bfiui" class="c7Bfiui">js模块化</span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col cell col-xs-6 col-sm-4 col-md-4 col-lg-3 c7Bfiui" xid="col4" __cid="c7Bfiui"> 
+                <div class="card c7Bfiui" __cid="c7Bfiui"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Bfiui" xid="button3" url="./lifecycle/page1.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:open" data-config="{&quot;icon&quot;:&quot;icon-loop&quot;,&quot;label&quot;:&quot;WeX5页面结构与生命周期&quot;}" __cid="c7Bfiui"> 
+                    <i xid="i14" class="icon-loop c7Bfiui" __cid="c7Bfiui"/>  
+                    <span xid="span14" __cid="c7Bfiui" class="c7Bfiui">WeX5页面结构与生命周期</span> 
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col cell col-xs-6 col-sm-4 col-md-4 col-lg-3 c7Bfiui" xid="col5" __cid="c7Bfiui"> 
+                <div class="card c7Bfiui" __cid="c7Bfiui"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Bfiui" xid="button6" url="./interactive/page.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:open" data-config="{&quot;icon&quot;:&quot;icon-ios7-browsers&quot;,&quot;label&quot;:&quot;WeX5页面间交互&quot;}" __cid="c7Bfiui"> 
+                    <i xid="i7" class="icon-ios7-browsers c7Bfiui" style="color: black;" __cid="c7Bfiui"/>  
+                    <span xid="span7" __cid="c7Bfiui" class="c7Bfiui">WeX5页面间交互</span> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c7Bfiui" class="c7Bfiui">.x-panel.pcem6vei-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcem6vei-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcem6vei-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcem6vei-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcem6vei-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcem6vei-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcem6vei-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcem6vei-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcem6vei-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

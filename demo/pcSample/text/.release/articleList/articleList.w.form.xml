@@ -5,7 +5,7 @@
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cY3eUZz" class="cY3eUZz"></div>  
   <div xid="div1" style="margin-left:20px;margin-top:20px;" __cid="cY3eUZz" class="cY3eUZz"> 
     <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cY3eUZz" xid="showJs" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cY3eUZz"> 
-      <i xid="i4" __cid="cY3eUZz" class="cY3eUZz"/>  
+      <i xid="i41" __cid="cY3eUZz" class="cY3eUZz"/>  
       <span xid="span7" __cid="cY3eUZz" class="cY3eUZz">js</span> 
     </a>  
     <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cY3eUZz" xid="sourceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sourceBtnClick" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cY3eUZz"> 

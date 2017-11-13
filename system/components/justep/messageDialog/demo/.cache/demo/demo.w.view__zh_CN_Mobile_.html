@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBZZVb2" class="cBZZVb2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cBZZVb2" class="cBZZVb2"></div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcARVFbu-iosstatusbar cBZZVb2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cBZZVb2"> 
+    <div class="x-panel-top cBZZVb2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBZZVb2"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cBZZVb2" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;MessageDialog&#34;}" __cid="cBZZVb2"> 
+        <div class="x-titlebar-left cBZZVb2" xid="div1" __cid="cBZZVb2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBZZVb2" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeWin" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;}" __cid="cBZZVb2"> 
+            <i xid="i1" class="icon-chevron-left cBZZVb2" __cid="cBZZVb2"></i>  
+            <span xid="span1" __cid="cBZZVb2" class="cBZZVb2"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cBZZVb2" xid="div2" __cid="cBZZVb2">MessageDialog</div>  
+        <div class="x-titlebar-right  cBZZVb2" xid="div3" __cid="cBZZVb2">
+          <div class="empty cBZZVb2" __cid="cBZZVb2"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cBZZVb2" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cBZZVb2"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cBZZVb2" xid="MessageDialogSource" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&#34;title&#34;:&#34;MessageDialog Demo&#34;}" __cid="cBZZVb2"> 
+        <h3 style="height:48px;vertical-align: middle;padding: 8px;display: inline-block;" __cid="cBZZVb2" class="cBZZVb2">MessageDialog</h3>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBZZVb2" xid="jsSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&#34;label&#34;:&#34;js&#34;}" __cid="cBZZVb2"> 
+          <i xid="jsSou" __cid="cBZZVb2" class="cBZZVb2"></i>  
+          <span xid="span2" __cid="cBZZVb2" class="cBZZVb2">js</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cBZZVb2" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:isVisible" data-events="onClick:showMessageDialogSource" data-config="{&#34;label&#34;:&#34;源码&#34;}" __cid="cBZZVb2"> 
+          <i xid="sou" __cid="cBZZVb2" class="cBZZVb2"></i>  
+          <span xid="span2" __cid="cBZZVb2" class="cBZZVb2">源码</span> 
+        </a>
+        <p __cid="cBZZVb2" class="cBZZVb2">1、信息提示窗口</p>  
+        <p __cid="cBZZVb2" class="cBZZVb2">2、选择MessageDialog的属性,并点击dynamicCreate按钮</p>  
+        <div style="margin-top: 20px;" __cid="cBZZVb2" class="cBZZVb2"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cBZZVb2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBZZVb2"> 
+            <label class="x-label cBZZVb2" __cid="cBZZVb2">type：</label>  
+            <select class="x-edit form-control cBZZVb2" __cid="cBZZVb2" data-bind="value:type"> 
+              <option value="OK" __cid="cBZZVb2" class="cBZZVb2">OK</option>  
+              <option value="OKCancel" __cid="cBZZVb2" class="cBZZVb2">OKCancel</option>  
+              <option value="YesNo" __cid="cBZZVb2" class="cBZZVb2">YesNo</option>  
+              <option value="YesNoCancel" __cid="cBZZVb2" class="cBZZVb2">YesNoCancel</option>  
+              <option value="Prompt" __cid="cBZZVb2" class="cBZZVb2">Prompt</option> 
+            </select> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cBZZVb2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBZZVb2"> 
+            <label class="x-label cBZZVb2" __cid="cBZZVb2">width：</label>  
+            <input class="x-edit form-control cBZZVb2" placeholder="请输入弹出框的宽度..." xid="widthId" __cid="cBZZVb2" data-bind="value:width,event:{change:$model._callModelFn.bind($model, 'widthIdChange')}"> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cBZZVb2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBZZVb2"> 
+            <label class="x-label cBZZVb2" __cid="cBZZVb2">title：</label>  
+            <input class="x-edit form-control cBZZVb2" __cid="cBZZVb2" data-bind="value:title"> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cBZZVb2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBZZVb2"> 
+            <label class="x-label cBZZVb2" __cid="cBZZVb2">message：</label>  
+            <input class="x-edit form-control cBZZVb2" __cid="cBZZVb2" data-bind="value:text"> 
+          </div>  
+          <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialg" style="top:15px;left:291px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&#34;message&#34;:&#34;通过组件方式创建MessageDialog,相关属性可以在组件中设置&#34;,&#34;title&#34;:&#34;demo&#34;,&#34;type&#34;:&#34;OK&#34;}" __cid="cBZZVb2" class="cBZZVb2">
+            <div class="x-modal-overlay cBZZVb2" __cid="cBZZVb2"></div>
+            <div class="x-modal cBZZVb2" __cid="cBZZVb2">
+              <div class="x-modal-inner cBZZVb2" __cid="cBZZVb2">
+                <div class="x-modal-title cBZZVb2" __cid="cBZZVb2">demo</div>
+                <div class="x-modal-text cBZZVb2" __cid="cBZZVb2">通过组件方式创建MessageDialog,相关属性可以在组件中设置</div>
+                <input class="x-modal-prompt-input cBZZVb2" type="text" __cid="cBZZVb2">
+              </div>
+              <div class="x-modal-buttons cBZZVb2" __cid="cBZZVb2">
+                <a class="x-modal-button x-modal-button-bold OK cBZZVb2" value="ok" __cid="cBZZVb2">确定</a>
+                <a class="x-modal-button x-modal-button-bold Yes cBZZVb2" value="yes" __cid="cBZZVb2">是</a>
+                <a class="x-modal-button x-modal-button-bold No cBZZVb2" value="no" __cid="cBZZVb2">否</a>
+                <a class="x-modal-button x-modal-button-bold Cancel cBZZVb2" value="cancel" __cid="cBZZVb2">取消</a>
+              </div>
+            </div>
+          </span>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cBZZVb2" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBZZVb2"> 
+            <label class="x-label cBZZVb2" xid="label1" __cid="cBZZVb2">inputValue：</label>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cBZZVb2" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},value:inputValue" __cid="cBZZVb2">
+          </div>
+        </div>  
+        <div xid="buttons" __cid="cBZZVb2" class="cBZZVb2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cBZZVb2" xid="testButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:show" data-config="{&#34;label&#34;:&#34;dynamicCreate&#34;}" __cid="cBZZVb2"> 
+            <i __cid="cBZZVb2" class="cBZZVb2"></i>  
+            <span __cid="cBZZVb2" class="cBZZVb2">dynamicCreate</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cBZZVb2" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:standardCreate" data-config="{&#34;label&#34;:&#34;standardCreate&#34;}" __cid="cBZZVb2"> 
+            <i xid="i3" __cid="cBZZVb2" class="cBZZVb2"></i>  
+            <span xid="span3" __cid="cBZZVb2" class="cBZZVb2">standardCreate</span> 
+          </a>  
+          <div component="$model/UI2/system/components/justep/output/output" xid="output" class="x-output cBZZVb2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBZZVb2"></div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cBZZVb2" class="cBZZVb2">.x-panel.pcARVFbu-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcARVFbu-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcARVFbu-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcARVFbu-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcARVFbu-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcARVFbu-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcARVFbu-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcARVFbu-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcARVFbu-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div id="aler" __cid="cBZZVb2" class="cBZZVb2"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="left:335px;top:406px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/system/components/justep/common/demo/dialog.w&#34;,&#34;status&#34;:&#34;normal&#34;}" __cid="cBZZVb2" class="cBZZVb2">
+    <div class="x-dialog-overlay cBZZVb2" __cid="cBZZVb2"></div>
+    <div class="x-dialog cBZZVb2" style="display:none;" __cid="cBZZVb2">
+      <div class="x-dialog-title cBZZVb2" __cid="cBZZVb2">
+        <button class="close cBZZVb2" __cid="cBZZVb2">
+          <span __cid="cBZZVb2" class="cBZZVb2">×</span>
+        </button>
+        <div class="x-dialog-title-text cBZZVb2" __cid="cBZZVb2"></div>
+      </div>
+      <div class="x-dialog-body cBZZVb2" __cid="cBZZVb2"></div>
+    </div>
+  </span> 
+</div>

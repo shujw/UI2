@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 c32Af2i" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c32Af2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.c32Af2i, .h5.c32Af2i{color: rgb(0, 0, 0); font-size: 16px} .text-black.c32Af2i{color: rgb(33, 33, 33)} .text-white.c32Af2i{color: rgb(255, 255, 255)} .img_new.c32Af2i{width: 100px; height: 70px} .img1.c32Af2i{width: 100%; height: 120px} .img3.c32Af2i{width: 100%; height: 60px} .img4.c32Af2i{width: 40px; height: 40px} .x-titlebar.c32Af2i{background-color: rgb(234, 65, 60); font-size: 14px} .col-xs-4.c32Af2i:nth-child(2){padding: 0 5px; color: red} .panel-heading.c32Af2i{padding-left: 0; border-color: rgb(225, 225, 225)} .panel.c32Af2i{margin-bottom: 10px; border: 0} .btn.x-gray.c32Af2i{border-color: rgb(193, 193, 193)} .x-nav-guide.c32Af2i{margin-top: 8px} .x-nav-guide.c32Af2i .btn-link.c32Af2i{font-weight: normal; color: rgb(253, 184, 182)} .x-nav-guide.c32Af2i .btn.c32Af2i{height: 40px; border-top: 0} .x-nav-guide.c32Af2i .btn.active.c32Af2i{border-bottom: 2px solid rgb(255, 255, 255); color: rgb(255, 255, 255)} .x-nopadding.c32Af2i{padding-left: 0; padding-right: 0} .x-audio.btn-group.c32Af2i{height: 48px} .x-audio.btn-group.c32Af2i .btn.c32Af2i:nth-child(1){border-right: 1px solid rgb(225, 225, 225)} .x-audio.btn-group.c32Af2i .btn.c32Af2i i.c32Af2i{font-size: 20px} .list-group.x-audio.c32Af2i{margin-bottom: 0} .list-group.x-audio.c32Af2i .list-group-item.c32Af2i{height: 240px !important; overflow: hidden} .x-audio.c32Af2i .panel-body.c32Af2i{padding: 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c32Af2i" class="c32Af2i"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar pcieqURn-iosstatusbar c32Af2i" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c32Af2i"> 
+    <div class="x-panel-top c32Af2i" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c32Af2i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c32Af2i" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="c32Af2i"> 
+        <div class="x-titlebar-left flex5 c32Af2i" xid="left1" __cid="c32Af2i">
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-nav-guide c32Af2i" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c32Af2i"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active c32Af2i" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;视频&quot;,&quot;target&quot;:&quot;audioContent1&quot;}" __cid="c32Af2i"> 
+              <i xid="i1" __cid="c32Af2i" class="c32Af2i"/>  
+              <span xid="span1" __cid="c32Af2i" class="c32Af2i">视频</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label c32Af2i" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;电台&quot;,&quot;target&quot;:&quot;audioContent2&quot;}" __cid="c32Af2i"> 
+              <i xid="i2" __cid="c32Af2i" class="c32Af2i"/>  
+              <span xid="span2" __cid="c32Af2i" class="c32Af2i">电台</span> 
+            </a> 
+          </div>
+        </div>  
+        <div class="x-titlebar-title c32Af2i" xid="title1" __cid="c32Af2i"/>  
+        <div class="x-titlebar-right  c32Af2i" xid="right1" __cid="c32Af2i">
+          <div class="empty c32Af2i" __cid="c32Af2i"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content c32Af2i" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c32Af2i"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c32Af2i" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="c32Af2i"> 
+        <div class="x-contents-content panel-body active c32Af2i" xid="audioContent1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c32Af2i"> 
+          <div class="list-group c32Af2i" __cid="c32Af2i"> 
+            <div class="list-group-item c32Af2i" __cid="c32Af2i"> 
+              <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-center c32Af2i" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c32Af2i"> 
+                <div class="col col-xs-3 x-nopadding c32Af2i" xid="col5" __cid="c32Af2i"> 
+                  <img src="" alt="" bind-attr-src="$model.getImageUrl('./img/audio1.png')" class="img4 c32Af2i" __cid="c32Af2i"/>  
+                  <div bind-text="'奇葩'" __cid="c32Af2i" class="c32Af2i"/> 
+                </div>  
+                <div class="col col-xs-3 x-nopadding c32Af2i" xid="col6" __cid="c32Af2i"> 
+                  <img src="" alt="" bind-attr-src="$model.getImageUrl('./img/audio2.png')" class="img4 c32Af2i" __cid="c32Af2i"/>  
+                  <div bind-text="'萌物'" __cid="c32Af2i" class="c32Af2i"/> 
+                </div>  
+                <div class="col col-xs-3 x-nopadding c32Af2i" xid="col7" __cid="c32Af2i"> 
+                  <img src="" alt="" xid="image40" bind-attr-src="$model.getImageUrl('./img/audio3.png')" class="img4 c32Af2i" __cid="c32Af2i"/>  
+                  <div bind-text="'美女'" __cid="c32Af2i" class="c32Af2i"/> 
+                </div>  
+                <div class="col col-xs-3 x-nopadding c32Af2i" xid="col8" __cid="c32Af2i"> 
+                  <img src="" alt="" xid="image4" bind-attr-src="$model.getImageUrl('./img/audio4.png')" class="img4 c32Af2i" __cid="c32Af2i"/>  
+                  <div bind-text="'精品'" __cid="c32Af2i" class="c32Af2i"/> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list x-wangyi c32Af2i" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;audioData&quot;}" __cid="c32Af2i"> 
+            <ul class="x-list-template x-min-height hide c32Af2i" xid="listTemplateUl1" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" bind-click="detailClick" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="c32Af2i"> 
+              <li xid="li2" class="x-min-height c32Af2i" componentname="li(html)" id="undefined_li2" __cid="c32Af2i"> 
+                <div class="list-group c32Af2i" xid="listGroup1" __cid="c32Af2i"> 
+                  <div class="list-group-item c32Af2i" __cid="c32Af2i"> 
+                    <a xid="a2" __cid="c32Af2i" class="c32Af2i"> 
+                      <img alt="" xid="image3" class="img-responsive img1 c32Af2i" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="c32Af2i"/> 
+                    </a>  
+                    <div class="panel-heading c32Af2i" __cid="c32Af2i"> 
+                      <h5 style="text-align: justify;" class="x-flex1 c32Af2i" bind-text="ref('fTitle')" __cid="c32Af2i"/>  
+                      <span xid="span3" class="text-muted c32Af2i" bind-text="ref('fOmit')" __cid="c32Af2i"/> 
+                    </div>  
+                    <div class="text-muted c32Af2i" __cid="c32Af2i"> 
+                      <span xid="span15" class="pull-right c32Af2i" __cid="c32Af2i"> 
+                        <i xid="i6" class="icon-compose c32Af2i" __cid="c32Af2i"/>  
+                        <span xid="span12" bind-text="ref('fPostNumber')" __cid="c32Af2i" class="c32Af2i"/>  
+                        <i xid="i4" class="icon-forward btn c32Af2i" __cid="c32Af2i"/> 
+                      </span>  
+                      <i xid="i10" class="icon-android-clock btn x-nopadding c32Af2i" __cid="c32Af2i"/>  
+                      <span xid="span13" bind-text="ref('fTime')" __cid="c32Af2i" class="c32Af2i"/>  
+                      <i xid="i9" class="icon-arrow-right-b btn x-nopadding c32Af2i" __cid="c32Af2i"/>  
+                      <span xid="span14" bind-text="ref('fPlayNumber')" __cid="c32Af2i" class="c32Af2i"/> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-contents-content c32Af2i" xid="audioContent2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c32Af2i"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-tuniu pcR32uEv-iosstatusbar c32Af2i" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c32Af2i"> 
+            <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-audio c32Af2i" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c32Af2i"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left text-black c32Af2i" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-download&quot;,&quot;label&quot;:&quot;我的下载&quot;}" __cid="c32Af2i"> 
+                <i xid="i12" class="icon-android-download c32Af2i" __cid="c32Af2i"/>  
+                <span xid="span16" __cid="c32Af2i" class="c32Af2i">我的下载</span> 
+              </a>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left text-black c32Af2i" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-timer-outline&quot;,&quot;label&quot;:&quot;最近播放&quot;}" __cid="c32Af2i"> 
+                <i xid="i13" class="icon-ios7-timer-outline c32Af2i" __cid="c32Af2i"/>  
+                <span xid="span17" __cid="c32Af2i" class="c32Af2i">最近播放</span> 
+              </a> 
+            </div>
+            <style __cid="c32Af2i" class="c32Af2i">.x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcR32uEv-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-tuniu pcF3UvAf-iosstatusbar c32Af2i" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c32Af2i"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list x-wangyi c32Af2i" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;classData&quot;}" __cid="c32Af2i"> 
+              <ul class="x-list-template x-min-height hide c32Af2i" xid="listTemplateUl2" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="c32Af2i"> 
+                <li xid="li1" class="panel-body c32Af2i" componentname="li(html)" id="undefined_li2" __cid="c32Af2i"> 
+                  <div bind-click="listClick" class="x-nopadding c32Af2i" __cid="c32Af2i"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon pull-right x-nopadding c32Af2i" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-forward&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c32Af2i"> 
+                      <i xid="i16" class="icon-ios7-arrow-forward text-muted c32Af2i" __cid="c32Af2i"/>  
+                      <span xid="span24" __cid="c32Af2i" class="c32Af2i"/> 
+                    </a>  
+                    <img alt="" xid="image17" class="img4 img-circle c32Af2i" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="c32Af2i"/>  
+                    <span class="text-muted c32Af2i" xid="span26" bind-text="ref('fName')" __cid="c32Af2i"/>  
+                    <div xid="div2" class="panel c32Af2i" __cid="c32Af2i"/>
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list c32Af2i" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;audioData&quot;,&quot;filter&quot;:&quot;$row.val('fClassID')==$object.val('fID')&quot;}" __cid="c32Af2i"> 
+                    <ul class="x-list-template hide c32Af2i" xid="listTemplateUl3" bind-click="detailClick" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="c32Af2i"> 
+                      <li xid="li3" class="col-xs-4 x-nopadding c32Af2i" __cid="c32Af2i">
+                        <div class="list-group x-audio c32Af2i" __cid="c32Af2i"> 
+                          <div class="list-group-item  x-nopadding c32Af2i" __cid="c32Af2i"> 
+                            <a __cid="c32Af2i" class="c32Af2i"> 
+                              <img alt="" xid="image15" class="img-responsive img3 c32Af2i" bind-attr-src="$model.getImageUrl(val('fImg'))" height="60px" __cid="c32Af2i"/> 
+                            </a>
+                            <div class="panel-body c32Af2i" __cid="c32Af2i"> 
+                              <h5 class="x-flex1 c32Af2i" bind-text="ref('fTitle')" __cid="c32Af2i"/>  
+                              <span class="text-muted c32Af2i" bind-text="ref('fOmit')" __cid="c32Af2i">54分钟前</span> 
+                            </div>
+                          </div> 
+                        </div>
+                      </li>
+                    </ul> 
+                  </div>
+                </li> 
+              </ul> 
+            </div>
+            <style __cid="c32Af2i" class="c32Af2i">.x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcF3UvAf-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c32Af2i" class="c32Af2i">.x-panel.pcieqURn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcieqURn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcieqURn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcieqURn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcieqURn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcieqURn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcieqURn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcieqURn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcieqURn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

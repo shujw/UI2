@@ -20,8 +20,10 @@ var __result = __parent1._extend(__parent0).extend({
 	this.__id='';
 	this.__cid='cYVb2Qv';
 	this._flag_='ff8b49fe63ee2baa24759fa0f3639f48';
+	this._wCfg_={};
+	this._appCfg_={};
 	this.callParent(contextUrl);
- var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fAddress":{"define":"fAddress","label":"地址","name":"fAddress","relation":"fAddress","type":"String"},"fName":{"define":"fName","label":"姓名","name":"fName","relation":"fName","type":"String"}},"directDelete":false,"events":{},"idColumn":"fName","initData":"[{\"fName\":\"主页模板信息栏目1\",\"fAddress\":\"地址\"}]","limit":20,"xid":"userData"});
- new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fID":{"define":"fID","label":"ID","name":"fID","relation":"fID","type":"String"},"fTime":{"define":"fTime","label":"时间","name":"fTime","relation":"fTime","rules":{"date":true},"type":"Date"},"fTitle":{"define":"fTitle","label":"标题","name":"fTitle","relation":"fTitle","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"informationDataCustomRefresh"},"idColumn":"fID","initData":"[]","limit":20,"xid":"informationData"});
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fAddress":{"define":"fAddress","label":"地址","name":"fAddress","relation":"fAddress","type":"String"},"fName":{"define":"fName","label":"姓名","name":"fName","relation":"fName","type":"String"}},"directDelete":false,"events":{},"idColumn":"fName","initData":"[{\"fName\":\"主页模板信息栏目1\",\"fAddress\":\"地址\"}]","isMain":false,"limit":20,"xid":"userData"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fID":{"define":"fID","label":"ID","name":"fID","relation":"fID","type":"String"},"fTime":{"define":"fTime","label":"时间","name":"fTime","relation":"fTime","rules":{"date":true},"type":"Date"},"fTitle":{"define":"fTitle","label":"标题","name":"fTitle","relation":"fTitle","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"informationDataCustomRefresh"},"idColumn":"fID","initData":"[]","isMain":false,"limit":20,"xid":"informationData"});
 }}); 
 return __result;});

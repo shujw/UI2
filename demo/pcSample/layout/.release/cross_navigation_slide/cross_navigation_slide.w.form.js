@@ -21,7 +21,9 @@ var __result = __parent1._extend(__parent0).extend({
 	this.__id='';
 	this.__cid='cqEVzea';
 	this._flag_='6b2a8e9b137d5a21ebc86921ec3b504a';
+	this._wCfg_={};
+	this._appCfg_={};
 	this.callParent(contextUrl);
- var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fAddress":{"define":"fAddress","label":"地址","name":"fAddress","relation":"fAddress","type":"String"},"fID":{"define":"fID","label":"fID","name":"fID","relation":"fID","type":"String"},"fName":{"define":"fName","label":"姓名","name":"fName","relation":"fName","type":"String"},"fRemark":{"define":"fRemark","label":"备注","name":"fRemark","relation":"fRemark","type":"String"},"fSex":{"define":"fSex","label":"性别","name":"fSex","relation":"fSex","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"textDataCustomRefresh"},"idColumn":"fID","initData":"[]","limit":20,"xid":"textData"});
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"fAddress":{"define":"fAddress","label":"地址","name":"fAddress","relation":"fAddress","type":"String"},"fID":{"define":"fID","label":"fID","name":"fID","relation":"fID","type":"String"},"fName":{"define":"fName","label":"姓名","name":"fName","relation":"fName","type":"String"},"fRemark":{"define":"fRemark","label":"备注","name":"fRemark","relation":"fRemark","type":"String"},"fSex":{"define":"fSex","label":"性别","name":"fSex","relation":"fSex","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"textDataCustomRefresh"},"idColumn":"fID","initData":"[]","isMain":false,"limit":20,"xid":"textData"});
 }}); 
 return __result;});
