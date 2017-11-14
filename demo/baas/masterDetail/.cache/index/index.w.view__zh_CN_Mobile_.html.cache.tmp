@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window demo-simpleData ceqErIn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceqErIn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceqErIn" class="ceqErIn"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcq2AjQz-iosstatusbar ceqErIn" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceqErIn"> 
+    <div class="x-panel-top ceqErIn" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceqErIn"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceqErIn" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;主从数据&quot;}" __cid="ceqErIn"> 
+        <div class="x-titlebar-left ceqErIn" xid="div1" __cid="ceqErIn"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceqErIn" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="ceqErIn"> 
+            <i xid="i9" __cid="ceqErIn" class="ceqErIn"/>  
+            <span xid="span9" __cid="ceqErIn" class="ceqErIn"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceqErIn" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'userData.save'}" __cid="ceqErIn"> 
+            <i xid="i4" __cid="ceqErIn" class="ceqErIn"/>  
+            <span xid="span4" __cid="ceqErIn" class="ceqErIn"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceqErIn" xid="div2" __cid="ceqErIn">主从数据</div>  
+        <div class="x-titlebar-right  ceqErIn" xid="div3" __cid="ceqErIn"> 
+          <div class="empty ceqErIn" __cid="ceqErIn"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ceqErIn" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceqErIn"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ceqErIn" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="ceqErIn"> 
+        <div class="x-contents-content active ceqErIn" xid="masterContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceqErIn"> 
+          <div class="x-scroll ceqErIn" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="ceqErIn"> 
+            <div class="x-scroll-content ceqErIn" xid="div6" __cid="ceqErIn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list ceqErIn" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;userData&quot;}" __cid="ceqErIn"> 
+                <ul class="x-list-template hide ceqErIn" xid="listTemplateUl1" __cid="ceqErIn" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li1" __cid="ceqErIn" class="ceqErIn" data-bind="css:{'bg-info' : $object == $model.userData.getCurrentRow()}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col x-col-67 ceqErIn" xid="col1" __cid="ceqErIn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output text-primary ceqErIn" xid="output3" data-bind="component:{ref:ref('fID'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceqErIn"/> 
+                      </div>  
+                      <div class="x-col ceqErIn" xid="col2" __cid="ceqErIn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output text-danger ceqErIn" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:'订单数：' + val('orderCount')" __cid="ceqErIn"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col x-col-67 ceqErIn" xid="col4" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input1" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div>  
+                      <div class="x-col ceqErIn" xid="col5" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input2" data-bind="component:{ref:ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col ceqErIn" xid="col14" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input3" data-bind="component:{ref:ref('fAddress'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up ceqErIn" xid="div7" __cid="ceqErIn"> 
+              <span class="x-pull-up-label ceqErIn" xid="span5" __cid="ceqErIn">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content ceqErIn" xid="detailContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ceqErIn"> 
+          <div class="x-scroll ceqErIn" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="ceqErIn"> 
+            <div class="x-scroll-content ceqErIn" xid="div5" __cid="ceqErIn"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list ceqErIn" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;orderData&quot;}" __cid="ceqErIn"> 
+                <ul class="x-list-template hide ceqErIn" xid="listTemplateUl2" __cid="ceqErIn" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                  <li xid="li2" __cid="ceqErIn" class="ceqErIn" data-bind="css:{'bg-info' : $object == $model.userData.getCurrentRow()}"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col x-col-33 ceqErIn" xid="col7" __cid="ceqErIn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output text-info ceqErIn" xid="output8" data-bind="component:{ref:ref('fUserName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceqErIn"/> 
+                      </div>  
+                      <div class="x-col ceqErIn" xid="col8" __cid="ceqErIn"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output ceqErIn" xid="output9" data-bind="component:{ref:ref(&quot;fCreateTime&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceqErIn"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col x-col-33 ceqErIn" xid="col6" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input4" data-bind="component:{ref:ref('fPhoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div>  
+                      <div class="x-col ceqErIn" xid="col3" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input5" data-bind="component:{ref:ref('fAddress'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row ceqErIn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceqErIn"> 
+                      <div class="x-col ceqErIn" xid="col9" __cid="ceqErIn"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control ceqErIn" xid="input6" data-bind="component:{ref:ref('fContent'),name:'$model/UI2/system/components/justep/input/input'}" __cid="ceqErIn"/> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up ceqErIn" xid="div4" __cid="ceqErIn"> 
+              <span class="x-pull-up-label ceqErIn" xid="span2" __cid="ceqErIn">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom ceqErIn" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceqErIn"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified ceqErIn" xid="buttonGroup1" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;masterButton&quot;,&quot;tabbed&quot;:true}" __cid="ceqErIn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ceqErIn" xid="masterButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;主表（用户）&quot;,&quot;target&quot;:&quot;masterContent&quot;}" __cid="ceqErIn"> 
+          <i xid="i5" __cid="ceqErIn" class="ceqErIn"/>  
+          <span xid="span6" __cid="ceqErIn" class="ceqErIn">主表（用户）</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ceqErIn" xid="detailButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;从表（订单）&quot;,&quot;target&quot;:&quot;detailContent&quot;}" __cid="ceqErIn"> 
+          <i xid="i7" __cid="ceqErIn" class="ceqErIn"/>  
+          <span xid="span7" __cid="ceqErIn" class="ceqErIn">从表（订单）</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="ceqErIn" class="ceqErIn">.x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcq2AjQz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

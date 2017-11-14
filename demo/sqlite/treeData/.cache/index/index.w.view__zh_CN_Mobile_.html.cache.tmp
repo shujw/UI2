@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window demo-simpleData c6viqaa" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6viqaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/tree/tree,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c6viqaa" class="c6viqaa"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcBJNrAf-iosstatusbar c6viqaa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6viqaa"> 
+    <div class="x-panel-top c6viqaa" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6viqaa"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c6viqaa" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;Sqlite树形一次加载&quot;}" __cid="c6viqaa"> 
+        <div class="x-titlebar-left c6viqaa" xid="div1" __cid="c6viqaa"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c6viqaa" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="c6viqaa"> 
+            <i xid="i9" __cid="c6viqaa" class="c6viqaa"/>  
+            <span xid="span9" __cid="c6viqaa" class="c6viqaa"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c6viqaa" xid="div2" __cid="c6viqaa">Sqlite树形一次加载</div>  
+        <div class="x-titlebar-right  c6viqaa" xid="div3" __cid="c6viqaa"> 
+          <div class="empty c6viqaa" __cid="c6viqaa"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c6viqaa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6viqaa"> 
+      <div component="$model/UI2/system/components/justep/tree/tree" class="x-tree x-inner-scroll c6viqaa" xid="regionTree" data-bind="component:{name:'$model/UI2/system/components/justep/tree/tree'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;regionData&quot;,&quot;labelColumn&quot;:&quot;fName&quot;,&quot;rootLabel&quot;:&quot;组织机构&quot;}" __cid="c6viqaa"> 
+        <div class="x-tree-head c6viqaa" xid="div4" __cid="c6viqaa"> 
+          <ul component="$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb" class="breadcrumb c6viqaa" xid="ul1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/breadcrumb/breadcrumb'}" __cid="c6viqaa"/> 
+        </div>  
+        <div class="x-tree-content x-scroll-view c6viqaa" xid="div5" __cid="c6viqaa"> 
+          <div component="$model/UI2/system/components/justep/scrollView/scrollView" supportPullDown="true" supportPullUp="true" class="x-scroll c6viqaa" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;bounce&quot;:true,&quot;hScroll&quot;:false,&quot;hScrollbar&quot;:false,&quot;vScroll&quot;:true,&quot;vScrollbar&quot;:true}" __cid="c6viqaa"> 
+            <ul class="x-tree-template x-scroll-content hide c6viqaa" xid="treeTemplateUl1" __cid="c6viqaa" data-bind="foreach:{data:$model.foreach_regionTree($element),afterRender:$model.foreach_afterRender_regionTree.bind($model,$element)}"> 
+              <li xid="li1" class="x-tree-link c6viqaa" __cid="c6viqaa"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center c6viqaa" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c6viqaa"> 
+                  <div class="x-col c6viqaa" xid="col1" __cid="c6viqaa"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output c6viqaa" xid="output1" data-bind="component:{ref:ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="c6viqaa"/> 
+                  </div>  
+                  <div class="x-col x-col-fixed c6viqaa" xid="col4" style="width:auto;" __cid="c6viqaa"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon c6viqaa" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$object.val('fType')!='zone'" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c6viqaa"> 
+                      <i xid="i3" class="icon-chevron-right c6viqaa" __cid="c6viqaa"/>  
+                      <span xid="span5" __cid="c6viqaa" class="c6viqaa"/> 
+                    </a> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="c6viqaa" class="c6viqaa">.x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcBJNrAf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

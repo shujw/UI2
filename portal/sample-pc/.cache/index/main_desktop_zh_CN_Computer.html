@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <script src="../../../v_18ec4ce077b149aea921234af80c3eeel_zh_CNs_desktopd_pc/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_3277df670b734c95b006eeba2e68a144l_zh_CNs_desktopd_pc/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_6ee802509d444c158fdc7dd9af2463ecl_zh_CNs_desktopd_pc/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div __id="id_1" component="$model/UI2/system/components/justep/window/window" extends="$UI/portal/sample-pc/base/base.w" sysParam="false" xid="window" class="window page-footer-fixed body page-sidebar-fixed page-header-fixed window page-quick-sidebar-over-content page-sidebar-closed-hide-logo cYBNnMv" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYBNnMv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">
+  <style>#x-default-loadingbar.cYBNnMv{background-color: rgb(28, 175, 154) !important} .x-portal-task-wait.cYBNnMv .badge.cYBNnMv{background-color: rgb(153, 153, 153)} .page-header.navbar.cYBNnMv .menu-toggler.sidebar-toggler.cYBNnMv{color: white; font-size: 24px} .page-header.navbar.cYBNnMv .page-logo.cYBNnMv .logo-default.cYBNnMv{margin: 10px 0 0 0} .page-content-close.cYBNnMv{float: right} .page-content-close.cYBNnMv a.cYBNnMv{margin: 15px} .page-content-close.cYBNnMv a.cYBNnMv i.cYBNnMv{font-size: 24px} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.cYBNnMv i.cYBNnMv{display: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.on.cYBNnMv i.cYBNnMv{display: inline-block} .nav.pull-right.cYBNnMv > li.cYBNnMv > .dropdown-menu.cYBNnMv, .nav.cYBNnMv > li.cYBNnMv > .dropdown-menu.pull-right.cYBNnMv{right: 0; left: auto} .page-header.navbar.cYBNnMv .top-menu.cYBNnMv .navbar-nav.cYBNnMv{font-size: 13px} .page-sidebar-menu.cYBNnMv a.cYBNnMv{cursor: pointer} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.cYBNnMv > a.cYBNnMv > .arrow.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.cYBNnMv > a.cYBNnMv > .arrow.cYBNnMv:before{font-family: Ionicons; content: ""} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.cYBNnMv > a.cYBNnMv > .arrow.open.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.cYBNnMv > a.cYBNnMv > .arrow.open.cYBNnMv:before{content: ""} .page-header.navbar.cYBNnMv .page-logo.cYBNnMv .logo-default.cYBNnMv{margin-top: 13px} [xid="login"].cYBNnMv .x-dialog-overlay.cYBNnMv{background: white} .portal-login-page.cYBNnMv .x-checkbox.cYBNnMv input[type="checkbox"].cYBNnMv:checked + label.cYBNnMv:before{background-color: white; color: black} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.cYBNnMv{text-overflow: ellipsis; white-space: nowrap; overflow: hidden} .dropdown-menu.cYBNnMv > .external.cYBNnMv{display: block; overflow: hidden; padding: 15px 15px; letter-spacing: 0.5px; border-bottom: 1px solid rgb(221, 221, 221)} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv{padding-right: 0 !important; padding-left: 0; list-style: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv > li.cYBNnMv:first-child a.cYBNnMv{border-top: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv > li.cYBNnMv > a.cYBNnMv{border-bottom: 1px solid rgb(239, 242, 246) !important; color: rgb(136, 136, 136); display: block; clear: both; font-weight: 300; line-height: 20px; white-space: normal; font-size: 13px; padding: 8px 15px 8px; text-shadow: none; text-decoration: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv > li.cYBNnMv > a.cYBNnMv > i.cYBNnMv{margin-top: 5px} .dropdown-menu.cYBNnMv > .external.cYBNnMv > h3.cYBNnMv{margin: 0; padding: 0; float: left; font-size: 13px; display: inline-block} .page-header.navbar.cYBNnMv .top-menu.cYBNnMv .navbar-nav.cYBNnMv > li.dropdown-user.cYBNnMv .dropdown-menu.cYBNnMv > .external.cYBNnMv .closeAll.cYBNnMv{color: rgb(91, 155, 209); display: inline-block; padding: 0; background: none; clear: inherit; font-size: 13px; font-weight: 300; position: absolute; right: 10px; border: 0; margin-top: -1px} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.psm.cYBNnMv > a.cYBNnMv > .icon-person-stalker.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.psm.cYBNnMv > a.cYBNnMv > .icon-person-stalker.cYBNnMv:before{float: right; width: 14px; text-align: center; margin-top: -1px; margin-right: 5px; margin-left: 5px; display: inline; font-size: 16px; height: auto; font-weight: 300; text-shadow: none} .page-sidebar.cYBNnMv .psm.cYBNnMv > a.cYBNnMv > span.cYBNnMv{display: inline; color: rgb(170, 170, 170)} .page-sidebar.cYBNnMv .psm.cYBNnMv .sub-menu.cYBNnMv a.cYBNnMv{text-overflow: ellipsis; overflow: hidden; white-space: nowrap} .page-title.cYBNnMv{height: 24px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct;onLoad:modelLoad" __cid="cYBNnMv" class="cYBNnMv"></div>  
+  <div class="page-root cYBNnMv" style="display: none;" xui:parent="window" xui:update-mode="insert" __cid="cYBNnMv"> 
+    <div class="page-header navbar navbar-fixed-top cYBNnMv" style="height:46px;" __cid="cYBNnMv"> 
+      <div class="page-header-inner cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-logo cYBNnMv" __cid="cYBNnMv"> 
+          <a __cid="cYBNnMv" class="cYBNnMv"> 
+            <img alt="logo" class="logo-default cYBNnMv" src="../../../v_147a33cdc4974b38afef8f69f6b3ed71l_zh_CNs_desktopd_pc/portal/sample-pc/assets/admin/layout/img/logo.png" __cid="cYBNnMv"> 
+          </a>  
+          <div class="menu-toggler sidebar-toggler cYBNnMv" __cid="cYBNnMv"></div> 
+        </div>  
+        <a class="menu-toggler responsive-toggler cYBNnMv" data-target=".navbar-collapse" data-toggle="collapse" href="javascript:;" __cid="cYBNnMv"></a>  
+        <div class="top-menu cYBNnMv" __cid="cYBNnMv"> 
+          <ul class="nav navbar-nav pull-right cYBNnMv" __cid="cYBNnMv"> 
+            <li class="dropdown dropdown-user cYBNnMv" id="portal-opened" style="display:none;" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle cYBNnMv" data-close-others="true" data-toggle="dropdown" data-x5-hover="dropdown" href="#" __cid="cYBNnMv"> 
+                <i class="icon-ios7-browsers cYBNnMv" __cid="cYBNnMv"></i>  
+                <span class="username username-hide-on-mobile cYBNnMv" __cid="cYBNnMv">已打开功能</span>  
+                <i class="fa fa-angle-down cYBNnMv" __cid="cYBNnMv"></i> 
+              </a>  
+              <ul class="dropdown-menu dropdown-menu-default cYBNnMv" __cid="cYBNnMv"> 
+                <li class="external cYBNnMv" __cid="cYBNnMv"> 
+                  <h3 __cid="cYBNnMv" class="cYBNnMv"> 
+                    <span class="bold cYBNnMv" __cid="cYBNnMv">12</span> 个打开的功能
+                  </h3>  
+                  <a class="closeAll cYBNnMv" href="#" __cid="cYBNnMv">全部关闭</a> 
+                </li>  
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <ul class="dropdown-menu-content scroller cYBNnMv" data-height="160px" __cid="cYBNnMv"></ul> 
+                </li> 
+              </ul> 
+            </li>  
+            <li class="dropdown dropdown-user cYBNnMv" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle x-portal-reload cYBNnMv" id="portal-reload" style="display:none;" __cid="cYBNnMv"> 
+                <i class="icon-refresh cYBNnMv" __cid="cYBNnMv"></i>  
+                <span class="username username-hide-on-mobile cYBNnMv" __cid="cYBNnMv">刷新</span> 
+              </a> 
+            </li>  
+            <li class="dropdown dropdown-user cYBNnMv" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle cYBNnMv" data-close-others="true" data-toggle="dropdown" data-x5-hover="dropdown" href="#" __cid="cYBNnMv"> 
+                <i class="icon-user cYBNnMv" __cid="cYBNnMv"></i>  
+                <span class="username username-hide-on-mobile x-portal-username cYBNnMv" id="username" __cid="cYBNnMv"></span>  
+                <i class="fa fa-angle-down cYBNnMv" __cid="cYBNnMv"></i> 
+              </a>  
+              <ul class="dropdown-menu dropdown-menu-default cYBNnMv" __cid="cYBNnMv"> 
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" xid="configBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:configBtnClick" data-config="{&#34;label&#34;:&#34;配置&#34;}" __cid="cYBNnMv" class="cYBNnMv"> 
+                    <i class="icon-settings cYBNnMv" __cid="cYBNnMv"></i> 配置
+                  </a> 
+                </li>  
+                <li class="divider cYBNnMv" __cid="cYBNnMv"></li>  
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <a class="x-portal-logout cYBNnMv" component="$model/UI2/system/components/justep/button/button" xid="logoutBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-power&#34;,&#34;label&#34;:&#34;注销&#34;}" __cid="cYBNnMv"> 
+                    <i class="icon-power cYBNnMv" xid="i1" __cid="cYBNnMv"></i>  
+                    <span xid="span1" __cid="cYBNnMv" class="cYBNnMv">注销</span> 
+                  </a> 
+                </li> 
+              </ul> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="clearfix cYBNnMv" __cid="cYBNnMv"></div>  
+    <div class="page-container cYBNnMv" __cid="cYBNnMv"> 
+      <div class="page-sidebar-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-sidebar navbar-collapse collapse cYBNnMv" __cid="cYBNnMv"> 
+          <ul class="page-sidebar-menu cYBNnMv" data-auto-scroll="true" data-keep-expanded="false" data-slide-speed="200" __cid="cYBNnMv"> 
+            <li class="sidebar-search-wrapper cYBNnMv" style="display:none;" __cid="cYBNnMv"> 
+              <form action="../../../v_09731c09f44745b19d8dd6eb07d90a5bl_zh_CNs_desktopd_pc/portal/sample-pc/extra_search.html" class="sidebar-search sidebar-search-bordered sidebar-search-solid cYBNnMv" method="POST" __cid="cYBNnMv"> 
+                <a class="remove cYBNnMv" href="javascript:;" __cid="cYBNnMv"> 
+                  <i class="icon-close cYBNnMv" __cid="cYBNnMv"></i> 
+                </a>  
+                <div class="input-group cYBNnMv" __cid="cYBNnMv"> 
+                  <input class="form-control cYBNnMv" placeholder="Search..." type="text" __cid="cYBNnMv">  
+                  <span class="input-group-btn cYBNnMv" __cid="cYBNnMv"> 
+                    <a class="btn submit cYBNnMv" href="javascript:;" __cid="cYBNnMv"> 
+                      <i class="icon-magnifier cYBNnMv" __cid="cYBNnMv"></i> 
+                    </a> 
+                  </span> 
+                </div> 
+              </form> 
+            </li>  
+            <li class="start active open cYBNnMv" __cid="cYBNnMv"> 
+              <a class="ajaxify cYBNnMv" isMain="true" __cid="cYBNnMv"> 
+                <i class="icon-home cYBNnMv" __cid="cYBNnMv"></i>  
+                <span class="title cYBNnMv" __cid="cYBNnMv">主页</span>  
+                <span class="selected cYBNnMv" __cid="cYBNnMv"></span> 
+              </a> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>  
+      <div class="page-content-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-content cYBNnMv" __cid="cYBNnMv"> 
+          <div class="page-content-close cYBNnMv" __cid="cYBNnMv"> 
+            <a component="$model/UI2/system/components/justep/button/button" xid="closeFuncBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeFuncBtnClick" __cid="cYBNnMv" class="cYBNnMv"> 
+              <i class="icon-close-round cYBNnMv" __cid="cYBNnMv"></i> 
+            </a> 
+          </div>  
+          <h3 class="page-title cYBNnMv" __cid="cYBNnMv">首页</h3>  
+          <div class="x-contents x-portal-pages cYBNnMv" component="$model/UI2/system/components/justep/contents/contents" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;routable&#34;:true,&#34;swipe&#34;:false,&#34;wrap&#34;:false}" __cid="cYBNnMv"></div> 
+        </div> 
+      </div>  
+      <div class="page-quick-sidebar-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-quick-sidebar cYBNnMv" __cid="cYBNnMv"> 
+          <div class="nav-justified cYBNnMv" __cid="cYBNnMv"></div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="page-footer cYBNnMv" style="height: 33px;" __cid="cYBNnMv"> 
+      <div class="page-footer-inner cYBNnMv" __cid="cYBNnMv">2000-2016 © 北京起步科技有限公司</div>  
+      <div class="scroll-to-top cYBNnMv" __cid="cYBNnMv"> 
+        <i class="icon-arrow-up cYBNnMv" __cid="cYBNnMv"></i> 
+      </div> 
+    </div> 
+  </div>
+  <div xui:parent="window" xui:update-mode="insert" __cid="cYBNnMv" class="cYBNnMv"> 
+    <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" style="left:36px;top:60px;" xid="configDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;height&#34;:&#34;auto&#34;,&#34;src&#34;:&#34;$model/UI2/portal/sample-pc/config/theme.w&#34;,&#34;status&#34;:&#34;normal&#34;,&#34;top&#34;:&#34;100px&#34;,&#34;width&#34;:&#34;420px&#34;}" __cid="cYBNnMv" class="cYBNnMv">
+      <div class="x-dialog-overlay cYBNnMv" __cid="cYBNnMv"></div>
+      <div class="x-dialog cYBNnMv" style="display:none;" __cid="cYBNnMv">
+        <div class="x-dialog-title cYBNnMv" __cid="cYBNnMv">
+          <button class="close cYBNnMv" __cid="cYBNnMv">
+            <span __cid="cYBNnMv" class="cYBNnMv">×</span>
+          </button>
+          <div class="x-dialog-title-text cYBNnMv" __cid="cYBNnMv"></div>
+        </div>
+        <div class="x-dialog-body cYBNnMv" __cid="cYBNnMv"></div>
+      </div>
+    </span> 
+  </div>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_55bc55ffe4c6469d9d3f171ceb94c59dl_zh_CNs_desktopd_pc/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_49b29c3fd1524de3bffc7347734a6b83l_zh_CNs_desktopd_pc/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_faea0eee28bc452f801e39ba6038cc66l_zh_CNs_desktopd_pc/system/core.min.js"></script><script src="../../../v_33517c0ed32c48e2ae6a8cc2dd127286l_zh_CNs_desktopd_pc/system/common.min.js"></script><script src="../../../v_d81f75dde6da4ddb91f0d29c065de9cal_zh_CNs_desktopd_pc/system/components/comp.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc/portal/sample-pc',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_a8376ee2153e4cfeaf90582d75a43239l_zh_CNs_desktopd_pc/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/portal/sample-pc/index.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

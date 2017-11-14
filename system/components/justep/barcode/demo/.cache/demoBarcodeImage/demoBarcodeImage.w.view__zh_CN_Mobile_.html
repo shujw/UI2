@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjE3YZ3" class="cjE3YZ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/barcode/barcodeImage,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjE3YZ3" class="cjE3YZ3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEbYB7r-iosstatusbar cjE3YZ3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjE3YZ3"> 
+    <div class="x-panel-top cjE3YZ3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjE3YZ3">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjE3YZ3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;barcodeImage&#34;}" __cid="cjE3YZ3"> 
+        <div class="x-titlebar-left cjE3YZ3" xid="div2" __cid="cjE3YZ3">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjE3YZ3" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtn" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;}" __cid="cjE3YZ3"> 
+            <i xid="i1" class="icon-chevron-left cjE3YZ3" __cid="cjE3YZ3"></i>  
+            <span xid="span1" __cid="cjE3YZ3" class="cjE3YZ3"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cjE3YZ3" xid="div3" __cid="cjE3YZ3">barcodeImage</div>  
+        <div class="x-titlebar-right  cjE3YZ3" xid="div4" __cid="cjE3YZ3">
+          <div class="empty cjE3YZ3" __cid="cjE3YZ3"></div>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cjE3YZ3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjE3YZ3"> 
+      <div align="left" __cid="cjE3YZ3" class="cjE3YZ3"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="output cjE3YZ3" xid="output2" data="data1" data-bind="component:{ref:data1.ref('description'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cjE3YZ3"></div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="code39" templateName="templateName" xid="barcodeImage6" barcodeConfig="{mw:0.6}" stretch="true" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;stretch&#34;:&#34;true&#34;,&#34;type&#34;:&#34;code39&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage6" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:48px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:code39
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9 a-z - . $ / + %
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="code93" templateName="templateName" xid="barcodeImage7" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;type&#34;:&#34;code93&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage7" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:48px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:code93
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9 a-z
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="code128" templateName="templateName" xid="barcodeImage8" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;type&#34;:&#34;code128&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage8" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:48px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:code128 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：支持完整的7位ASCII码（US-ASCII）字符集
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:18</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="codabar" templateName="templateName" xid="barcodeImage9" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fAge&#34;,&#34;type&#34;:&#34;codabar&#34;}" data-bind="component:{ref:data1.ref('fAge'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fAge')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage9" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:48px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:codabar
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9 - $ : / . +
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:18</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="intl2of5" templateName="templateName" xid="barcodeImage10" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fAge&#34;,&#34;type&#34;:&#34;intl2of5&#34;}" data-bind="component:{ref:data1.ref('fAge'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fAge')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage10" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:intl2of5
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:1234567890123</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="itf14" templateName="templateName" xid="barcodeImage11" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;itf14&#34;,&#34;type&#34;:&#34;itf14&#34;}" data-bind="component:{ref:data1.ref('itf14'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('itf14')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage11" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:itf14
+              <br __cid="cjE3YZ3" class="cjE3YZ3"> 取值范围：0-9，长度必须为13或14
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:12345678901</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="upc-a" templateName="templateName" xid="barcodeImage12" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;upca&#34;,&#34;type&#34;:&#34;upc-a&#34;}" data-bind="component:{ref:data1.ref('upca'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('upca')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage12" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:upc-a 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9，长度必须为11或12
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:1234567</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="upc-e" templateName="templateName" xid="barcodeImage13" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;upce&#34;,&#34;type&#34;:&#34;upc-e&#34;}" data-bind="component:{ref:data1.ref('upce'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('upce')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage13" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:upc-e 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9，长度必须为7或8
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:123456789012</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="ean-13" templateName="templateName" xid="barcodeImage14" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;ean13&#34;,&#34;type&#34;:&#34;ean-13&#34;}" data-bind="component:{ref:data1.ref('ean13'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('ean13')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage14" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:ean-13
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9，长度必须为12或13
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:1234567</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="ean-8" templateName="templateName" xid="barcodeImage15" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;upce&#34;,&#34;type&#34;:&#34;ean-8&#34;}" data-bind="component:{ref:data1.ref('upce'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('upce')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage15" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:ean-8
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9，长度必须为7或8
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:123456789012</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="ean-128" templateName="templateName" xid="barcodeImage16" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;ean13&#34;,&#34;type&#34;:&#34;ean-128&#34;}" data-bind="component:{ref:data1.ref('ean13'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('ean13')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage16" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:ean-128
+              <br __cid="cjE3YZ3" class="cjE3YZ3"> 取值范围：完整的7位ASCII码（US-ASCII）字符集
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:18</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="postnet" templateName="templateName" xid="barcodeImage17" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fAge&#34;,&#34;type&#34;:&#34;postnet&#34;}" data-bind="component:{ref:data1.ref('fAge'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fAge')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage17" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:postnet 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:1234567</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="royal-mail-cbc" templateName="templateName" xid="barcodeImage1" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;upce&#34;,&#34;type&#34;:&#34;royal-mail-cbc&#34;}" data-bind="component:{ref:data1.ref('upce'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('upce')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage1" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:royal-mail-cbc
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9 a-z
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:12345678901234567890</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="usps4cb" templateName="templateName" xid="barcodeImage2" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;usps4cb&#34;,&#34;type&#34;:&#34;usps4cb&#34;}" data-bind="component:{ref:data1.ref('usps4cb'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('usps4cb')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage2" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:usps4cb 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：0-9，长度至少20
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="pdf417" templateName="templateName" xid="barcodeImage3" barcodeConfig="{mw:0.6}" config="{&#34;barcodeConfig&#34;:&#34;{mw:0.6}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;type&#34;:&#34;pdf417&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage3" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:pdf417 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：所有可打印的ASCII字符是有效字符
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="datamatrix" templateName="templateName" xid="barcodeImage4" barcodeConfig="{mw:2.0}" stretch="false" config="{&#34;barcodeConfig&#34;:&#34;{mw:2.0}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;stretch&#34;:&#34;false&#34;,&#34;type&#34;:&#34;datamatrix&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage4" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:datamatrix 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：所有的ISO-8859-1字符都是有效的信息字符
+              <br __cid="cjE3YZ3" class="cjE3YZ3">stretch：false,config:{mw:2.0}
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-responsive-md cjE3YZ3" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjE3YZ3"> 
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:http://www.baidu.com</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="qr" templateName="templateName" xid="barcodeImage5" stretch="false" barcodeConfig="{mw:1.0}" config="{&#34;barcodeConfig&#34;:&#34;{mw:1.0}&#34;,&#34;relation&#34;:&#34;qr&#34;,&#34;stretch&#34;:&#34;false&#34;,&#34;type&#34;:&#34;qr&#34;}" data-bind="component:{ref:data1.ref('qr'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('qr')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage5" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:qr
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：所有的utf-8字符都是有效的信息字符
+              <br __cid="cjE3YZ3" class="cjE3YZ3">stretch：false,config:{mw:1.0}
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:中华人民共和国</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="qr" templateName="templateName" xid="barcodeImage18" barcodeConfig="{mw:1.0}" stretch="false" config="{&#34;barcodeConfig&#34;:&#34;{mw:1.0}&#34;,&#34;relation&#34;:&#34;CN&#34;,&#34;stretch&#34;:&#34;false&#34;,&#34;type&#34;:&#34;qr&#34;}" data-bind="component:{ref:data1.ref('CN') ,name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('CN')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage18" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:qr
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：所有的utf-8字符都是有效的信息字符
+              <br __cid="cjE3YZ3" class="cjE3YZ3">stretch：false,config:{mw:1.0}
+            </div> 
+          </div>  
+          <div class="x-col cjE3YZ3" __cid="cjE3YZ3"> 
+            <div xid="div1" style="height:30px;" __cid="cjE3YZ3" class="cjE3YZ3"> 
+              <font color="red" __cid="cjE3YZ3" class="cjE3YZ3">值:abcde</font> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cjE3YZ3" type="datamatrix" templateName="templateName" xid="barcodeImage19" stretch="false" barcodeConfig="{mw:2.0}" config="{&#34;barcodeConfig&#34;:&#34;{mw:2.0}&#34;,&#34;relation&#34;:&#34;fName&#34;,&#34;stretch&#34;:&#34;false&#34;,&#34;type&#34;:&#34;datamatrix&#34;}" data-bind="component:{ref:data1.ref('fName'),name:'$model/UI2/system/components/justep/barcode/barcodeImage'},ref:data1.ref('fName')" __cid="cjE3YZ3">
+              <img id="img-barcodeImage19" src="about:blank" style="vertical-align:middle;" __cid="cjE3YZ3" class="cjE3YZ3">
+            </div>  
+            <div xid="div1" style="height:60px;" __cid="cjE3YZ3" class="cjE3YZ3">类型:datamatrix 
+              <br __cid="cjE3YZ3" class="cjE3YZ3">取值范围：所有的ISO-8859-1字符都是有效的信息字符
+              <br __cid="cjE3YZ3" class="cjE3YZ3">stretch：false,config:{mw:2.0}
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cjE3YZ3" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjE3YZ3"></div>  
+    <style __cid="cjE3YZ3" class="cjE3YZ3">.x-panel.pcEbYB7r-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcEbYB7r-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEbYB7r-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEbYB7r-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEbYB7r-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEbYB7r-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEbYB7r-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEbYB7r-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEbYB7r-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

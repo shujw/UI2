@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czqmiii" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czqmiii" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czqmiii" class="czqmiii"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJviUjy-iosstatusbar czqmiii" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czqmiii"> 
+    <div class="x-panel-top czqmiii" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czqmiii"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czqmiii" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;menu组件&quot;}" __cid="czqmiii"> 
+        <div class="x-titlebar-left czqmiii" xid="div1" __cid="czqmiii"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czqmiii" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtn" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="czqmiii"> 
+            <i xid="i1" class="icon-chevron-left czqmiii" __cid="czqmiii"/>  
+            <span xid="span1" __cid="czqmiii" class="czqmiii"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czqmiii" xid="div2" __cid="czqmiii">menu组件</div>  
+        <div class="x-titlebar-right  czqmiii" xid="div3" __cid="czqmiii">
+          <div class="empty czqmiii" __cid="czqmiii"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content czqmiii" xid="content1" style="padding:8.75px" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czqmiii"> 
+      <h3 __cid="czqmiii" class="czqmiii">menu
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czqmiii" xid="button3" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showMenuSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="czqmiii"> 
+          <i xid="i3" __cid="czqmiii" class="czqmiii"/>  
+          <span xid="span3" __cid="czqmiii" class="czqmiii">源码</span> 
+        </a> 
+      </h3>  
+      <p __cid="czqmiii" class="czqmiii">菜单组件,可放置一组菜单选项</p>  
+      <div __cid="czqmiii" class="czqmiii"> 
+        <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu czqmiii" style="display:block;top:auto" xid="demoMenu" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="czqmiii"> 
+          <li class="x-menu-item czqmiii" xid="item2" __cid="czqmiii"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czqmiii" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-c&quot;,&quot;label&quot;:&quot;菜单一&quot;}" __cid="czqmiii"> 
+              <i xid="i2" class="icon-loading-c czqmiii" __cid="czqmiii"/>  
+              <span xid="span2" __cid="czqmiii" class="czqmiii">菜单一</span> 
+            </a> 
+          </li>  
+          <li class="x-menu-divider divider czqmiii" xid="divider2" __cid="czqmiii"/>  
+          <li class="x-menu-item czqmiii" xid="item1" __cid="czqmiii"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czqmiii" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-folder&quot;,&quot;label&quot;:&quot;菜单二&quot;}" __cid="czqmiii"> 
+              <i xid="i5" class="icon-android-folder czqmiii" __cid="czqmiii"/>  
+              <span xid="span5" __cid="czqmiii" class="czqmiii">菜单二</span> 
+            </a> 
+          </li>  
+          <li class="x-menu-item czqmiii" xid="item3" __cid="czqmiii"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link czqmiii" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;菜单三&quot;}" __cid="czqmiii"> 
+              <i xid="i4" __cid="czqmiii" class="czqmiii"/>  
+              <span xid="span4" __cid="czqmiii" class="czqmiii">菜单三</span> 
+            </a> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="czqmiii" class="czqmiii">.x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJviUjy-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/components/justep/common/demo/dialog.w&quot;,&quot;status&quot;:&quot;normal&quot;}" __cid="czqmiii" class="czqmiii">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay czqmiii" __cid="czqmiii"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog czqmiii" style="display:none;" __cid="czqmiii">
+      <xhtml:div class="x-dialog-title czqmiii" __cid="czqmiii">
+        <xhtml:button class="close czqmiii" __cid="czqmiii">
+          <xhtml:span __cid="czqmiii" class="czqmiii">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text czqmiii" __cid="czqmiii"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body czqmiii" __cid="czqmiii"/>
+    </xhtml:div>
+  </span> 
+</div>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJzA7V3" class="cJzA7V3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJzA7V3" class="cJzA7V3"></div>  
+  <div __cid="cJzA7V3" class="cJzA7V3"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfmMjqi-iosstatusbar cJzA7V3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJzA7V3"> 
+    <div class="x-panel-top cJzA7V3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJzA7V3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJzA7V3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;labelEdit&quot;}" __cid="cJzA7V3"> 
+        <div class="x-titlebar-left cJzA7V3" xid="div1" __cid="cJzA7V3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJzA7V3" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeWin" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cJzA7V3"> 
+            <i xid="i1" class="icon-chevron-left cJzA7V3" __cid="cJzA7V3"/>  
+            <span xid="span1" __cid="cJzA7V3" class="cJzA7V3"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJzA7V3" xid="div2" __cid="cJzA7V3">labelEdit</div>  
+        <div class="x-titlebar-right  cJzA7V3" xid="div3" __cid="cJzA7V3">
+          <div class="empty cJzA7V3" __cid="cJzA7V3"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJzA7V3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJzA7V3"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;labelEdit组件&quot;}" __cid="cJzA7V3"> 
+        <h3 style="height:48px;vertical-align: middle;padding: 8px;display: inline-block;" __cid="cJzA7V3" class="cJzA7V3">labelEdit</h3>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cJzA7V3" xid="button2" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showLabelEditSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cJzA7V3"> 
+          <i xid="i2" __cid="cJzA7V3" class="cJzA7V3"/>  
+          <span xid="span2" __cid="cJzA7V3" class="cJzA7V3">源码</span> 
+        </a>  
+        <p __cid="cJzA7V3" class="cJzA7V3">1、包含label部分和edit部分</p>  
+        <p __cid="cJzA7V3" class="cJzA7V3">2、label部分：通过bind-text感知data数据</p>  
+        <p __cid="cJzA7V3" class="cJzA7V3">3、edit部分：通过bind-ref感知data数据</p>  
+        <div xid="showLabelEdit" __cid="cJzA7V3" class="cJzA7V3"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fName')" __cid="cJzA7V3"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzA7V3" data="mainData" data-bind="component:{ref:mainData.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入名称&quot;}" __cid="cJzA7V3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fName')" __cid="cJzA7V3"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJzA7V3" data="mainData" data-bind="component:{ref:mainData.ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJzA7V3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fAge')" __cid="cJzA7V3"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzA7V3" data="mainData" data-bind="component:{ref:mainData.ref('fAge'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入年龄&quot;}" __cid="cJzA7V3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fAge')" __cid="cJzA7V3"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJzA7V3" data="mainData" data-bind="component:{ref:mainData.ref('fAge'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJzA7V3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fSex')" __cid="cJzA7V3"/>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cJzA7V3" bind-options="data1.datas" bind-optionsValue="'fValue'" bind-optionsCaption="'请选择性别...'" bind-optionsText="'fName'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:mainData.ref('fSex'),name:'$model/UI2/system/components/justep/select/select'}" __cid="cJzA7V3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fSex')" __cid="cJzA7V3"/>  
+            <div component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-edit cJzA7V3" xid="C3F982BB446A432986AD0BB1DFF6A5A3" bind-foreach="{data:data1.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:mainData.ref('fSex'),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="cJzA7V3">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cJzA7V3" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('fName'),value:ref('fValue')}" __cid="cJzA7V3">
+                <xhtml:input type="radio" __cid="cJzA7V3" class="cJzA7V3"/>
+                <xhtml:label __cid="cJzA7V3" class="cJzA7V3"/>
+              </xhtml:span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fSex')" __cid="cJzA7V3"/>  
+            <div component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-edit cJzA7V3" xid="331EDC5544D549FFB6D8CA4DB4414CB8" bind-foreach="{data:data1.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:mainData.ref('fSex'),name:'$model/UI2/system/components/justep/select/checkboxGroup'}" __cid="cJzA7V3">
+              <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cJzA7V3" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('fName'),value:ref('fValue')}" __cid="cJzA7V3">
+                <xhtml:input type="checkbox" __cid="cJzA7V3" class="cJzA7V3"/>
+                <xhtml:label __cid="cJzA7V3" class="cJzA7V3"/>
+              </xhtml:span>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fSex')" __cid="cJzA7V3"/>  
+            <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle x-edit cJzA7V3" type="checkbox" name="checkbox1" ON="男" OFF="女" checkedValue="1" checked="true" data-config="{&quot;checked&quot;:true,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot;女&quot;,&quot;on&quot;:&quot;男&quot;},&quot;name&quot;:&quot;checkbox1&quot;}" data-bind="component:{ref:mainData.ref('fSex'),name:'$model/UI2/system/components/justep/button/toggle'}" __cid="cJzA7V3">
+              <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" name="checkbox1" __cid="cJzA7V3" class="cJzA7V3"/>
+              <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" data-on="男" data-off="女" __cid="cJzA7V3" class="cJzA7V3">
+                <xhtml:span __cid="cJzA7V3" class="cJzA7V3"/>
+              </xhtml:label>
+            </span> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cJzA7V3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzA7V3"> 
+            <label class="x-label x-center cJzA7V3" bind-text="mainData.label('fText')" __cid="cJzA7V3"/>  
+            <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cJzA7V3" data="mainData" data-bind="component:{ref:mainData.ref('fText'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cJzA7V3"/> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJzA7V3" class="cJzA7V3">.x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfmMjqi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/components/justep/common/demo/dialog.w&quot;,&quot;status&quot;:&quot;normal&quot;}" __cid="cJzA7V3" class="cJzA7V3">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJzA7V3" __cid="cJzA7V3"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJzA7V3" style="display:none;" __cid="cJzA7V3">
+      <xhtml:div class="x-dialog-title cJzA7V3" __cid="cJzA7V3">
+        <xhtml:button class="close cJzA7V3" __cid="cJzA7V3">
+          <xhtml:span __cid="cJzA7V3" class="cJzA7V3">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cJzA7V3" __cid="cJzA7V3"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cJzA7V3" __cid="cJzA7V3"/>
+    </xhtml:div>
+  </span> 
+</div>

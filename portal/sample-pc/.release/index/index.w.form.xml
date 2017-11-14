@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" __id="id_1" component="$model/UI2/system/components/justep/window/window" extends="$UI/portal/sample-pc/base/base.w" sysParam="false" xid="window" class="window page-footer-fixed body page-sidebar-fixed page-header-fixed window page-quick-sidebar-over-content page-sidebar-closed-hide-logo cYBNnMv" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYBNnMv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style>#x-default-loadingbar.cYBNnMv{background-color: rgb(28, 175, 154) !important} .x-portal-task-wait.cYBNnMv .badge.cYBNnMv{background-color: rgb(153, 153, 153)} .page-header.navbar.cYBNnMv .menu-toggler.sidebar-toggler.cYBNnMv{color: white; font-size: 24px} .page-header.navbar.cYBNnMv .page-logo.cYBNnMv .logo-default.cYBNnMv{margin: 10px 0 0 0} .page-content-close.cYBNnMv{float: right} .page-content-close.cYBNnMv a.cYBNnMv{margin: 15px} .page-content-close.cYBNnMv a.cYBNnMv i.cYBNnMv{font-size: 24px} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.cYBNnMv i.cYBNnMv{display: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.on.cYBNnMv i.cYBNnMv{display: inline-block} .nav.pull-right.cYBNnMv &gt; li.cYBNnMv &gt; .dropdown-menu.cYBNnMv, .nav.cYBNnMv &gt; li.cYBNnMv &gt; .dropdown-menu.pull-right.cYBNnMv{right: 0; left: auto} .page-header.navbar.cYBNnMv .top-menu.cYBNnMv .navbar-nav.cYBNnMv{font-size: 13px} .page-sidebar-menu.cYBNnMv a.cYBNnMv{cursor: pointer} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.cYBNnMv &gt; a.cYBNnMv &gt; .arrow.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.cYBNnMv &gt; a.cYBNnMv &gt; .arrow.cYBNnMv:before{font-family: Ionicons; content: ""} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.cYBNnMv &gt; a.cYBNnMv &gt; .arrow.open.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.cYBNnMv &gt; a.cYBNnMv &gt; .arrow.open.cYBNnMv:before{content: ""} .page-header.navbar.cYBNnMv .page-logo.cYBNnMv .logo-default.cYBNnMv{margin-top: 13px} [xid="login"].cYBNnMv .x-dialog-overlay.cYBNnMv{background: white} .portal-login-page.cYBNnMv .x-checkbox.cYBNnMv input[type="checkbox"].cYBNnMv:checked + label.cYBNnMv:before{background-color: white; color: black} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv li.cYBNnMv a.cYBNnMv{text-overflow: ellipsis; white-space: nowrap; overflow: hidden} .dropdown-menu.cYBNnMv &gt; .external.cYBNnMv{display: block; overflow: hidden; padding: 15px 15px; letter-spacing: 0.5px; border-bottom: 1px solid rgb(221, 221, 221)} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv{padding-right: 0 !important; padding-left: 0; list-style: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv &gt; li.cYBNnMv:first-child a.cYBNnMv{border-top: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv &gt; li.cYBNnMv &gt; a.cYBNnMv{border-bottom: 1px solid rgb(239, 242, 246) !important; color: rgb(136, 136, 136); display: block; clear: both; font-weight: 300; line-height: 20px; white-space: normal; font-size: 13px; padding: 8px 15px 8px; text-shadow: none; text-decoration: none} #portal-opened.cYBNnMv .dropdown-menu.cYBNnMv .dropdown-menu-content.cYBNnMv &gt; li.cYBNnMv &gt; a.cYBNnMv &gt; i.cYBNnMv{margin-top: 5px} .dropdown-menu.cYBNnMv &gt; .external.cYBNnMv &gt; h3.cYBNnMv{margin: 0; padding: 0; float: left; font-size: 13px; display: inline-block} .page-header.navbar.cYBNnMv .top-menu.cYBNnMv .navbar-nav.cYBNnMv &gt; li.dropdown-user.cYBNnMv .dropdown-menu.cYBNnMv &gt; .external.cYBNnMv .closeAll.cYBNnMv{color: rgb(91, 155, 209); display: inline-block; padding: 0; background: none; clear: inherit; font-size: 13px; font-weight: 300; position: absolute; right: 10px; border: 0; margin-top: -1px} .page-sidebar.cYBNnMv .page-sidebar-menu.cYBNnMv li.psm.cYBNnMv &gt; a.cYBNnMv &gt; .icon-person-stalker.cYBNnMv:before, .page-sidebar-closed.page-sidebar-fixed.cYBNnMv .page-sidebar.cYBNnMv:hover .page-sidebar-menu.cYBNnMv li.psm.cYBNnMv &gt; a.cYBNnMv &gt; .icon-person-stalker.cYBNnMv:before{float: right; width: 14px; text-align: center; margin-top: -1px; margin-right: 5px; margin-left: 5px; display: inline; font-size: 16px; height: auto; font-weight: 300; text-shadow: none} .page-sidebar.cYBNnMv .psm.cYBNnMv &gt; a.cYBNnMv &gt; span.cYBNnMv{display: inline; color: rgb(170, 170, 170)} .page-sidebar.cYBNnMv .psm.cYBNnMv .sub-menu.cYBNnMv a.cYBNnMv{text-overflow: ellipsis; overflow: hidden; white-space: nowrap} .page-title.cYBNnMv{height: 24px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct;onLoad:modelLoad" __cid="cYBNnMv" class="cYBNnMv"/>  
+  <div class="page-root cYBNnMv" style="display: none;" xmlns:xui="http://www.justep.com/xui" xui:parent="window" xui:update-mode="insert" __cid="cYBNnMv"> 
+    <div class="page-header navbar navbar-fixed-top cYBNnMv" style="height:46px;" __cid="cYBNnMv"> 
+      <div class="page-header-inner cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-logo cYBNnMv" __cid="cYBNnMv"> 
+          <a __cid="cYBNnMv" class="cYBNnMv"> 
+            <img alt="logo" class="logo-default cYBNnMv" src="$model/UI2/portal/sample-pc/assets/admin/layout/img/logo.png" __cid="cYBNnMv"/> 
+          </a>  
+          <div class="menu-toggler sidebar-toggler cYBNnMv" __cid="cYBNnMv"></div> 
+        </div>  
+        <a class="menu-toggler responsive-toggler cYBNnMv" data-target=".navbar-collapse" data-toggle="collapse" href="javascript:;" __cid="cYBNnMv"/>  
+        <div class="top-menu cYBNnMv" __cid="cYBNnMv"> 
+          <ul class="nav navbar-nav pull-right cYBNnMv" __cid="cYBNnMv"> 
+            <li class="dropdown dropdown-user cYBNnMv" id="portal-opened" style="display:none;" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle cYBNnMv" data-close-others="true" data-toggle="dropdown" data-x5-hover="dropdown" href="#" __cid="cYBNnMv"> 
+                <i class="icon-ios7-browsers cYBNnMv" __cid="cYBNnMv"/>  
+                <span class="username username-hide-on-mobile cYBNnMv" __cid="cYBNnMv">已打开功能</span>  
+                <i class="fa fa-angle-down cYBNnMv" __cid="cYBNnMv"/> 
+              </a>  
+              <ul class="dropdown-menu dropdown-menu-default cYBNnMv" __cid="cYBNnMv"> 
+                <li class="external cYBNnMv" __cid="cYBNnMv"> 
+                  <h3 __cid="cYBNnMv" class="cYBNnMv"> 
+                    <span class="bold cYBNnMv" __cid="cYBNnMv">12</span> 个打开的功能
+                  </h3>  
+                  <a class="closeAll cYBNnMv" href="#" __cid="cYBNnMv">全部关闭</a> 
+                </li>  
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <ul class="dropdown-menu-content scroller cYBNnMv" data-height="160px" __cid="cYBNnMv"/> 
+                </li> 
+              </ul> 
+            </li>  
+            <li class="dropdown dropdown-user cYBNnMv" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle x-portal-reload cYBNnMv" id="portal-reload" style="display:none;" __cid="cYBNnMv"> 
+                <i class="icon-refresh cYBNnMv" __cid="cYBNnMv"/>  
+                <span class="username username-hide-on-mobile cYBNnMv" __cid="cYBNnMv">刷新</span> 
+              </a> 
+            </li>  
+            <li class="dropdown dropdown-user cYBNnMv" __cid="cYBNnMv"> 
+              <a class="dropdown-toggle cYBNnMv" data-close-others="true" data-toggle="dropdown" data-x5-hover="dropdown" href="#" __cid="cYBNnMv"> 
+                <i class="icon-user cYBNnMv" __cid="cYBNnMv"/>  
+                <span class="username username-hide-on-mobile x-portal-username cYBNnMv" id="username" __cid="cYBNnMv"/>  
+                <i class="fa fa-angle-down cYBNnMv" __cid="cYBNnMv"/> 
+              </a>  
+              <ul class="dropdown-menu dropdown-menu-default cYBNnMv" __cid="cYBNnMv"> 
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <a component="$model/UI2/system/components/justep/button/button" xid="configBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:configBtnClick" data-config="{&quot;label&quot;:&quot;配置&quot;}" __cid="cYBNnMv" class="cYBNnMv"> 
+                    <i class="icon-settings cYBNnMv" __cid="cYBNnMv"/> 配置
+                  </a> 
+                </li>  
+                <li class="divider cYBNnMv" __cid="cYBNnMv"/>  
+                <li __cid="cYBNnMv" class="cYBNnMv"> 
+                  <a class="x-portal-logout cYBNnMv" component="$model/UI2/system/components/justep/button/button" xid="logoutBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-power&quot;,&quot;label&quot;:&quot;注销&quot;}" __cid="cYBNnMv"> 
+                    <i class="icon-power cYBNnMv" xid="i1" __cid="cYBNnMv"/>  
+                    <span xid="span1" __cid="cYBNnMv" class="cYBNnMv">注销</span> 
+                  </a> 
+                </li> 
+              </ul> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="clearfix cYBNnMv" __cid="cYBNnMv"/>  
+    <div class="page-container cYBNnMv" __cid="cYBNnMv"> 
+      <div class="page-sidebar-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-sidebar navbar-collapse collapse cYBNnMv" __cid="cYBNnMv"> 
+          <ul class="page-sidebar-menu cYBNnMv" data-auto-scroll="true" data-keep-expanded="false" data-slide-speed="200" __cid="cYBNnMv"> 
+            <li class="sidebar-search-wrapper cYBNnMv" style="display:none;" __cid="cYBNnMv"> 
+              <form action="$model/UI2/portal/sample-pc/extra_search.html" class="sidebar-search sidebar-search-bordered sidebar-search-solid cYBNnMv" method="POST" __cid="cYBNnMv"> 
+                <a class="remove cYBNnMv" href="javascript:;" __cid="cYBNnMv"> 
+                  <i class="icon-close cYBNnMv" __cid="cYBNnMv"/> 
+                </a>  
+                <div class="input-group cYBNnMv" __cid="cYBNnMv"> 
+                  <input class="form-control cYBNnMv" placeholder="Search..." type="text" __cid="cYBNnMv"/>  
+                  <span class="input-group-btn cYBNnMv" __cid="cYBNnMv"> 
+                    <a class="btn submit cYBNnMv" href="javascript:;" __cid="cYBNnMv"> 
+                      <i class="icon-magnifier cYBNnMv" __cid="cYBNnMv"/> 
+                    </a> 
+                  </span> 
+                </div> 
+              </form> 
+            </li>  
+            <li class="start active open cYBNnMv" __cid="cYBNnMv"> 
+              <a class="ajaxify cYBNnMv" isMain="true" __cid="cYBNnMv"> 
+                <i class="icon-home cYBNnMv" __cid="cYBNnMv"/>  
+                <span class="title cYBNnMv" __cid="cYBNnMv">主页</span>  
+                <span class="selected cYBNnMv" __cid="cYBNnMv"/> 
+              </a> 
+            </li> 
+          </ul> 
+        </div> 
+      </div>  
+      <div class="page-content-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-content cYBNnMv" __cid="cYBNnMv"> 
+          <div class="page-content-close cYBNnMv" __cid="cYBNnMv"> 
+            <a component="$model/UI2/system/components/justep/button/button" xid="closeFuncBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeFuncBtnClick" __cid="cYBNnMv" class="cYBNnMv"> 
+              <i class="icon-close-round cYBNnMv" __cid="cYBNnMv"/> 
+            </a> 
+          </div>  
+          <h3 class="page-title cYBNnMv" __cid="cYBNnMv">首页</h3>  
+          <div class="x-contents x-portal-pages cYBNnMv" component="$model/UI2/system/components/justep/contents/contents" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:true,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cYBNnMv"/> 
+        </div> 
+      </div>  
+      <div class="page-quick-sidebar-wrapper cYBNnMv" __cid="cYBNnMv"> 
+        <div class="page-quick-sidebar cYBNnMv" __cid="cYBNnMv"> 
+          <div class="nav-justified cYBNnMv" __cid="cYBNnMv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="page-footer cYBNnMv" style="height: 33px;" __cid="cYBNnMv"> 
+      <div class="page-footer-inner cYBNnMv" __cid="cYBNnMv">2000-2016 © 北京起步科技有限公司</div>  
+      <div class="scroll-to-top cYBNnMv" __cid="cYBNnMv"> 
+        <i class="icon-arrow-up cYBNnMv" __cid="cYBNnMv"/> 
+      </div> 
+    </div> 
+  </div>
+  <div xmlns:xui="http://www.justep.com/xui" xui:parent="window" xui:update-mode="insert" __cid="cYBNnMv" class="cYBNnMv"> 
+    <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" style="left:36px;top:60px;" xid="configDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;height&quot;:&quot;auto&quot;,&quot;src&quot;:&quot;$model/UI2/portal/sample-pc/config/theme.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;top&quot;:&quot;100px&quot;,&quot;width&quot;:&quot;420px&quot;}" __cid="cYBNnMv" class="cYBNnMv">
+      <xhtml:div class="x-dialog-overlay cYBNnMv" __cid="cYBNnMv"/>
+      <xhtml:div class="x-dialog cYBNnMv" style="display:none;" __cid="cYBNnMv">
+        <xhtml:div class="x-dialog-title cYBNnMv" __cid="cYBNnMv">
+          <xhtml:button class="close cYBNnMv" __cid="cYBNnMv">
+            <xhtml:span __cid="cYBNnMv" class="cYBNnMv">×</xhtml:span>
+          </xhtml:button>
+          <xhtml:div class="x-dialog-title-text cYBNnMv" __cid="cYBNnMv"/>
+        </xhtml:div>
+        <xhtml:div class="x-dialog-body cYBNnMv" __cid="cYBNnMv"/>
+      </xhtml:div>
+    </span> 
+  </div>
+</div>

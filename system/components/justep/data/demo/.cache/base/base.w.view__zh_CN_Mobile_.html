@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<div xid="window" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2M32Av" class="c2M32Av" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c2M32Av" class="c2M32Av"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYbmYF3-iosstatusbar c2M32Av" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2M32Av"> 
+    <div class="x-panel-top c2M32Av" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2M32Av"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c2M32Av" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;Data&#34;}" __cid="c2M32Av"> 
+        <div class="x-titlebar-left c2M32Av" xid="div1" __cid="c2M32Av"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c2M32Av" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" __cid="c2M32Av"> 
+            <i xid="i1" __cid="c2M32Av" class="c2M32Av"></i>  
+            <span xid="span1" __cid="c2M32Av" class="c2M32Av"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c2M32Av" xid="div2" __cid="c2M32Av">Data</div>  
+        <div class="x-titlebar-right  c2M32Av" xid="div3" __cid="c2M32Av">
+          <div class="empty c2M32Av" __cid="c2M32Av"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c2M32Av" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2M32Av"> 
+      <div style="padding:6px 6px 6px 6px;" __cid="c2M32Av" class="c2M32Av"> 
+        <h3 style="height:48px;vertical-align: middle;padding: 8px;display: inline-block;" __cid="c2M32Av" class="c2M32Av">特性说明:</h3>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2M32Av" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:isVisible" data-events="onClick:showBizDataSource" data-config="{&#34;label&#34;:&#34;masterData源码&#34;}" __cid="c2M32Av"> 
+          <i xid="i10" __cid="c2M32Av" class="c2M32Av"></i>  
+          <span xid="span12" __cid="c2M32Av" class="c2M32Av">masterData源码</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c2M32Av" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&#34;label&#34;:&#34;js&#34;}" __cid="c2M32Av"> 
+          <i xid="i12" __cid="c2M32Av" class="c2M32Av"></i>  
+          <span xid="span14" __cid="c2M32Av" class="c2M32Av">js</span> 
+        </a>  
+        <p __cid="c2M32Av" class="c2M32Av">1、masterData中当String必填，提示“请填写String”
+          <br __cid="c2M32Av" class="c2M32Av">2、masterDate的数据从该目录下base.json中获取。
+          <br __cid="c2M32Av" class="c2M32Av"> 3 、masterData中当Integer必须大于50
+        </p> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c2M32Av" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&#34;title&#34;:&#34;Master&#34;}" __cid="c2M32Av"> 
+        <div class="x-control-group-title c2M32Av" xid="controlGroupTitle1" __cid="c2M32Av"> 
+          <span xid="span2" __cid="c2M32Av" class="c2M32Av">title</span> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label1" __cid="c2M32Av" data-bind="text:masterData.label('fString')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input1" data-bind="component:{ref:masterData.ref('fString'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label2" __cid="c2M32Av" data-bind="text:masterData.label('fInteger')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input2" data-bind="component:{ref:masterData.ref('fInteger'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label3" __cid="c2M32Av" data-bind="text:masterData.label('fFloat')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input3" data-bind="component:{ref:masterData.ref('fFloat'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label5" __cid="c2M32Av" data-bind="text:masterData.label('fDate')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input5" data-bind="component:{ref:masterData.ref('fDate'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label6" __cid="c2M32Av" data-bind="text:masterData.label('fDateTime')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input6" data-bind="component:{ref:masterData.ref('fDateTime'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+          <label class="x-label c2M32Av" xid="label7" __cid="c2M32Av" data-bind="text:masterData.label('fTime')"></label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input7" data-bind="component:{ref:masterData.ref('fTime'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av"> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c2M32Av" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&#34;title&#34;:&#34;动态创建的mainData和List：&#34;}" __cid="c2M32Av"> 
+        <div class="x-control-group-title c2M32Av" xid="controlGroupTitle2" __cid="c2M32Av"> 
+          <span xid="span3" __cid="c2M32Av" class="c2M32Av">title</span>
+        </div>  
+        <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide c2M32Av" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-config="{&#34;data&#34;:&#34;mainData&#34;}" __cid="c2M32Av"> 
+          <li xid="li1" __cid="c2M32Av" class="c2M32Av">
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+              <label class="x-label c2M32Av" xid="label4" __cid="c2M32Av" data-bind="text:label('sID')"></label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input4" data-bind="component:{ref:ref('sID'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="c2M32Av">
+            </div>  
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+              <label class="x-label c2M32Av" xid="label9" __cid="c2M32Av" data-bind="text:label('sName')"></label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input9" data-bind="component:{ref:ref('sName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av">
+            </div>
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c2M32Av" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c2M32Av"> 
+              <label class="x-label c2M32Av" xid="label8" __cid="c2M32Av" data-bind="text:label('sAge')"></label>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit c2M32Av" xid="input8" data-bind="component:{ref:ref('sAge'),name:'$model/UI2/system/components/justep/input/input'}" __cid="c2M32Av">
+            </div> 
+          </li>
+        </ul>
+      </div>
+    </div>  
+    <style __cid="c2M32Av" class="c2M32Av">.x-panel.pcYbmYF3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcYbmYF3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYbmYF3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYbmYF3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYbmYF3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYbmYF3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYbmYF3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYbmYF3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYbmYF3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/system/components/justep/common/demo/dialog.w&#34;,&#34;status&#34;:&#34;normal&#34;}" __cid="c2M32Av" class="c2M32Av">
+    <div class="x-dialog-overlay c2M32Av" __cid="c2M32Av"></div>
+    <div class="x-dialog c2M32Av" style="display:none;" __cid="c2M32Av">
+      <div class="x-dialog-title c2M32Av" __cid="c2M32Av">
+        <button class="close c2M32Av" __cid="c2M32Av">
+          <span __cid="c2M32Av" class="c2M32Av">×</span>
+        </button>
+        <div class="x-dialog-title-text c2M32Av" __cid="c2M32Av"></div>
+      </div>
+      <div class="x-dialog-body c2M32Av" __cid="c2M32Av"></div>
+    </div>
+  </span> 
+</div>

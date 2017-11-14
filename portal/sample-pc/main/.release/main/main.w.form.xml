@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window container-fluid c2IVzYz" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2IVzYz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c2IVzYz" class="c2IVzYz"/>  
+  <div component="$model/UI2/system/components/bootstrap/row/row" class="row c2IVzYz" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="c2IVzYz"> 
+    <div class="col col-xs-4 center-block c2IVzYz" xid="col1" __cid="c2IVzYz"> 
+      <img src="$model/UI2/portal/sample-pc/main/img/we5-1-300x188.png" alt="" xid="image1" style="width:100%;max-width:300px;" __cid="c2IVzYz" class="c2IVzYz"/> 
+    </div>  
+    <div class="col col-xs-8 center-block c2IVzYz" xid="col2" __cid="c2IVzYz"> 
+      <h2 style="text-align: left;" __cid="c2IVzYz" class="c2IVzYz">WeX5 – 
+        <span style="color: #ff0000;" __cid="c2IVzYz" class="c2IVzYz">开源</span>、
+        <span style="color: #ff0000;" __cid="c2IVzYz" class="c2IVzYz">免费</span>的应用快速开发框架
+      </h2>  
+      <ul __cid="c2IVzYz" class="c2IVzYz"> 
+        <li __cid="c2IVzYz" class="c2IVzYz"> 
+          <div __cid="c2IVzYz" class="c2IVzYz"> 
+            <span style="color: #000000;" __cid="c2IVzYz" class="c2IVzYz">定位：开发面向消费者和公众的开放应用系统</span> 
+          </div> 
+        </li>  
+        <li __cid="c2IVzYz" class="c2IVzYz"> 
+          <div __cid="c2IVzYz" class="c2IVzYz"> 
+            <span style="color: #000000;" __cid="c2IVzYz" class="c2IVzYz">适用：一般app、电商app、客服app、会员app、微店微商等</span> 
+          </div> 
+        </li>  
+        <li __cid="c2IVzYz" class="c2IVzYz"> 
+          <div __cid="c2IVzYz" class="c2IVzYz"> 
+            <span style="color: #000000;" __cid="c2IVzYz" class="c2IVzYz">前端：安卓app/苹果app/微信服务号/PC web app</span> 
+          </div> 
+        </li>  
+        <li __cid="c2IVzYz" class="c2IVzYz"> 
+          <div __cid="c2IVzYz" class="c2IVzYz"> 
+            <span style="color: #000000;" __cid="c2IVzYz" class="c2IVzYz">后端：后端数据处理组件，对接各主流技术平台</span> 
+          </div> 
+        </li>  
+        <li __cid="c2IVzYz" class="c2IVzYz"> 
+          <div __cid="c2IVzYz" class="c2IVzYz"> 
+            <span style="color: #000000;" __cid="c2IVzYz" class="c2IVzYz">费用：完全开源，彻底免费，无任何限制</span> 
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

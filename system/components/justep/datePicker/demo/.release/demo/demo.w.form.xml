@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cEfiMRf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEfiMRf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/datePicker/datePicker,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEfiMRf" class="cEfiMRf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcnAjuea-iosstatusbar cEfiMRf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEfiMRf"> 
+    <div class="x-panel-top cEfiMRf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfiMRf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEfiMRf" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;时间选择&quot;}" __cid="cEfiMRf"> 
+        <div class="x-titlebar-left cEfiMRf" __cid="cEfiMRf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cEfiMRf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cEfiMRf"> 
+            <i class="icon-chevron-left cEfiMRf" __cid="cEfiMRf"/>  
+            <span __cid="cEfiMRf" class="cEfiMRf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cEfiMRf" __cid="cEfiMRf">时间选择</div>  
+        <div class="x-titlebar-right  cEfiMRf" __cid="cEfiMRf">
+          <div class="empty cEfiMRf" __cid="cEfiMRf"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEfiMRf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEfiMRf"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cEfiMRf" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cEfiMRf"> 
+        <div class="x-control-group-title cEfiMRf" xid="controlGroupTitle1" __cid="cEfiMRf"> 
+          <span xid="span1" __cid="cEfiMRf" class="cEfiMRf">title</span> 
+        </div>  
+        <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group cEfiMRf" xid="radioGroup1" bind-foreach="{data:typeData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:$model.mainData.ref(&quot;type&quot;),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="cEfiMRf">
+          <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cEfiMRf" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('name'),value:ref('id')}" __cid="cEfiMRf">
+            <xhtml:input type="radio" __cid="cEfiMRf" class="cEfiMRf"/>
+            <xhtml:label __cid="cEfiMRf" class="cEfiMRf"/>
+          </xhtml:span>
+        </span>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cEfiMRf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:datePickerClick" data-config="{&quot;label&quot;:&quot;选择日期时间&quot;}" __cid="cEfiMRf"> 
+          <i xid="i1" __cid="cEfiMRf" class="cEfiMRf"/>  
+          <span xid="span2" __cid="cEfiMRf" class="cEfiMRf">选择日期时间</span> 
+        </a>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cEfiMRf" xid="output" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cEfiMRf"/>
+      </div> 
+    </div>  
+    <style __cid="cEfiMRf" class="cEfiMRf">.x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcnAjuea-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/datePicker/datePicker" class="x-popPicker cEfiMRf" xid="datePicker" style="left:75px;top:11px;" data-bind="component:{name:'$model/UI2/system/components/justep/datePicker/datePicker'}" data-events="onOK:doOK" data-config="{&quot;type&quot;:&quot;datetime&quot;}" __cid="cEfiMRf"> 
+    <div class="x-popPicker-overlay cEfiMRf" __cid="cEfiMRf"/>  
+    <div class="x-popPicker-content cEfiMRf" __cid="cEfiMRf"> 
+      <div class="x-poppicker-header cEfiMRf" __cid="cEfiMRf"> 
+        <button class="btn btn-default x-btn-ok cEfiMRf" __cid="cEfiMRf">确定</button> 
+      </div> 
+    </div> 
+  </div> 
+</div>

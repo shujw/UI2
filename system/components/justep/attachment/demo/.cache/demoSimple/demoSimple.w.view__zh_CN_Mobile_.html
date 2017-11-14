@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIz2YRb" class="cIz2YRb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cIz2YRb" class="cIz2YRb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVJbIFb-iosstatusbar cIz2YRb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIz2YRb"> 
+    <div class="x-panel-top cIz2YRb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIz2YRb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cIz2YRb" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;AttachmentSimple&#34;}" __cid="cIz2YRb"> 
+        <div class="x-titlebar-left cIz2YRb" xid="div1" __cid="cIz2YRb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIz2YRb" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeWin" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;}" __cid="cIz2YRb"> 
+            <i xid="i2" class="icon-chevron-left cIz2YRb" __cid="cIz2YRb"></i>  
+            <span xid="span2" __cid="cIz2YRb" class="cIz2YRb"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIz2YRb" xid="div2" __cid="cIz2YRb">AttachmentSimple</div>  
+        <div class="x-titlebar-right  cIz2YRb" xid="div3" __cid="cIz2YRb">
+          <div class="empty cIz2YRb" __cid="cIz2YRb"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-flex x-flex-column cIz2YRb" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIz2YRb"> 
+      <h3 __cid="cIz2YRb" class="cIz2YRb">AttachmentSimple</h3>  
+      <p xid="p1" __cid="cIz2YRb" class="cIz2YRb">attachmentSimple组件，只需要绑定data的某一个字段就可以使用。</p>
+      <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{ref:data1.ref('fAttachment'),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" __cid="cIz2YRb" class="cIz2YRb"> 
+        <div class="x-attachment cIz2YRb" xid="div4" __cid="cIz2YRb"> 
+          <div class="x-attachment-content x-card-border cIz2YRb" xid="div5" __cid="cIz2YRb"> 
+            <div class="x-doc-process cIz2YRb" xid="div6" __cid="cIz2YRb"> 
+              <div class="progress-bar x-doc-process-bar cIz2YRb" role="progressbar" style="width:0%;" xid="div7" __cid="cIz2YRb"></div>
+            </div>  
+            <div data-bind="foreach:$attachmentItems" xid="div8" __cid="cIz2YRb" class="cIz2YRb"> 
+              <div class="x-attachment-cell cIz2YRb" xid="div9" __cid="cIz2YRb"> 
+                <div class="x-attachment-item x-item-other cIz2YRb" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div10" __cid="cIz2YRb"> 
+                  <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cIz2YRb" xid="a1" __cid="cIz2YRb"></a>
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-attachment-cell cIz2YRb" data-bind="visible:$state.get() == 'upload'" xid="div11" __cid="cIz2YRb"> 
+              <div class="x-attachment-item x-item-upload cIz2YRb" data-bind="visible:$state.get() == 'upload'" xid="div12" __cid="cIz2YRb"></div>
+            </div>  
+            <div class="x-attachment-cell cIz2YRb" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div13" __cid="cIz2YRb"> 
+              <div class="x-attachment-item x-item-remove cIz2YRb" data-bind="click:changeState.bind($object,'remove')" xid="div14" __cid="cIz2YRb"></div>
+            </div>  
+            <div style="clear:both;" xid="div15" __cid="cIz2YRb" class="cIz2YRb"></div>
+          </div> 
+        </div> 
+      </div>  
+      <label xid="label2" __cid="cIz2YRb" class="cIz2YRb">附件字段中存储的内容:</label>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cIz2YRb" xid="textarea1" style="height:259px;" data-bind="component:{ref:data1.ref('fAttachment'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cIz2YRb"></textarea>
+    </div>  
+    <style __cid="cIz2YRb" class="cIz2YRb">.x-panel.pcVJbIFb-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcVJbIFb-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcVJbIFb-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVJbIFb-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVJbIFb-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcVJbIFb-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVJbIFb-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVJbIFb-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVJbIFb-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

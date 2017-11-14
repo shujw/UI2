@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbmIvMf" class="cbmIvMf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/wing/wing,$model/UI2/system/components/justep/wing/child,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cbmIvMf" class="cbmIvMf"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="left:183px;top:108px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/components/justep/common/demo/dialog.w&quot;}" __cid="cbmIvMf" class="cbmIvMf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cbmIvMf" __cid="cbmIvMf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cbmIvMf" style="display:none;" __cid="cbmIvMf">
+      <xhtml:div class="x-dialog-title cbmIvMf" __cid="cbmIvMf">
+        <xhtml:button class="close cbmIvMf" __cid="cbmIvMf">
+          <xhtml:span __cid="cbmIvMf" class="cbmIvMf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cbmIvMf" __cid="cbmIvMf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cbmIvMf" __cid="cbmIvMf"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cbmIvMf" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;button7&quot;,&quot;direction&quot;:&quot;right-bottom&quot;}" __cid="cbmIvMf"> 
+    <div class="x-popMenu-overlay cbmIvMf" xid="div5" __cid="cbmIvMf"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cbmIvMf" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cbmIvMf"> 
+      <li class="x-menu-item cbmIvMf" xid="item1" __cid="cbmIvMf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button2" bind-visible="isVisible" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showWingSource" data-config="{&quot;label&quot;:&quot;源码&quot;}" __cid="cbmIvMf"> 
+          <i xid="i2" __cid="cbmIvMf" class="cbmIvMf"/>  
+          <span xid="span2" __cid="cbmIvMf" class="cbmIvMf">源码</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cbmIvMf" xid="item2" __cid="cbmIvMf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&quot;label&quot;:&quot;js&quot;}" __cid="cbmIvMf"> 
+          <i xid="i4" __cid="cbmIvMf" class="cbmIvMf"/>  
+          <span xid="span4" __cid="cbmIvMf" class="cbmIvMf">js</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/wing/wing" class="x-wing cbmIvMf" xid="wing" data-bind="component:{name:'$model/UI2/system/components/justep/wing/wing'}" __cid="cbmIvMf"> 
+    <div class="x-wing-left cbmIvMf" xid="left1" style="background-color:white;width:40%;" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cbmIvMf"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cbmIvMf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:hideLeft" data-config="{&quot;label&quot;:&quot;hide&quot;}" __cid="cbmIvMf"> 
+        <i xid="i1" __cid="cbmIvMf" class="cbmIvMf"/>  
+        <span xid="span1" __cid="cbmIvMf" class="cbmIvMf">hide</span> 
+      </a>  
+      <h2 __cid="cbmIvMf" class="cbmIvMf">left page</h2> 
+    </div>  
+    <div class="x-wing-content cbmIvMf" xid="content1" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cbmIvMf"> 
+      <div class="x-wing-backdrop cbmIvMf" xid="div1" __cid="cbmIvMf"/>  
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbmIvMf" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;wing&quot;}" __cid="cbmIvMf"> 
+        <div class="x-titlebar-left cbmIvMf" xid="div2" __cid="cbmIvMf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeWin" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cbmIvMf"> 
+            <i xid="i5" class="icon-chevron-left cbmIvMf" __cid="cbmIvMf"/>  
+            <span xid="span5" __cid="cbmIvMf" class="cbmIvMf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbmIvMf" xid="div3" __cid="cbmIvMf">wing</div>  
+        <div class="x-titlebar-right  cbmIvMf" xid="div4" __cid="cbmIvMf">
+          <div class="empty cbmIvMf" __cid="cbmIvMf"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showMenu" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cbmIvMf"> 
+            <i xid="i7" class="icon-android-note cbmIvMf" __cid="cbmIvMf"/>  
+            <span xid="span7" __cid="cbmIvMf" class="cbmIvMf"/> 
+          </a>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbmIvMf" xid="row1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbmIvMf"> 
+        <div class="x-col text-center cbmIvMf" xid="col2" style="width:30%" __cid="cbmIvMf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openLeft" data-config="{&quot;label&quot;:&quot;showLeft&quot;}" __cid="cbmIvMf"> 
+            <i xid="i1" __cid="cbmIvMf" class="cbmIvMf"/>  
+            <span xid="span1" __cid="cbmIvMf" class="cbmIvMf">showLeft</span> 
+          </a> 
+        </div>  
+        <div class="x-col cbmIvMf" __cid="cbmIvMf"> 
+          <h3 __cid="cbmIvMf" class="cbmIvMf">content page</h3> 
+        </div>  
+        <div class="x-col text-center cbmIvMf" xid="col3" align="right" __cid="cbmIvMf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbmIvMf" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showRight" data-config="{&quot;label&quot;:&quot;showRight&quot;}" __cid="cbmIvMf"> 
+            <i xid="i3" __cid="cbmIvMf" class="cbmIvMf"/>  
+            <span xid="span3" __cid="cbmIvMf" class="cbmIvMf">showRight</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cbmIvMf" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbmIvMf"> 
+        <div class="x-col cbmIvMf" __cid="cbmIvMf"/>  
+        <div class="x-col cbmIvMf" style="width:30%" __cid="cbmIvMf"> 
+          <p __cid="cbmIvMf" class="cbmIvMf">1、容器组件，包含left、content、right三部分</p>  
+          <p __cid="cbmIvMf" class="cbmIvMf">2、左滑右滑可打开left、right部分</p>  
+          <p __cid="cbmIvMf" class="cbmIvMf">3、点击content部分，关闭打开的侧边部分</p> 
+        </div>  
+        <div class="x-col cbmIvMf" __cid="cbmIvMf"/> 
+      </div> 
+    </div>  
+    <div class="x-wing-right cbmIvMf" xid="right1" style="background-color:white;width:40%;" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="cbmIvMf"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cbmIvMf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:hideRight" data-config="{&quot;label&quot;:&quot;hide&quot;}" __cid="cbmIvMf"> 
+        <i xid="i1" __cid="cbmIvMf" class="cbmIvMf"/>  
+        <span xid="span1" __cid="cbmIvMf" class="cbmIvMf">hide</span> 
+      </a>  
+      <h2 __cid="cbmIvMf" class="cbmIvMf">right page</h2> 
+    </div> 
+  </div> 
+</div>

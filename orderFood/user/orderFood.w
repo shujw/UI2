@@ -28,7 +28,7 @@
         </col> 
       </rule>  
       <data xid="default6">[]</data> 
-    </div>
+    </div>  
     <div component="$UI/system/components/justep/data/data" autoLoad="false"
       xid="cartData" idColumn="fFoodID"> 
       <column label="col4" name="fFoodID" type="String" xid="default41"/>  
@@ -63,7 +63,7 @@
       <column label="分类图片" name="fClassImg" type="String" xid="xid8"/> 
     </div> 
   </div>  
-  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar"> 
+  <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full x-card"> 
     <div class="x-panel-top" height="49"> 
       <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar"
         title="桌号：9"> 
@@ -108,22 +108,50 @@
                     <div component="$UI/system/components/justep/output/output"
                       class="x-output list-group-item-text" xid="output2" bind-ref="ref('fDescription')"
                       style="font-size:x-small;"/>  
-                    <a component="$UI/system/components/justep/button/button"
-                      xid="addCartBtn" onClick="addCartBtnClick" icon="icon-ios7-plus-outline"
-                      class="btn btn-icon-top pull-right x-card" style="padding:0;color:#EC8557;font-weight:bold;font-size:large;font-variant:normal;text-decoration:none;"> 
-                      <i xid="i14" class="icon-ios7-plus-outline"/>  
-                      <span xid="span10"/> 
+                    
+                    <a component="$UI/system/components/justep/button/button" xid="addCartBtn" onClick="addCartBtnClick" icon="linear linear-pluscircle" class="btn btn-icon-top pull-right" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;"> 
+                      <i xid="i14" class="linear linear-pluscircle" />  
+                      <span xid="span10" /> 
                     </a>
-                    <div component="$UI/system/components/justep/output/output"
-                      class="x-output list-group-item-text" xid="output3" bind-ref="ref('calcPriceText')"
-                      style="font-weight:normal;color:#F98C5C;"/> 
-                  </div> 
+                    <div component="$UI/system/components/justep/output/output" class="x-output pull-right" xid="output5" bind-ref="ref('fCount')" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block"></div><a component="$UI/system/components/justep/button/button"
+                      xid="reduceCountBtn" onClick="addCartBtnClick" icon="linear linear-circleminus"
+                      class="btn btn-icon-top pull-right" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;"> 
+                      <i xid="i14" class="linear linear-circleminus"/>  
+                      <span xid="span10"/> 
+                    </a>  
+                     
+                  <div component="$UI/system/components/justep/output/output" class="x-output list-group-item-text" xid="output3" bind-ref="ref('calcPriceText')" style="font-weight:normal;color:#F98C5C;height:100%;width:50%;"></div></div> 
                 </div> 
               </li> 
             </ul> 
           </div> 
         </div> 
       </div> 
-    </div> 
+    </div>  
+    <div xid="bottom1" class="x-panel-bottom"> 
+      <div component="$UI/system/components/bootstrap/row/row" class="row"
+        xid="row5"> 
+        <div class="col col-xs-8" xid="col3"> 
+          <div component="$UI/system/components/justep/button/buttonGroup"
+            class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"> 
+            <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-icon-left"
+              label="￥０" xid="button1" icon="round round-buy" style="text-align:left;font-size:larger;"> 
+              <i xid="i1" class="icon round round-buy"/>  
+              <span xid="span1">￥０</span> 
+            </a>  
+            </div> 
+        </div>  
+        <div class="col col-xs-4" xid="col6"> 
+          <div component="$UI/system/components/justep/button/buttonGroup"
+            class="btn-group btn-group-justified" tabbed="false" xid="buttonGroup2"> 
+            <a component="$UI/system/components/justep/button/button" class="btn btn-warning"
+              label="下单" xid="shoppingCartBtn" style="top:2px;height:100%;right:5px"> 
+              <i xid="i8" class="icon"/>  
+              <span xid="span7">下单</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
   </div> 
 </div>

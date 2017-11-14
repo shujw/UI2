@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cmuUBJz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmuUBJz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cmuUBJz" class="cmuUBJz"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/system/components/justep/common/demo/dialog.w&#34;,&#34;status&#34;:&#34;normal&#34;}" __cid="cmuUBJz" class="cmuUBJz">
+    <div class="x-dialog-overlay cmuUBJz" __cid="cmuUBJz"></div>
+    <div class="x-dialog cmuUBJz" style="display:none;" __cid="cmuUBJz">
+      <div class="x-dialog-title cmuUBJz" __cid="cmuUBJz">
+        <button class="close cmuUBJz" __cid="cmuUBJz">
+          <span __cid="cmuUBJz" class="cmuUBJz">×</span>
+        </button>
+        <div class="x-dialog-title-text cmuUBJz" __cid="cmuUBJz"></div>
+      </div>
+      <div class="x-dialog-body cmuUBJz" __cid="cmuUBJz"></div>
+    </div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcz26Rji-iosstatusbar cmuUBJz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmuUBJz"> 
+    <div class="x-panel-top cmuUBJz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmuUBJz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cmuUBJz" xid="titleBar3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;contents&#34;}" __cid="cmuUBJz"> 
+        <div class="x-titlebar-left cmuUBJz" xid="div7" __cid="cmuUBJz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmuUBJz" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closeWin" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;}" __cid="cmuUBJz"> 
+            <i xid="i5" class="icon-chevron-left cmuUBJz" __cid="cmuUBJz"></i>  
+            <span xid="span6" __cid="cmuUBJz" class="cmuUBJz"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmuUBJz" xid="div8" __cid="cmuUBJz">contents</div>  
+        <div class="x-titlebar-right  cmuUBJz" xid="div9" __cid="cmuUBJz">
+          <div class="empty cmuUBJz" __cid="cmuUBJz"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmuUBJz" xid="prevBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:prevBtnClick" data-config="{&#34;label&#34;:&#34;prev&#34;}" __cid="cmuUBJz"> 
+            <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+            <span __cid="cmuUBJz" class="cmuUBJz">prev</span> 
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmuUBJz" xid="nextBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:nextBtnClick" data-config="{&#34;label&#34;:&#34;next&#34;}" __cid="cmuUBJz"> 
+            <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+            <span __cid="cmuUBJz" class="cmuUBJz">next</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cmuUBJz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmuUBJz"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" xid="pages" class="x-contents x-full cmuUBJz" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:pagesSlide" data-config="{&#34;active&#34;:0,&#34;slidable&#34;:true,&#34;swipe&#34;:true,&#34;wrap&#34;:true}" __cid="cmuUBJz"> 
+        <div class="x-contents-content active cmuUBJz" xid="content-1" style="padding:8.75px" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentsActive" __cid="cmuUBJz"> 
+          <h3 style="height:48px;vertical-align: middle;padding: 8px;display: inline-block;" __cid="cmuUBJz" class="cmuUBJz">contents</h3>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmuUBJz" xid="jsSource" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showJsSource" data-config="{&#34;label&#34;:&#34;js&#34;}" __cid="cmuUBJz"> 
+            <i xid="jsSou" __cid="cmuUBJz" class="cmuUBJz"></i>  
+            <span __cid="cmuUBJz" class="cmuUBJz">js</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmuUBJz" xid="source" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:isVisible" data-events="onClick:showContentsSource" data-config="{&#34;label&#34;:&#34;源码&#34;}" __cid="cmuUBJz"> 
+            <i xid="sou" __cid="cmuUBJz" class="cmuUBJz"></i>  
+            <span __cid="cmuUBJz" class="cmuUBJz">源码</span> 
+          </a>  
+          <br __cid="cmuUBJz" class="cmuUBJz">  
+          <p __cid="cmuUBJz" class="cmuUBJz">1、容器组件，多个contents之间可任意切换</p>  
+          <p __cid="cmuUBJz" class="cmuUBJz">2、可以将同一类数据放到一个contents中</p>  
+          <p __cid="cmuUBJz" class="cmuUBJz">3、左右滑动可切换页面</p>  
+          <p __cid="cmuUBJz" class="cmuUBJz"> 
+            <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cmuUBJz" name="checkbox" value="1" label="是否使用滑动动画" xid="slideControl" checked="true" data-config="{&#34;checked&#34;:true,&#34;disabled&#34;:false,&#34;label&#34;:&#34;是否使用滑动动画&#34;,&#34;name&#34;:&#34;checkbox&#34;,&#34;value&#34;:&#34;1&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkboxChanged" __cid="cmuUBJz">
+              <input type="checkbox" name="checkbox" value="1" __cid="cmuUBJz" class="cmuUBJz">
+              <label __cid="cmuUBJz" class="cmuUBJz">是否使用滑动动画</label>
+            </span>  
+            <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cmuUBJz" name="checkbox" value="1" label="是否循环" xid="wrapControl" checked="true" data-config="{&#34;checked&#34;:true,&#34;disabled&#34;:false,&#34;label&#34;:&#34;是否循环&#34;,&#34;name&#34;:&#34;checkbox&#34;,&#34;value&#34;:&#34;1&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:wrapControlChanged" __cid="cmuUBJz">
+              <input type="checkbox" name="checkbox" value="1" __cid="cmuUBJz" class="cmuUBJz">
+              <label __cid="cmuUBJz" class="cmuUBJz">是否循环</label>
+            </span> 
+          </p>  
+          <div style="text-align:center;" __cid="cmuUBJz" class="cmuUBJz"> 
+            <h1 __cid="cmuUBJz" class="cmuUBJz">page 1</h1>  
+            <a component="$model/UI2/system/components/justep/button/button" xid="button2" class="btn btn-default btn-lg cmuUBJz" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:goNextPage" data-config="{&#34;label&#34;:&#34;go&#34;}" __cid="cmuUBJz"> 
+              <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+              <span __cid="cmuUBJz" class="cmuUBJz">go</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cmuUBJz" xid="content-2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onInactive:contentsUnActive" __cid="cmuUBJz"> 
+          <div style="text-align:center" __cid="cmuUBJz" class="cmuUBJz"> 
+            <h1 __cid="cmuUBJz" class="cmuUBJz">page 2</h1>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg  cmuUBJz" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backPrePage" data-config="{&#34;label&#34;:&#34;back&#34;}" __cid="cmuUBJz"> 
+              <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+              <span __cid="cmuUBJz" class="cmuUBJz">back</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg  cmuUBJz" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:nextPage" data-config="{&#34;label&#34;:&#34;next&#34;}" __cid="cmuUBJz"> 
+              <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+              <span __cid="cmuUBJz" class="cmuUBJz">next</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cmuUBJz" xid="content-3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmuUBJz"> 
+          <div style="text-align:center" __cid="cmuUBJz" class="cmuUBJz"> 
+            <h1 xid="h31" __cid="cmuUBJz" class="cmuUBJz">page 3</h1>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg  cmuUBJz" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backPage" data-config="{&#34;label&#34;:&#34;back&#34;}" __cid="cmuUBJz"> 
+              <i __cid="cmuUBJz" class="cmuUBJz"></i>  
+              <span __cid="cmuUBJz" class="cmuUBJz">back</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cmuUBJz" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmuUBJz"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cmuUBJz" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cmuUBJz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmuUBJz" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;page1&#34;,&#34;target&#34;:&#34;content-1&#34;}" __cid="cmuUBJz"> 
+          <i xid="i6" __cid="cmuUBJz" class="cmuUBJz"></i>  
+          <span xid="span7" __cid="cmuUBJz" class="cmuUBJz">page1</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmuUBJz" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;page2&#34;,&#34;target&#34;:&#34;content-2&#34;}" __cid="cmuUBJz"> 
+          <i xid="i7" __cid="cmuUBJz" class="cmuUBJz"></i>  
+          <span xid="span8" __cid="cmuUBJz" class="cmuUBJz">page2</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cmuUBJz" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;page3&#34;,&#34;target&#34;:&#34;content-3&#34;}" __cid="cmuUBJz"> 
+          <i xid="i8" __cid="cmuUBJz" class="cmuUBJz"></i>  
+          <span xid="span9" __cid="cmuUBJz" class="cmuUBJz">page3</span> 
+        </a> 
+      </div> 
+    </div>  
+    <div id="aler" __cid="cmuUBJz" class="cmuUBJz"></div>  
+    <style __cid="cmuUBJz" class="cmuUBJz">.x-panel.pcz26Rji-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcz26Rji-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcz26Rji-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcz26Rji-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26Rji-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcz26Rji-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz26Rji-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26Rji-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz26Rji-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
