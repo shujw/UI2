@@ -6,29 +6,22 @@
     <div component="$UI/system/components/justep/data/baasData" autoLoad="true"
       orderBy="fID:asc" xid="foodData" idColumn="fID" confirmDelete="true" queryAction="queryFood"
       tableName="takeout_food" url="/justep/takeout" limit="6" confirmRefresh="false"> 
-      <column label="fID" name="fID" type="String" xid="default1"/>  
-      <column label="fName" name="fName" type="String" xid="default2"/>  
-      <column label="fPrice" name="fPrice" type="Float" xid="default3"/>  
-      <column label="fDescription" name="fDescription" type="String" xid="default4"/>  
-      <column label="fImage" name="fImage" type="String" xid="default5"/>  
-      <column label="calcPriceText" name="calcPriceText" type="String" isCalculate="true"
-        xid="default23"/>  
-      <column label="calcImageURL" name="calcImageURL" type="String" isCalculate="true"
-        xid="default24"/>  
-      <rule xid="rule2"> 
-        <col name="calcPriceText" xid="ruleCol2"> 
-          <calculate xid="calculate2"> 
-            <expr xid="default30">js:'¥ ' + val('fPrice') + '元'</expr> 
-          </calculate> 
-        </col>  
-        <col name="calcImageURL" xid="ruleCol7"> 
-          <calculate xid="calculate7"> 
-            <expr xid="default35"><![CDATA[js:$model.transURL('./img/'+val('fImage'))]]></expr> 
-          </calculate> 
-        </col> 
-      </rule>  
-      <data xid="default6">[]</data> 
-    </div>  
+      <column label="fID" name="fID" type="String" xid="default1"></column>
+  <column label="fName" name="fName" type="String" xid="default2"></column>
+  <column label="fPrice" name="fPrice" type="Float" xid="default3"></column>
+  <column label="fDescription" name="fDescription" type="String" xid="default4"></column>
+  <column label="fImage" name="fImage" type="String" xid="default5"></column>
+  <column isCalculate="true" label="calcPriceText" name="calcPriceText" type="String" xid="default23"></column>
+  <column isCalculate="true" label="calcImageURL" name="calcImageURL" type="String" xid="default24"></column>
+  <rule xid="rule2">
+   <col name="calcPriceText" xid="ruleCol2">
+    <calculate xid="calculate2">
+     <expr xid="default30">js:'¥ ' + val('fPrice') + '元'</expr></calculate> </col> 
+   <col name="calcImageURL" xid="ruleCol7">
+    <calculate xid="calculate7">
+     <expr xid="default35">js:$model.transURL('./img/'+val('fImage'))</expr></calculate> </col> </rule>
+  <data xid="default6">[]</data>
+  <column label="fCount" name="fCount" type="Integer" xid="xid9"></column></div>  
     <div component="$UI/system/components/justep/data/data" autoLoad="false"
       xid="cartData" idColumn="fFoodID"> 
       <column label="col4" name="fFoodID" type="String" xid="default41"/>  
@@ -40,6 +33,35 @@
         <col name="calcMoney" xid="ruleCol4"> 
           <calculate xid="calculate4"> 
             <expr xid="default27">js:val('fPrice') * val('fCount')</expr> 
+          </calculate> 
+        </col> 
+      </rule> 
+    </div>  
+        <div component="$UI/system/components/justep/data/data" autoLoad="false"
+      xid="statusData" autoNew="true" idColumn="calcCanSaveOrder"> 
+      <column label="col0" name="calcCartSumMoneyText" type="String" xid="default9"/>  
+      <column label="col1" name="calcCartCountText" type="String" xid="default25"/>  
+      <column label="col0" name="calcCanSaveOrder" type="String" xid="default33"/>  
+      <column label="col1" name="calcCanClearCart" type="String" xid="default34"/>  
+      <rule xid="rule3"> 
+        <col name="calcCartSumMoneyText" xid="ruleCol1"> 
+          <calculate xid="calculate1"> 
+            <expr xid="default26">js:'¥ ' + $model.comp('cartData').sum('calcMoney') + '元'</expr> 
+          </calculate> 
+        </col>  
+        <col name="calcCartCountText" xid="ruleCol3"> 
+          <calculate xid="calculate3"> 
+            <expr xid="default28">js:($model.comp('cartData').count() &gt; 0) ? '购物车(' + $model.comp('cartData').count() + ')' : '购物车'</expr> 
+          </calculate> 
+        </col>  
+        <col name="calcCanSaveOrder" xid="ruleCol5"> 
+          <calculate xid="calculate5"> 
+            <expr xid="default31">js:$model.comp('cartData').sum("calcMoney") &gt; 0</expr> 
+          </calculate> 
+        </col>  
+        <col name="calcCanClearCart" xid="ruleCol6"> 
+          <calculate xid="calculate6"> 
+            <expr xid="default32">js:$model.comp('cartData').count() &gt; 0</expr> 
           </calculate> 
         </col> 
       </rule> 
@@ -113,9 +135,9 @@
                       <i xid="i14" class="linear linear-pluscircle" />  
                       <span xid="span10" /> 
                     </a>
-                    <div component="$UI/system/components/justep/output/output" class="x-output pull-right" xid="output5" bind-ref="ref('fCount')" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block"></div><a component="$UI/system/components/justep/button/button"
-                      xid="reduceCountBtn" onClick="addCartBtnClick" icon="linear linear-circleminus"
-                      class="btn btn-icon-top pull-right" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;"> 
+                    <div component="$UI/system/components/justep/output/output" class="pull-right" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" bind-ref="ref('fCount')" bind-visible='ref("fCount").get() &gt; 0'></div><a component="$UI/system/components/justep/button/button"
+                      xid="reduceCountBtn" onClick="reduceCountBtnClick" icon="linear linear-circleminus"
+                      class="btn btn-icon-top pull-right" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;" bind-visible='ref("fCount").get() &gt; 0'> 
                       <i xid="i14" class="linear linear-circleminus"/>  
                       <span xid="span10"/> 
                     </a>  
@@ -135,9 +157,9 @@
           <div component="$UI/system/components/justep/button/buttonGroup"
             class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"> 
             <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-icon-left"
-              label="￥０" xid="button1" icon="round round-buy" style="text-align:left;font-size:larger;"> 
+              label="￥０" xid="button1" icon="round round-buy" style="text-align:left;font-size:larger;" bind-text="statusData.ref('calcCartSumMoneyText')"> 
               <i xid="i1" class="icon round round-buy"/>  
-              <span xid="span1">￥０</span> 
+              <span xid="span1" bind-text="statusData.ref('calcCartSumMoneyText')">￥０</span> 
             </a>  
             </div> 
         </div>  

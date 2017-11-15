@@ -43,8 +43,8 @@
                       <i xid="i14" class="linear linear-pluscircle cQjeqAn" __cid="cQjeqAn"></i>  
                       <span xid="span10" __cid="cQjeqAn" class="cQjeqAn"></span> 
                     </a>  
-                    <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-right cQjeqAn" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" data-bind="component:{ref:ref('fCount'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"></div>
-                    <a component="$model/UI2/system/components/justep/button/button" xid="reduceCountBtn" class="btn btn-icon-top pull-right cQjeqAn" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addCartBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-circleminus&#34;}" __cid="cQjeqAn"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="pull-right cQjeqAn" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" data-bind="component:{ref:ref('fCount'),name:'$model/UI2/system/components/justep/output/output'},visible:ref(&#34;fCount&#34;).get() &gt; 0" __cid="cQjeqAn"></div>
+                    <a component="$model/UI2/system/components/justep/button/button" xid="reduceCountBtn" class="btn btn-icon-top pull-right cQjeqAn" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:ref(&#34;fCount&#34;).get() &gt; 0" data-events="onClick:reduceCountBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-circleminus&#34;}" __cid="cQjeqAn"> 
                       <i xid="i14" class="linear linear-circleminus cQjeqAn" __cid="cQjeqAn"></i>  
                       <span xid="span10" __cid="cQjeqAn" class="cQjeqAn"></span> 
                     </a>  
@@ -61,9 +61,9 @@
       <div component="$model/UI2/system/components/bootstrap/row/row" class="row cQjeqAn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQjeqAn"> 
         <div class="col col-xs-8 cQjeqAn" xid="col3" __cid="cQjeqAn"> 
           <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cQjeqAn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cQjeqAn"> 
-            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQjeqAn" xid="button1" style="text-align:left;font-size:larger;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;round round-buy&#34;,&#34;label&#34;:&#34;￥０&#34;}" __cid="cQjeqAn"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQjeqAn" xid="button1" style="text-align:left;font-size:larger;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},text:statusData.ref('calcCartSumMoneyText')" data-config="{&#34;icon&#34;:&#34;round round-buy&#34;,&#34;label&#34;:&#34;￥０&#34;}" __cid="cQjeqAn"> 
               <i xid="i1" class="icon round round-buy cQjeqAn" __cid="cQjeqAn"></i>  
-              <span xid="span1" __cid="cQjeqAn" class="cQjeqAn">￥０</span> 
+              <span xid="span1" __cid="cQjeqAn" class="cQjeqAn" data-bind="text:statusData.ref('calcCartSumMoneyText')">￥０</span> 
             </a> 
           </div> 
         </div>  

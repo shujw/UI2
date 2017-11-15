@@ -17,6 +17,7 @@ define(function(require) {
 		Model.prototype.addCartBtnClick = function(event) {
 		var row = event.bindingContext.$object;
 		var cartData = this.comp("cartData");
+		console.dir(event);
 		if (cartData.find([ 'fFoodID' ], [ row.val('fID') ]).length === 0) {
 			cartData.newData({
 				index : 0,
@@ -27,6 +28,25 @@ define(function(require) {
 					"fCount" : 1
 				} ]
 			});
+			row.val("fCount",1);
+			//设置组件属性值
+		} else {
+			var currentCartDataRow = cartData.find([ 'fFoodID' ], [ row.val('fID') ])[0];
+			currentCartDataRow.val("fCount", currentCartDataRow.val("fCount") + 1);
+			//this.comp('output5').set({"value": currentCartDataRow.val("fCount")});
+			row.val("fCount",currentCartDataRow.val("fCount"));
+		}
+	};
+	
+	Model.prototype.reduceCountBtnClick = function(event) {
+		var row = event.bindingContext.$object;
+		row.val("fCount", (row.val("fCount") > 0) ? row.val("fCount") - 1 : 0);
+		var cartData = this.comp("cartData");
+		if (cartData.find([ 'fFoodID' ], [ row.val('fID') ]).length === 0) {
+		  // TODO 按钮不显示设置
+		} else {
+			var currentCartDataRow = cartData.find([ 'fFoodID' ], [ row.val('fID') ])[0];
+			currentCartDataRow.val("fCount", row.val("fCount"));
 		}
 	};
 	
