@@ -13,15 +13,18 @@
   <column label="fImage" name="fImage" type="String" xid="default5"></column>
   <column isCalculate="true" label="calcPriceText" name="calcPriceText" type="String" xid="default23"></column>
   <column isCalculate="true" label="calcImageURL" name="calcImageURL" type="String" xid="default24"></column>
+  <data xid="default6">[]</data>
+  <column label="fCount" name="fCount" type="Integer" xid="xid9"></column>
   <rule xid="rule2">
    <col name="calcPriceText" xid="ruleCol2">
     <calculate xid="calculate2">
      <expr xid="default30">js:'¥ ' + val('fPrice') + '元'</expr></calculate> </col> 
    <col name="calcImageURL" xid="ruleCol7">
     <calculate xid="calculate7">
-     <expr xid="default35">js:$model.transURL('./img/'+val('fImage'))</expr></calculate> </col> </rule>
-  <data xid="default6">[]</data>
-  <column label="fCount" name="fCount" type="Integer" xid="xid9"></column></div>  
+     <expr xid="default35">js:$model.transURL('./img/'+val('fImage'))</expr></calculate> </col> 
+   <col name="fCount" xid="ruleCol8">
+    <calculate xid="calculate8">
+     <expr xid="default7"></expr></calculate> </col> </rule></div>  
     <div component="$UI/system/components/justep/data/data" autoLoad="false"
       xid="cartData" idColumn="fFoodID"> 
       <column label="col4" name="fFoodID" type="String" xid="default41"/>  
@@ -85,6 +88,41 @@
       <column label="分类图片" name="fClassImg" type="String" xid="xid8"/> 
     </div> 
   </div>  
+  <div component="$UI/system/components/justep/popOver/popOver" class="x-popOver" direction="auto" xid="popOver" position="bottom">
+  <!--  <div class="x-popOver-overlay" xid="div6"/>-->
+   <div class="x-popOver-overlay" xid="div6"></div><div xid="div7" class="x-popOver-content"><div class="panel panel-default panel-default x-card" component="$UI/system/components/bootstrap/panel/panel" xid="panel2" style="width:493px;"> 
+            <div class="panel-heading" xid="heading2"> 
+              <h4 class="panel-title" xid="h42"><![CDATA[清单]]></h4> 
+            </div>  
+   <div class="panel-body" xid="body2" style="width:421px;"> 
+                 <span style="color:#ddd" bind-visible="$model.cartData.getCount() == 0">空</span>  
+              <div component="$UI/system/components/justep/list/list" class="x-list" xid="carList" data="cartData"> 
+                <ul class="x-list-template x-min-height" xid="listTemplateUl2" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl2"> 
+                  <li xid="li2" class="x-min-height" componentname="li(html)" id="undefined_li2"> 
+                    <div component="$UI/system/components/bootstrap/row/row" class="row" xid="row1"> 
+                      <div class="col col-xs-5" xid="col7"> 
+                        <div component="$UI/system/components/justep/output/output" class="x-output" xid="output4" bind-ref="ref('fName')"/> 
+                      </div>  
+                      <div class="col col-xs-2" xid="col8"> 
+                        <div component="$UI/system/components/justep/output/output" class="x-output" xid="output11" bind-ref="'¥' + ref('fPrice').get()" format="0,000"/> 
+                      </div>  
+                      <div class="col col-xs-5" xid="col9"> 
+                        <a component="$UI/system/components/justep/button/button" class="btn btn-xs btn-only-icon" label="button" xid="reduceCountBtn" icon="icon-android-remove" onClick="reduceCountBtnClick" style="color:white;background-color:#35b3e4;"> 
+                          <i xid="i3" class="icon-android-remove" />  
+                          <span xid="span3" /> 
+                        </a>  
+                        <div component="$UI/system/components/justep/output/output" class="x-output" xid="output5" bind-ref="ref('fCount')" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" />  
+                        <a component="$UI/system/components/justep/button/button" class="btn btn-xs btn-only-icon" label="button" xid="addCountBtn" icon="icon-android-add" onClick="addCountBtnClick" style="color:white;background-color:#35b3e4;"> 
+                          <i xid="i4" class="icon-android-add" />  
+                          <span xid="span4" /> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+              </div>
+              </div></div></div>
   <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full x-card"> 
     <div class="x-panel-top" height="49"> 
       <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar"
@@ -136,7 +174,7 @@
                       <span xid="span10" /> 
                     </a>
                     <div component="$UI/system/components/justep/output/output" class="pull-right" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" bind-ref="ref('fCount')" bind-visible='ref("fCount").get() &gt; 0'></div><a component="$UI/system/components/justep/button/button"
-                      xid="reduceCountBtn" onClick="reduceCountBtnClick" icon="linear linear-circleminus"
+                      xid="reduceCountBtn" onClick="reduceCartBtnClick" icon="linear linear-circleminus"
                       class="btn btn-icon-top pull-right" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;" bind-visible='ref("fCount").get() &gt; 0'> 
                       <i xid="i14" class="linear linear-circleminus"/>  
                       <span xid="span10"/> 
@@ -157,9 +195,9 @@
           <div component="$UI/system/components/justep/button/buttonGroup"
             class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"> 
             <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-icon-left"
-              label="￥０" xid="button1" icon="round round-buy" style="text-align:left;font-size:larger;" bind-text="statusData.ref('calcCartSumMoneyText')"> 
+              label="￥０" xid="button1" icon="round round-buy" style="text-align:left;font-size:larger;" bind-text="statusData.ref('calcCartSumMoneyText')" onClick="showPopOver"> 
               <i xid="i1" class="icon round round-buy"/>  
-              <span xid="span1" bind-text="statusData.ref('calcCartSumMoneyText')">￥０</span> 
+              <span xid="span1" bind-text="statusData.ref('calcCartSumMoneyText')"><![CDATA[￥０]]></span> 
             </a>  
             </div> 
         </div>  
