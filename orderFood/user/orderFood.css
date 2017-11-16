@@ -21,3 +21,10 @@
 .tb-listBox{ padding-left:0px; padding-right:10px; margin-bottom:10px;}
 .tb-listBox div{ background-color:#fff;}
 .tb-listBox p{ font-size:13px; margin-top:5px;}
+
+.angleBox {
+  float:left; position:relative;
+}
+.angle {
+  position:absolute; right:0px; top:0; background-color: #c71c22;
+}

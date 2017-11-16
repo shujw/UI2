@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" class="main13 cQjeqAn" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQjeqAn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/bootstrap/panel/panel,$model/UI2/system/components/justep/button/buttonGroup,">
-  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cQjeqAn{color: rgb(51, 51, 51)} .tb-nopadding.cQjeqAn{padding-left: 0; padding-right: 0} .x-panel-top.cQjeqAn .x-titlebar.cQjeqAn{background-color: rgb(178, 133, 58)} .x-titlebar.cQjeqAn .x-titlebar-title.cQjeqAn{font-weight: normal} .x-cards.cQjeqAn{padding: 0} .tb-box.cQjeqAn, .tb-box.cQjeqAn &gt; .col.cQjeqAn{height: 100%; margin: 0; padding: 0} s.cQjeqAn .tb-box.cQjeqAn &gt; .col.cQjeqAn:first-child{padding-right: 10px} .list-group.cQjeqAn{box-shadow: none} .list-group-item.cQjeqAn{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cQjeqAn{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cQjeqAn h5.cQjeqAn{color: rgb(207, 2, 2)} .tb-listBox.cQjeqAn{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cQjeqAn div.cQjeqAn{background-color: rgb(255, 255, 255)} .tb-listBox.cQjeqAn p.cQjeqAn{font-size: 13px; margin-top: 5px}</xhtml:style>  
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cQjeqAn{color: rgb(51, 51, 51)} .tb-nopadding.cQjeqAn{padding-left: 0; padding-right: 0} .x-panel-top.cQjeqAn .x-titlebar.cQjeqAn{background-color: rgb(178, 133, 58)} .x-titlebar.cQjeqAn .x-titlebar-title.cQjeqAn{font-weight: normal} .x-cards.cQjeqAn{padding: 0} .tb-box.cQjeqAn, .tb-box.cQjeqAn &gt; .col.cQjeqAn{height: 100%; margin: 0; padding: 0} s.cQjeqAn .tb-box.cQjeqAn &gt; .col.cQjeqAn:first-child{padding-right: 10px} .list-group.cQjeqAn{box-shadow: none} .list-group-item.cQjeqAn{background-color: rgb(245, 245, 245); border-radius: 0; border-color: rgb(225, 225, 225)} .list-group-item.current.cQjeqAn{background-color: rgb(255, 255, 255); border-right: 0; color: rgb(207, 2, 2)} .list-group-item.current.cQjeqAn h5.cQjeqAn{color: rgb(207, 2, 2)} .tb-listBox.cQjeqAn{padding-left: 0px; padding-right: 10px; margin-bottom: 10px} .tb-listBox.cQjeqAn div.cQjeqAn{background-color: rgb(255, 255, 255)} .tb-listBox.cQjeqAn p.cQjeqAn{font-size: 13px; margin-top: 5px} .angleBox.cQjeqAn{float: left; position: relative} .angle.cQjeqAn{position: absolute; right: 0px; top: 0; background-color: rgb(199, 28, 34)}</xhtml:style>  
   <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cQjeqAn" class="cQjeqAn"></div>  
   <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cQjeqAn" xid="popOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="cQjeqAn"> 
-    <div class="x-popOver-overlay cQjeqAn" xid="div6" __cid="cQjeqAn"/>
-    <div xid="div7" class="x-popOver-content cQjeqAn" __cid="cQjeqAn">
+    <div class="x-popOver-overlay cQjeqAn" xid="div6" __cid="cQjeqAn"/>  
+    <div xid="div7" class="x-popOver-content cQjeqAn" __cid="cQjeqAn"> 
       <div class="panel panel-default panel-default x-card cQjeqAn" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel2" style="width:493px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cQjeqAn"> 
         <div class="panel-heading cQjeqAn" xid="heading2" __cid="cQjeqAn"> 
           <h4 class="panel-title cQjeqAn" xid="h42" __cid="cQjeqAn">清单</h4> 
@@ -38,8 +38,8 @@
             </ul> 
           </div> 
         </div> 
-      </div>
-    </div>
+      </div> 
+    </div> 
   </div>  
   <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card pcRFnAva-iosstatusbar cQjeqAn" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQjeqAn"> 
     <div class="x-panel-top cQjeqAn" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQjeqAn"> 
@@ -82,12 +82,12 @@
                       <i xid="i14" class="linear linear-pluscircle cQjeqAn" __cid="cQjeqAn"/>  
                       <span xid="span10" __cid="cQjeqAn" class="cQjeqAn"/> 
                     </a>  
-                    <div component="$model/UI2/system/components/justep/output/output" class="pull-right cQjeqAn" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" bind-visible="ref(&quot;fCount&quot;).get() &gt; 0" data-bind="component:{ref:ref('fCount'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"/>
+                    <div component="$model/UI2/system/components/justep/output/output" class="pull-right cQjeqAn" xid="output5" style="text-align:center;margin-right:10px;margin-left:10px;display:inline-block" bind-visible="ref(&quot;fCount&quot;).get() &gt; 0" data-bind="component:{ref:ref('fCount'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"/>  
                     <a component="$model/UI2/system/components/justep/button/button" xid="reduceCountBtn" class="btn btn-icon-top pull-right cQjeqAn" style="padding:0;color:#EC8557;font-weight:normal;font-size:small;font-variant:normal;text-decoration:none;" bind-visible="ref(&quot;fCount&quot;).get() &gt; 0" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reduceCartBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-circleminus&quot;}" __cid="cQjeqAn"> 
                       <i xid="i14" class="linear linear-circleminus cQjeqAn" __cid="cQjeqAn"/>  
                       <span xid="span10" __cid="cQjeqAn" class="cQjeqAn"/> 
                     </a>  
-                    <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cQjeqAn" xid="output3" style="font-weight:normal;color:#F98C5C;height:100%;width:50%;" data-bind="component:{ref:ref('calcPriceText'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"/>
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output list-group-item-text cQjeqAn" xid="output3" style="font-weight:normal;color:#F98C5C;height:100%;width:50%;" data-bind="component:{ref:ref('calcPriceText'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQjeqAn"/> 
                   </div> 
                 </div> 
               </li> 
@@ -98,10 +98,18 @@
     </div>  
     <div xid="bottom1" class="x-panel-bottom cQjeqAn" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQjeqAn"> 
       <div component="$model/UI2/system/components/bootstrap/row/row" class="row cQjeqAn" xid="row5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQjeqAn"> 
-        <div class="col col-xs-8 cQjeqAn" xid="col3" __cid="cQjeqAn"> 
+        <div class="col col-xs-1 cQjeqAn" xid="col1" __cid="cQjeqAn"> 
+          <div class="angleBox  cQjeqAn" style="width:44px;height:43px;" bind-click="showPopOver" __cid="cQjeqAn"> 
+            <span class="badge angle cQjeqAn" bind-text="statusData.ref('calcCartCountText')" style="font-size:xx-small;" __cid="cQjeqAn">4</span>  
+            <div xid="div1" style="width:50px;height:47px;text-align:center;" __cid="cQjeqAn" class="cQjeqAn">
+              <i xid="i2" class="round round-buy cQjeqAn" style="font-size:30px;font-weight:500;" __cid="cQjeqAn"/>
+            </div>
+          </div> 
+        </div>  
+        <div class="col col-xs-7 cQjeqAn" xid="col3" __cid="cQjeqAn"> 
           <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cQjeqAn" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cQjeqAn"> 
-            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQjeqAn" xid="button1" style="text-align:left;font-size:larger;" bind-text="statusData.ref('calcCartSumMoneyText')" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showPopOver" data-config="{&quot;icon&quot;:&quot;round round-buy&quot;,&quot;label&quot;:&quot;￥０&quot;}" __cid="cQjeqAn"> 
-              <i xid="i1" class="icon round round-buy cQjeqAn" __cid="cQjeqAn"/>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQjeqAn" xid="button1" bind-text="statusData.ref('calcCartSumMoneyText')" style="text-align:left;font-size:larger;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showPopOver" data-config="{&quot;label&quot;:&quot;￥０&quot;}" __cid="cQjeqAn"> 
+              <i xid="i1" class="icon cQjeqAn" __cid="cQjeqAn"/>  
               <span xid="span1" bind-text="statusData.ref('calcCartSumMoneyText')" __cid="cQjeqAn" class="cQjeqAn">￥０</span> 
             </a> 
           </div> 
